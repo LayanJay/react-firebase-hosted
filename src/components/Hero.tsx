@@ -1,10 +1,18 @@
 import Container from "react-bootstrap/Container";
-import "./hero.scss";
 
 function Hero() {
   return (
-    <Container>
-      <h1>Hello</h1>
+    <Container className="heroContainer">
+      <img
+        alt=""
+        src="src\assets\landing_section\ruler_pattern_left.png"
+        className="draftablesRulerLeft"
+      />
+      <img
+        alt=""
+        src="src\assets\landing_section\ruler_pattern_right.png"
+        className="draftablesRulerRight"
+      />
     </Container>
   );
 }

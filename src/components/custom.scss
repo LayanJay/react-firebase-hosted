@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
 // change the theme
 $theme-colors: (
   "primary": #202f3f,
@@ -6,7 +8,14 @@ $theme-colors: (
 
 .linkLight{
   color: #5fa8ff;
+  margin: 0;
 }
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+
+// --------------NAV----------------
 
 .nav-link{
   font-family: 'Poppins';
@@ -14,8 +23,59 @@ $theme-colors: (
   font-weight: 600 !important;
 }
 
-.container{
-  align-items: flex-start !important;
+.draftablesLogo{
+  margin-right: 100px;
 }
-// Import Bootstrap and its default variables
-@import '~bootstrap/scss/bootstrap.scss';
+
+.navbar-nav{
+  align-items: center;
+
+}
+
+// --------------HERO----------------
+
+.heroContainer {
+  background-image: url(../assets/landing_section/landing_section_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100vw !important;
+  height: 100vh !important;
+  background-color: #202f3f;
+
+  
+}
+
+
+
+.draftablesRulerLeft{
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  object-fit: cover;
+  overflow: hidden;
+  float: left;
+  
+}
+
+.draftablesRulerRight{
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  object-fit: cover;
+  overflow: hidden;
+  float: right;
+  
+}
+
+// --------------WHAT IS----------------
+
+.whatIsContainer{
+  background-image: url(../assets/ownyourteam/bg_img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 100vw !important;
+  height: 100vh !important;
+  background-color: #202f3f;
+}
