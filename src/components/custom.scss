@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+// change the theme
+$theme-colors: (
+  "primary": #202f3f,
+);
+
+.linkLight{
+  color: #5fa8ff;
+}
+
+.nav-link{
+  font-family: 'Poppins';
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+.container{
+  align-items: flex-start !important;
+}
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
