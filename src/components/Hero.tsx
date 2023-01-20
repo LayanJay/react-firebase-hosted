@@ -17,10 +17,24 @@ function Hero() {
       <div className="landingAssets">
         <img
           alt=""
+          src="src\assets\dot_pattern_1.png"
+          className="dotPatternSlogan"
+        />
+        <img
+          alt=""
+          src="src\assets\dot_pattern_1.png"
+          className="dotPatternSlogan2"
+        />
+        <img
+          alt=""
           src="src\assets\landing_section\slogan-text.png"
           className="landingSlogan"
         />
-
+        <img
+          alt=""
+          src="src\assets\dot_pattern_2.png"
+          className="dotPatternLogo"
+        />
         <img
           alt=""
           src="src\assets\landing_section\draftable_logo.png"
@@ -28,10 +42,10 @@ function Hero() {
         />
       </div>
       <div className="landingButton">
-        <h2 className="buttonText">
+        <h1 className="buttonText">
           Experience the height of sports emulation
-        </h2>
-        <Button variant="primary">Sign Up For Alpha</Button>
+        </h1>
+        <Button className="buttonAlpha">Sign Up For Alpha</Button>
       </div>
     </Container>
   );
