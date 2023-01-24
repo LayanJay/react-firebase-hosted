@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-
+// --------------GLOBAL----------------
 // change the theme
 $theme-colors: (
   "primary": #202f3f,
 );
 
+html *{
+  font-family: 'Poppins';
+  color: white;
+}
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
@@ -92,11 +96,9 @@ $theme-colors: (
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'Poppins';
 }
 
 .buttonText{
-  font-family: 'Poppins';
   color: white !important;
   font-weight: 500 !important;
   font-style: italic;
@@ -105,12 +107,14 @@ $theme-colors: (
 }
 
 .buttonAlpha{
-  font-family: 'Poppins';
   background-image: linear-gradient(to right, #5FA8FF, #CC00FF) !important;
-  font-weight: 400 !important;
-  font-size: 18px;
+  font-weight: 600 !important;
+  font-size: 21px;
   border: 0;
   transition: transform .2s;
+  width: 10vw;
+  height: 50px;
+  border-radius: 5px;
 }
 
 .buttonAlpha:hover{
@@ -142,21 +146,57 @@ $theme-colors: (
   padding-bottom: 15%;
   z-index: 1;
 }
+// --------------ALPHA----------------
+.alphaContainer{
+  max-width: 100vw !important;
+  height: 20vh !important;
+  background-color: #202f3f;
+  display: flex;
+  align-items: center;
+}
+
+.alphaText{
+  color: white;
+  font-weight: bolder !important;
+  font-style: italic;
+  font-size: 48px;
+}
+
+.alphaDescription{
+  color: white;
+  font-size: 18px;
+}
+
+.alphaAssets{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.alphaFormField{
+  height: 50px;
+  width: 25vw;
+  background-color: #304059;
+  border: 0;
+  border-radius: 5px;
+}
+
 
 // --------------WHAT IS----------------
 
 .whatIsContainer{
+  padding-top: 5vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/ownyourteam/bg_img.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   max-width: 100vw !important;
-  height: 85vh !important;
+  height: 100vh !important;
   background-color: #202f3f;
 }
 
 .ownYourTeam{
-  font-family: 'Poppins';
   color: white !important;
   font-weight: 600 !important;
   font-size: 64px;
@@ -165,6 +205,55 @@ $theme-colors: (
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-style: italic;
   word-spacing: 20px;
+}
+
+.whatIsAssets{
+  display: flex;
+  justify-content: center;
+}
+
+.whatIsInnerContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.whatIsImage{
+  width: 22vw;
+  height: auto;
+  padding: 2vw;
+}
+
+.whatIsImageMain{
+  width: 25vw;
+  border:5px solid #CC00FF;
+  height: auto;
+}
+
+.dotPatternWhatIs{
+  position: absolute;
+  width: 5%;
+  height: auto;
+  left: 13%;
+  padding-top: 15%;
+  z-index: 1;
+}
+
+.dotPatternWhatIs2{
+  position: absolute;
+  width: 5%;
+  height: auto;
+  left: 37%;
+  padding-bottom: 15%;
+  z-index: 1;
+}
+
+.dotPatternWhatIs3{
+  position: absolute;
+  width: 5%;
+  height: auto;
+  left: 37%;
+  padding-bottom: 15%;
+  z-index: 1;
 }
 
 // --------------Partners----------------

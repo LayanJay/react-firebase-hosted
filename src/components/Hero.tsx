@@ -45,7 +45,7 @@ function Hero() {
         <h1 className="buttonText">
           Experience the height of sports emulation
         </h1>
-        <Button className="buttonAlpha">Sign Up For Alpha</Button>
+        <Button className="buttonAlpha">PLAY</Button>
       </div>
     </Container>
   );
