@@ -1,16 +1,21 @@
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import Button from "react-bootstrap/Button";
 
 function NavigationBar() {
   return (
-    <Navbar collapseOnSelect expand="xl" bg="primary" variant="dark">
+    <Navbar
+      className="navigationBarMain"
+      collapseOnSelect
+      expand="xl"
+      bg="primary"
+      variant="dark"
+    >
       <Container fluid className="navBar">
         <img
           alt=""
           src="src\assets\navbar\logo.png"
-          width="125vw"
-          height="45vh"
           className="draftablesLogo"
         />
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -27,9 +32,9 @@ function NavigationBar() {
             <Nav.Link href="#gameplay">GAMEPLAY</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link className="joinLink" href="#join">
-              JOIN NOW
-            </Nav.Link>
+            <div>
+              <Button className="buttonNav">JOIN NOW</Button>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Container>

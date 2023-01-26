@@ -19,7 +19,11 @@ function Alpha() {
               placeholder="Example@gmail.com"
             />
           </label>
-          <input className="buttonAlpha" type="submit" value="Sign Up" />
+          <input
+            className="buttonAlpha buttonAlphaSignup"
+            type="submit"
+            value="Sign Up"
+          />
         </form>
       </Container>
     </Container>
