@@ -6,6 +6,8 @@ import Partners from "./components/Partners";
 import Roadmap from "./components/Roadmap";
 import About from "./components/About";
 import Alpha from "./components/Alpha";
+import Contact from "./components/Contact";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -14,9 +16,11 @@ function App() {
       <Hero />
       <Alpha />
       <WhatIs />
-      <Partners />
       <Roadmap />
       <About />
+      <Partners />
+      <Contact />
+      <Footer />
     </>
   );
 }
