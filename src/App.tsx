@@ -7,7 +7,7 @@ import Roadmap from "./components/Roadmap";
 import About from "./components/About";
 import Alpha from "./components/Alpha";
 import Contact from "./components/Contact";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
