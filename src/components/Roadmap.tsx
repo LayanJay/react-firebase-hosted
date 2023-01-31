@@ -1,4 +1,5 @@
 import Container from "react-bootstrap/Container";
+import "./styles/Roadmap.scss";
 
 function Roadmap() {
   return (

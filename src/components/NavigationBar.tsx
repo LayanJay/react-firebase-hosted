@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
+import "./styles/NavigationBar.scss";
 
 function NavigationBar() {
   return (
@@ -33,7 +34,7 @@ function NavigationBar() {
           </Nav>
           <Nav>
             <div>
-              <Button className="buttonNav">JOIN NOW</Button>
+              <Button className="buttonGeneral buttonNav">JOIN NOW</Button>
             </div>
           </Nav>
         </Navbar.Collapse>

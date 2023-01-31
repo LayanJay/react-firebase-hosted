@@ -1,4 +1,5 @@
 import Container from "react-bootstrap/Container";
+import "./styles/About.scss";
 
 function About() {
   return (
@@ -8,6 +9,11 @@ function About() {
           alt=""
           src="src\assets\aboutUs\aboutUs-img.png"
           className="aboutLeftImg"
+        />
+        <img
+          alt=""
+          src="src\assets\dot_pattern_2.png"
+          className="dotPatternAbout"
         />
       </div>
       <div className="aboutRight">

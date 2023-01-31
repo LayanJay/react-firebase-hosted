@@ -1,27 +1,28 @@
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
+import "./styles/OwnYourTeam.scss";
 
-function WhatIs() {
+function OwnYourTeam() {
   return (
-    <Container className="whatIsContainer">
-      <h1 className="ownYourTeam">OWN. YOUR. TEAM.</h1>
-      <h2 className="generalText">
+    <Container className="oytContainer">
+      <h1 className="oytTitle">OWN. YOUR. TEAM.</h1>
+      <p className="oytDescription">
         Draftables is the most customizable, rewarding, and in-depth sports
         simulator of all time. You no longer have to pretend to be a football
         franchise owner — you are one.
-      </h2>
-      <Container className="whatIsInnerContainer">
+      </p>
+      <Container className="oytInnerContainer">
         <img
           alt=""
           src="src\assets\dot_pattern_1.png"
-          className="dotPatternWhatIs"
+          className="dotPatternOyt"
         />
         <img
           alt=""
           src="src\assets\dot_pattern_1.png"
-          className="dotPatternWhatIs2"
+          className="dotPatternOyt2"
         />
-        <div className="whatIsAssets">
+        <div className="oytAssets">
           <img
             alt=""
             src="src\assets\ownyourteam\american_football.png"
@@ -45,19 +46,21 @@ function WhatIs() {
             className="whatIsImage"
           />
         </div>
-        <div className="landingButton">
-          <h2 className="generalText">
+        <div className="oytLitePaper">
+          <p className="oytDescription">
             Draftables aims to fully realize the potential of sports simulators.
             Experience unlimited control, true ownership, season-to-season
             continuity, and a lively community. Draftables is a fun,
             free-to-play game that solves the issues with current sports video
             games.
-          </h2>
-          <Button className="buttonAlpha">LITEPAPER</Button>
+          </p>
+          <Button className="buttonGeneral buttonGeneralLitePaper">
+            LITEPAPER
+          </Button>
         </div>
       </Container>
     </Container>
   );
 }
 
-export default WhatIs;
+export default OwnYourTeam;

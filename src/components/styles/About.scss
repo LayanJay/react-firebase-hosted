@@ -1,0 +1,94 @@
+.about {
+  background: radial-gradient(
+    234.95% 6815.94% at 51.44% 50%,
+    #32435c 0%,
+    #111822 100%
+  );
+  display: flex;
+  align-items: center;
+  padding: 100px;
+  margin: 0;
+  height: auto;
+  max-width: 100vw !important;
+  justify-content: space-around;
+  position: relative;
+}
+
+.aboutLeft {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+.aboutLeftImg {
+  max-width: 35vw;
+  height: auto;
+  z-index: 2;
+}
+
+.aboutRight {
+  border-left: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50vw;
+  padding-left: 100px;
+}
+
+.aboutRightTitle {
+  font-weight: 700;
+  font-size: 64px;
+  padding-bottom: 75px;
+  font-style: italic;
+}
+
+.aboutRightSubtitle {
+  font-weight: 700;
+  font-size: 32px;
+  color: #5fa8ff;
+  padding-bottom: 25px;
+}
+
+.aboutRightText {
+  padding-bottom: 75px;
+}
+
+.aboutRightSocials {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+}
+
+.socialIcon {
+  width: 2vw;
+  height: auto;
+}
+
+///Background Assets
+
+.dotPatternAbout {
+  position: absolute;
+  width: 35vw;
+  height: auto;
+  left: 7%;
+  top: 10%;
+  z-index: 1;
+}
+
+.dotPatternPartner2 {
+  position: absolute;
+  width: 5vw;
+  height: auto;
+  left: 13%;
+  top: 60%;
+  z-index: 1;
+}
+
+.dotPatternPartner3 {
+  position: absolute;
+  width: 5vw;
+  height: auto;
+  left: 38%;
+  top: 30%;
+  z-index: 1;
+}
