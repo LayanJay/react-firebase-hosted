@@ -17,9 +17,10 @@
   flex-direction: column;
   align-items: center;
   border-top: 5px solid #10171f;
+  position: relative;
 }
 
-.roadMapTitle {
+.roadMapSection {
   font-weight: 700;
   font-size: 48px;
   padding-bottom: 50px;
@@ -32,26 +33,189 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  flex-direction: column;
+  align-items: center;
 }
 
 .roadMapStep {
-  background: tomato;
-  padding: 5px;
-  width: 25vw;
-  height: 30vh;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  max-width: 20vw;
+  min-height: 30vh;
   margin-top: 10px;
   line-height: 50px;
   color: white;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 5%;
+  border: solid white 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
 }
 
 .roadMapHeader {
-  font-size: 48px;
+  font-size: 28px;
   font-weight: 700;
 }
 
 .roadMapText {
-  font-size: 18px;
   font-weight: 500;
+  font-size: 17.4449px;
+  line-height: 24px;
+  /* or 135% */
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.roadMapNumber {
+  font-size: 64px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roadMapTitle {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-style: italic;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.progressText {
+  font-size: 42px;
+  font-weight: 700;
+  font-style: italic;
+  background: linear-gradient(90deg, #5fa8ff, #cc00ff);
+  background-clip: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.progressTextSoon {
+  font-size: 42px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roadMapStepBackground1 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(../../assets/roadmap/RoadmapSteps.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #202f3f;
+  border-image: linear-gradient(#5fa8ff, #cc00ff) 30;
+  border-width: 2.5px;
+  border-style: solid;
+}
+
+.roadMapStepBackground2 {
+  background: rgba(32, 47, 63, 0.3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.roadMapInnerFlexContainerTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 90vw;
+}
+
+.roadMapInnerFlexContainerBot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70vw;
+}
+
+//BackgroundAssets
+
+.dotPatternRoadMap1 {
+  position: absolute;
+  width: 5vw;
+  height: auto;
+  left: 91%;
+  top: 7%;
+  z-index: 1;
+}
+
+.dotPatternRoadMap2 {
+  position: absolute;
+  width: 5vw;
+  height: auto;
+  left: 18%;
+  top: 85%;
+  z-index: 1;
+}
+
+.dotPatternRoadMap3 {
+  position: absolute;
+  width: 25vw;
+  height: auto;
+  left: 17%;
+  top: 10%;
+  z-index: 1;
+}
+
+.dotPatternRoadMap4 {
+  position: absolute;
+  width: 5vw;
+  height: auto;
+  left: 85%;
+  top: 70%;
+  z-index: 1;
+}
+
+.roadMapArrow1 {
+  position: absolute;
+  width: 7vw;
+  height: auto;
+  left: 1%;
+  top: 30%;
+  z-index: 1;
+}
+
+.roadMapArrow2 {
+  position: absolute;
+  width: 7vw;
+  height: auto;
+  left: 31.5%;
+  top: 30%;
+  z-index: 1;
+}
+.roadMapArrow3 {
+  position: absolute;
+  width: 7vw;
+  height: auto;
+  left: 61.5%;
+  top: 30%;
+  z-index: 1;
+}
+
+.roadMapArrow4 {
+  position: absolute;
+  width: 45vw;
+  height: auto;
+  left: 35%;
+  top: 47.3%;
+  z-index: 1;
+}
+
+.roadMapArrow5 {
+  position: absolute;
+  width: 7vw;
+  height: auto;
+  left: 46.5%;
+  top: 70%;
+  z-index: 1;
 }

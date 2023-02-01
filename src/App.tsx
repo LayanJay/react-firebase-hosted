@@ -1,7 +1,7 @@
 import "./App.css";
 import NavigationBar from "./components/NavigationBar";
 import Hero from "./components/Hero";
-import OwnYourTeam from "./components/Ownyourteam";
+import OwnYourTeam from "./components/OwnYourTeam";
 import Partners from "./components/Partners";
 import Roadmap from "./components/Roadmap";
 import About from "./components/About";
