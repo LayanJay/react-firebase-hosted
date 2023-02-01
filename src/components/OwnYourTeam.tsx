@@ -4,7 +4,7 @@ import "./styles/OwnYourTeam.scss";
 
 function OwnYourTeam() {
   return (
-    <Container className="oytContainer">
+    <Container className="oytContainer" id="whatis">
       <h1 className="oytTitle">OWN. YOUR. TEAM.</h1>
       <p className="oytDescription">
         Draftables is the most customizable, rewarding, and in-depth sports

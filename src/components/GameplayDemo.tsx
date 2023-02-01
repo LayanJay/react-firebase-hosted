@@ -4,7 +4,7 @@ import "./styles/GameplayDemo.scss";
 
 function GameplayDemo() {
   return (
-    <Container className="gameplayDemoContainer">
+    <Container className="gameplayDemoContainer" id="gameplay">
       <h1 className="gameplayDemoTitle">GAMEPLAY DEMO</h1>
       <img
         alt=""

@@ -4,7 +4,7 @@ import "./styles/Partners.scss";
 
 function Partners() {
   return (
-    <Container className="supportingPartners">
+    <Container className="supportingPartners" id="support">
       <img
         alt=""
         src="src\assets\dot_pattern_2.png"

@@ -3,7 +3,7 @@ import "./styles/About.scss";
 
 function About() {
   return (
-    <Container className="about">
+    <Container className="about" id="aboutus">
       <div className="aboutLeft">
         <img
           alt=""

@@ -3,7 +3,7 @@ import "./styles/Roadmap.scss";
 
 function Roadmap() {
   return (
-    <Container className="roadMap">
+    <Container className="roadMap" id="roadmap">
       <div className="backgroundAssets">
         <img
           alt=""
