@@ -1,20 +1,17 @@
 import Container from "react-bootstrap/Container";
 import "./styles/About.scss";
+import aboutUsImg from "../assets/aboutUs/aboutUs-img.png";
+import dotPattern2 from "../assets/dot_pattern_2.png";
+import linkedinLogo from "../assets/aboutUs/Vector-1.png";
+import instagramLogo from "../assets/aboutUs/Vector-2.png";
+import twitterLogo from "../assets/aboutUs/Vector.png";
 
 function About() {
   return (
     <Container className="about" id="aboutus">
       <div className="aboutLeft">
-        <img
-          alt=""
-          src="src/assets/aboutUs/aboutUs-img.png"
-          className="aboutLeftImg"
-        />
-        <img
-          alt=""
-          src="src/assets/dot_pattern_2.png"
-          className="dotPatternAbout"
-        />
+        <img alt="" src={aboutUsImg} className="aboutLeftImg" />
+        <img alt="" src={dotPattern2} className="dotPatternAbout" />
       </div>
       <div className="aboutRight">
         <h1 className="aboutRightTitle">About Draft Labs</h1>
@@ -27,21 +24,9 @@ function About() {
           while they "contribute-to-earn."
         </p>
         <div className="aboutRightSocials">
-          <img
-            alt=""
-            src="src/assets/aboutUs/Vector-1.png"
-            className="socialIcon"
-          />
-          <img
-            alt=""
-            src="src/assets/aboutUs/Vector-2.png"
-            className="socialIcon"
-          />
-          <img
-            alt=""
-            src="src/assets/aboutUs/Vector.png"
-            className="socialIcon"
-          />
+          <img alt="" src={linkedinLogo} className="socialIcon" />
+          <img alt="" src={instagramLogo} className="socialIcon" />
+          <img alt="" src={twitterLogo} className="socialIcon" />
         </div>
       </div>
     </Container>

@@ -1,5 +1,8 @@
 import Container from "react-bootstrap/Container";
 import "./styles/Footer.scss";
+import linkedinLogo from "../assets/aboutUs/Vector-1.png";
+import instagramLogo from "../assets/aboutUs/Vector-2.png";
+import twitterLogo from "../assets/aboutUs/Vector.png";
 
 function Footer() {
   return (
@@ -40,21 +43,9 @@ function Footer() {
           <p>Copyright ©2023 All Rights Reserved | DRAFT LABS</p>
         </div>
         <div className="copyrightLeft">
-          <img
-            alt=""
-            src="src/assets/aboutUs/Vector-1.png"
-            className="socialIcon"
-          />
-          <img
-            alt=""
-            src="src/assets/aboutUs/Vector-2.png"
-            className="socialIcon"
-          />
-          <img
-            alt=""
-            src="src/assets/aboutUs/Vector.png"
-            className="socialIcon"
-          />
+          <img alt="" src={linkedinLogo} className="socialIcon" />
+          <img alt="" src={instagramLogo} className="socialIcon" />
+          <img alt="" src={twitterLogo} className="socialIcon" />
         </div>
       </div>
     </Container>
