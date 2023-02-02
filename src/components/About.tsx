@@ -7,12 +7,12 @@ function About() {
       <div className="aboutLeft">
         <img
           alt=""
-          src="src\assets\aboutUs\aboutUs-img.png"
+          src="src/assets/aboutUs/aboutUs-img.png"
           className="aboutLeftImg"
         />
         <img
           alt=""
-          src="src\assets\dot_pattern_2.png"
+          src="src/assets/dot_pattern_2.png"
           className="dotPatternAbout"
         />
       </div>
@@ -29,17 +29,17 @@ function About() {
         <div className="aboutRightSocials">
           <img
             alt=""
-            src="src\assets\aboutUs\Vector-1.png"
+            src="src/assets/aboutUs/Vector-1.png"
             className="socialIcon"
           />
           <img
             alt=""
-            src="src\assets\aboutUs\Vector-2.png"
+            src="src/assets/aboutUs/Vector-2.png"
             className="socialIcon"
           />
           <img
             alt=""
-            src="src\assets\aboutUs\Vector.png"
+            src="src/assets/aboutUs/Vector.png"
             className="socialIcon"
           />
         </div>

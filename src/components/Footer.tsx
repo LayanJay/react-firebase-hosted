@@ -6,7 +6,7 @@ function Footer() {
     <Container className="footer">
       <img
         alt=""
-        src="src\assets\footer\footer_logo.png"
+        src="src/assets/footer/footer_logo.png"
         className="footerLogo"
       />
       <div className="footerContent">
@@ -42,17 +42,17 @@ function Footer() {
         <div className="copyrightLeft">
           <img
             alt=""
-            src="src\assets\aboutUs\Vector-1.png"
+            src="src/assets/aboutUs/Vector-1.png"
             className="socialIcon"
           />
           <img
             alt=""
-            src="src\assets\aboutUs\Vector-2.png"
+            src="src/assets/aboutUs/Vector-2.png"
             className="socialIcon"
           />
           <img
             alt=""
-            src="src\assets\aboutUs\Vector.png"
+            src="src/assets/aboutUs/Vector.png"
             className="socialIcon"
           />
         </div>
