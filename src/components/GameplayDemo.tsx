@@ -8,12 +8,12 @@ function GameplayDemo() {
       <h1 className="gameplayDemoTitle">GAMEPLAY DEMO</h1>
       <img
         alt=""
-        src="src/assets/landing_section/ruler_pattern_left.png"
+        src="/src/assets/landing_section/ruler_pattern_right.png"
         className="gameplayRulerLeft"
       />
       <img
         alt=""
-        src="src/assets/landing_section/ruler_pattern_right.png"
+        src="/src/assets/landing_section/ruler_pattern_right.png"
         className="gameplayRulerRight"
       />
     </Container>

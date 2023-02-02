@@ -16,7 +16,7 @@ function NavigationBar() {
       <Container fluid className="navBar">
         <img
           alt=""
-          src="src/assets/navbar/logo.png"
+          src="/src/assets/navbar/logo.png"
           className="draftablesLogo"
         />
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
