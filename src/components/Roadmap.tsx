@@ -1,56 +1,23 @@
 import Container from "react-bootstrap/Container";
 import "./styles/Roadmap.scss";
+import dotPattern1 from "../assets/dot_pattern_1.png";
+import dotPattern2 from "../assets/dot_pattern_2.png";
+import arrow1 from "../assets/roadmap/arrow1.png";
+import arrow3 from "../assets/roadmap/arrow3.png";
 
 function Roadmap() {
   return (
     <Container className="roadMap" id="roadmap">
       <div className="backgroundAssets">
-        <img
-          alt=""
-          src="src/assets/dot_pattern_1.png"
-          className="dotPatternRoadMap1"
-        />
-        <img
-          alt=""
-          src="src/assets/dot_pattern_1.png"
-          className="dotPatternRoadMap2"
-        />
-        <img
-          alt=""
-          src="src/assets/dot_pattern_1.png"
-          className="dotPatternRoadMap4"
-        />
-        <img
-          alt=""
-          src="src/assets/roadmap/arrow1.png"
-          className="roadMapArrow1"
-        />
-        <img
-          alt=""
-          src="src/assets/roadmap/arrow1.png"
-          className="roadMapArrow2"
-        />
-        <img
-          alt=""
-          src="src/assets/roadmap/arrow1.png"
-          className="roadMapArrow3"
-        />
-        <img
-          alt=""
-          src="src/assets/roadmap/arrow1.png"
-          className="roadMapArrow5"
-        />
-        <img
-          alt=""
-          src="src/assets/roadmap/arrow3.png"
-          className="roadMapArrow4"
-        />
-
-        <img
-          alt=""
-          src="src/assets/dot_pattern_2.png"
-          className="dotPatternRoadMap3"
-        />
+        <img alt="" src={dotPattern1} className="dotPatternRoadMap1" />
+        <img alt="" src={dotPattern1} className="dotPatternRoadMap2" />
+        <img alt="" src={dotPattern1} className="dotPatternRoadMap4" />
+        <img alt="" src={arrow1} className="roadMapArrow1" />
+        <img alt="" src={arrow1} className="roadMapArrow2" />
+        <img alt="" src={arrow1} className="roadMapArrow3" />
+        <img alt="" src={arrow1} className="roadMapArrow5" />
+        <img alt="" src={arrow3} className="roadMapArrow4" />
+        <img alt="" src={dotPattern2} className="dotPatternRoadMap3" />
       </div>
       <h1 className="roadMapSection">ROADMAP</h1>
       <div className="roadMapFlexContainer">

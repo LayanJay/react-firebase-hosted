@@ -1,6 +1,11 @@
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import "./styles/OwnYourTeam.scss";
+import dotPattern1 from "../assets/dot_pattern_1.png";
+import oytFootball1 from "../assets/ownyourteam/american_football.png";
+import oytFootball2 from "../assets/ownyourteam/american_football_2.png";
+import oytFootball3 from "../assets/ownyourteam/american_football_3.png";
+import oytVs from "../assets/ownyourteam/vs.png";
 
 function OwnYourTeam() {
   return (
@@ -12,39 +17,15 @@ function OwnYourTeam() {
         franchise owner — you are one.
       </p>
       <Container className="oytInnerContainer">
-        <img
-          alt=""
-          src="src/assets/dot_pattern_1.png"
-          className="dotPatternOyt"
-        />
-        <img
-          alt=""
-          src="src/assets/dot_pattern_1.png"
-          className="dotPatternOyt2"
-        />
+        <img alt="" src={dotPattern1} className="dotPatternOyt" />
+        <img alt="" src={dotPattern1} className="dotPatternOyt2" />
         <div className="oytAssets">
-          <img
-            alt=""
-            src="src/assets/ownyourteam/american_football.png"
-            className="whatIsImage"
-          />
+          <img alt="" src={oytFootball1} className="whatIsImage" />
           <div className="gradientBackground">
-            <img
-              alt=""
-              src="src/assets/ownyourteam/vs.png"
-              className="whatIsImage whatIsImageMain"
-            />
+            <img alt="" src={oytVs} className="whatIsImage whatIsImageMain" />
           </div>
-          <img
-            alt=""
-            src="src/assets/ownyourteam/american_football_3.png"
-            className="whatIsImage"
-          />
-          <img
-            alt=""
-            src="src/assets/ownyourteam/american_football_2.png"
-            className="whatIsImage"
-          />
+          <img alt="" src={oytFootball3} className="whatIsImage" />
+          <img alt="" src={oytFootball2} className="whatIsImage" />
         </div>
         <div className="oytLitePaper">
           <p className="oytDescription">
