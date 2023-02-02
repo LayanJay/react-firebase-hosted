@@ -3,6 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import "./styles/NavigationBar.scss";
+import draftablesLogo from "../assets/navbar/logo.png";
 
 function NavigationBar() {
   return (
@@ -14,11 +15,7 @@ function NavigationBar() {
       variant="dark"
     >
       <Container fluid className="navBar">
-        <img
-          alt=""
-          src="/src/assets/navbar/logo.png"
-          className="draftablesLogo"
-        />
+        <img alt="" src={draftablesLogo} className="draftablesLogo" />
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
