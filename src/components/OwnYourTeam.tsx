@@ -14,35 +14,35 @@ function OwnYourTeam() {
       <Container className="oytInnerContainer">
         <img
           alt=""
-          src="src\assets\dot_pattern_1.png"
+          src="src/assets/dot_pattern_1.png"
           className="dotPatternOyt"
         />
         <img
           alt=""
-          src="src\assets\dot_pattern_1.png"
+          src="src/assets/dot_pattern_1.png"
           className="dotPatternOyt2"
         />
         <div className="oytAssets">
           <img
             alt=""
-            src="src\assets\ownyourteam\american_football.png"
+            src="src/assets/ownyourteam/american_football.png"
             className="whatIsImage"
           />
           <div className="gradientBackground">
             <img
               alt=""
-              src="src\assets\ownyourteam\vs.png"
+              src="src/assets/ownyourteam/vs.png"
               className="whatIsImage whatIsImageMain"
             />
           </div>
           <img
             alt=""
-            src="src\assets\ownyourteam\american_football_3.png"
+            src="src/assets/ownyourteam/american_football_3.png"
             className="whatIsImage"
           />
           <img
             alt=""
-            src="src\assets\ownyourteam\american_football_2.png"
+            src="src/assets/ownyourteam/american_football_2.png"
             className="whatIsImage"
           />
         </div>

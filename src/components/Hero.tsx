@@ -8,28 +8,28 @@ function Hero() {
       <div className="backgroundAssets">
         <img
           alt=""
-          src="src\assets\landing_section\ruler_pattern_left.png"
+          src="src/assets/landing_section/ruler_pattern_left.png"
           className="heroRulerLeft"
         />
         <img
           alt=""
-          src="src\assets\landing_section\ruler_pattern_right.png"
+          src="src/assets/landing_section/ruler_pattern_right.png"
           className="heroRulerRight"
         />
         <img
           alt=""
-          src="src\assets\dot_pattern_1.png"
+          src="src/assets/dot_pattern_1.png"
           className="dotPatternSlogan"
         />
         <img
           alt=""
-          src="src\assets\dot_pattern_1.png"
+          src="src/assets/dot_pattern_1.png"
           className="dotPatternSlogan2"
         />
 
         <img
           alt=""
-          src="src\assets\dot_pattern_2.png"
+          src="src/assets/dot_pattern_2.png"
           className="dotPatternLogo"
         />
       </div>
@@ -37,12 +37,12 @@ function Hero() {
         <div className="landingLogos">
           <img
             alt=""
-            src="src\assets\landing_section\slogan-text.png"
+            src="src/assets/landing_section/slogan-text.png"
             className="landingLogo"
           />
           <img
             alt=""
-            src="src\assets\landing_section\draftable_logo.png"
+            src="src/assets/landing_section/draftable_logo.png"
             className="landingLogo"
           />
         </div>

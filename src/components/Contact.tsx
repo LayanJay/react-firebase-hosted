@@ -10,19 +10,7 @@ function Contact() {
           Have any questions or want to get in contact?
         </p>
       </div>
-      <div className="contactRight">
-        <p>FORM HERE</p>
-        <p>FORM HERE</p>
-        <p>FORM HERE</p>
-        <p>FORM HERE</p>
-        <p>FORM HERE</p>
-        <p>FORM HERE</p>
-        <p>FORM HERE</p>
-        <p>FORM HERE</p>
-        <p>FORM HERE</p>
-        <p>FORM HERE</p>
-        <p>FORM HERE</p>
-      </div>
+      <div className="contactRight"></div>
     </Container>
   );
 }

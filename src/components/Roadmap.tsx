@@ -7,48 +7,48 @@ function Roadmap() {
       <div className="backgroundAssets">
         <img
           alt=""
-          src="src\assets\dot_pattern_1.png"
+          src="src/assets/dot_pattern_1.png"
           className="dotPatternRoadMap1"
         />
         <img
           alt=""
-          src="src\assets\dot_pattern_1.png"
+          src="src/assets/dot_pattern_1.png"
           className="dotPatternRoadMap2"
         />
         <img
           alt=""
-          src="src\assets\dot_pattern_1.png"
+          src="src/assets/dot_pattern_1.png"
           className="dotPatternRoadMap4"
         />
         <img
           alt=""
-          src="src\assets\roadmap\arrow1.png"
+          src="src/assets/roadmap/arrow1.png"
           className="roadMapArrow1"
         />
         <img
           alt=""
-          src="src\assets\roadmap\arrow1.png"
+          src="src/assets/roadmap/arrow1.png"
           className="roadMapArrow2"
         />
         <img
           alt=""
-          src="src\assets\roadmap\arrow1.png"
+          src="src/assets/roadmap/arrow1.png"
           className="roadMapArrow3"
         />
         <img
           alt=""
-          src="src\assets\roadmap\arrow1.png"
+          src="src/assets/roadmap/arrow1.png"
           className="roadMapArrow5"
         />
         <img
           alt=""
-          src="src\assets\roadmap\arrow3.png"
+          src="src/assets/roadmap/arrow3.png"
           className="roadMapArrow4"
         />
 
         <img
           alt=""
-          src="src\assets\dot_pattern_2.png"
+          src="src/assets/dot_pattern_2.png"
           className="dotPatternRoadMap3"
         />
       </div>
