@@ -49,6 +49,7 @@ function OwnYourTeam() {
           <FsLightbox
             toggler={toggler}
             sources={[
+              //@ts-ignore
               <iframe src={litepaper} width="1920px" height="1080px" />,
             ]}
           />
