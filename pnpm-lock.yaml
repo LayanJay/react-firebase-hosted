@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/fslightbox-react': ^1.4.2
   '@types/react': ^18.0.26
   '@types/react-dom': ^18.0.9
   '@vitejs/plugin-react': ^3.0.0
@@ -8,6 +9,7 @@ specifiers:
   firebase: ^9.15.0
   firebase-admin: ^11.4.1
   firebase-functions: ^4.1.1
+  fslightbox-react: ^1.6.3
   react: ^18.2.0
   react-bootstrap: ^2.7.0
   react-dom: ^18.2.0
@@ -20,12 +22,14 @@ dependencies:
   firebase: 9.15.0
   firebase-admin: 11.4.1
   firebase-functions: 4.1.1_firebase-admin@11.4.1
+  fslightbox-react: 1.6.3_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-bootstrap: 2.7.0_ib3m5ricvtkl2cll7qpr2f6lvq
   react-dom: 18.2.0_react@18.2.0
   sass: 1.58.0
 
 devDependencies:
+  '@types/fslightbox-react': 1.4.2
   '@types/react': 18.0.26
   '@types/react-dom': 18.0.10
   '@vitejs/plugin-react': 3.0.1_vite@4.0.4
@@ -1274,6 +1278,12 @@ packages:
       '@types/serve-static': 1.15.0
     dev: false
 
+  /@types/fslightbox-react/1.4.2:
+    resolution: {integrity: sha512-Bj+1xmiCKGgqiCL7MGv6UKCoIs7Cw8SWfV9gEPtNQGdXzYURLXVEdJsjSVDLuq4DpkvO4UixlbhOvZmp7+QJSA==}
+    dependencies:
+      '@types/react': 18.0.26
+    dev: true
+
   /@types/jsonwebtoken/8.5.9:
     resolution: {integrity: sha512-272FMnFGzAVMGtu9tkr29hRL6bZj4Zs1KZNeHLnKqAvp06tAIcarTMwOh8/8bz4FmKRcMxZhZNeUAQsNLoiPhg==}
     dependencies:
@@ -2078,6 +2088,17 @@ packages:
     os: [darwin]
     requiresBuild: true
     optional: true
+
+  /fslightbox-react/1.6.3_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-PGjvGqLi1cj87MUj+przlWwk2BkbZmmF0Ub3k0TLjQox2hYVZ98xKAXUO3Y7fdMVrcrYKlNl8htRfwgaxDZC9g==}
+    peerDependencies:
+      prop-types: '>=15.6.2'
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
 
   /function-bind/1.1.1:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
