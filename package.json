@@ -7,11 +7,17 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "deploy": "pnpm build && firebase deploy --only hosting"
+    "deploy": "pnpm build && firebase deploy --only hosting",
+    "lint": "eslint --max-warnings=0 src"
   },
   "dependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/plugin-syntax-flow": "^7.14.5",
+    "@babel/plugin-transform-react-jsx": "^7.14.9",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
+    "eslint": "^8.33.0",
+    "eslint-config-react-app": "^7.0.1",
     "fslightbox-react": "^1.6.3",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",

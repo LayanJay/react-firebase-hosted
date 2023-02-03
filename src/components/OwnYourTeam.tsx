@@ -50,7 +50,7 @@ function OwnYourTeam() {
             toggler={toggler}
             sources={[
               //@ts-ignore
-              <iframe src={litepaper} width="1920px" height="1080px" />,
+              <iframe title={'LITEPAPER'} src={litepaper} width="1920px" height="1080px" />,
             ]}
           />
         </div>
