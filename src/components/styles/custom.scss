@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+// --------------GLOBAL----------------
+// change the theme
+$theme-colors: (
+  "primary": #202f3f,
+);
+
+html * {
+  font-family: "Poppins";
+  color: white;
+}
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";
