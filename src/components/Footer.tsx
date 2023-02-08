@@ -1,8 +1,8 @@
 import Container from "react-bootstrap/Container";
 import "./styles/Footer.scss";
-import linkedinLogo from "../assets/aboutUs/Vector-1.png";
-import instagramLogo from "../assets/aboutUs/Vector-2.png";
-import twitterLogo from "../assets/aboutUs/Vector.png";
+import linkedinLogo from "../assets/linkedin-logo.svg";
+import redditLogo from "../assets/reddit-logo.svg";
+import twitterLogo from "../assets/twitter-logo.svg";
 
 function Footer() {
   return (
@@ -14,28 +14,34 @@ function Footer() {
       />
       <div className="footerContent">
         <div className="footerLeft">
-          <h3 className="footerHeaders">About Us</h3>
-          <li>About Draftables</li>
-          <li>Contact us</li>
-          <li>Help Center</li>
-          <li>Blogs</li>
-          <li>Career</li>
+          <h3 className="footerHeaders"></h3>
+          <li>
+            <a href="#support">Our Team</a>
+          </li>
+        </div>
+        <div className="footerMiddleLeft">
+          <h3 className="footerHeaders"></h3>
+          <li>
+            <a href="#whatis">About Draftables</a>
+          </li>
         </div>
         <div className="footerMiddle">
-          <h3 className="footerHeaders">Contact Info</h3>
-          <li>About Draftables</li>
-          <li>Contact us</li>
-          <li>Help Center</li>
-          <li>Blogs</li>
-          <li>Career</li>
+          <h3 className="footerHeaders"></h3>
+          <li>
+            <a href="#contact">Contact us</a>
+          </li>
+        </div>
+        <div className="footerMiddleRight">
+          <h3 className="footerHeaders"></h3>
+          <li>
+            <a href="">Blogs</a>
+          </li>
         </div>
         <div className="footerRight">
-          <h3 className="footerHeaders">Newsletter</h3>
-          <li>About Draftables</li>
-          <li>Contact us</li>
-          <li>Help Center</li>
-          <li>Blogs</li>
-          <li>Career</li>
+          <h3 className="footerHeaders"></h3>
+          <li>
+            <a href="">Careers</a>
+          </li>
         </div>
       </div>
       <div className="copyrightSocials">
@@ -43,9 +49,9 @@ function Footer() {
           <p>Copyright ©2023 All Rights Reserved | DRAFT LABS</p>
         </div>
         <div className="copyrightLeft">
-          <img alt="" src={linkedinLogo} className="socialIcon" />
-          <img alt="" src={instagramLogo} className="socialIcon" />
           <img alt="" src={twitterLogo} className="socialIcon" />
+          <img alt="" src={linkedinLogo} className="socialIcon" />
+          <img alt="" src={redditLogo} className="socialIcon" />
         </div>
       </div>
     </Container>

@@ -31,7 +31,9 @@ function NavigationBar() {
           </Nav>
           <Nav>
             <div>
-              <Button className="buttonGeneral buttonNav">JOIN NOW</Button>
+              <Button href="#alpha" className="buttonGeneral buttonNav">
+                JOIN NOW
+              </Button>
             </div>
           </Nav>
         </Navbar.Collapse>

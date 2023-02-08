@@ -4,7 +4,7 @@ import "./styles/Alpha.scss";
 
 function Alpha() {
   return (
-    <Container className="alphaContainer">
+    <Container className="alphaContainer" id="alpha">
       <Container className="alphaAssets">
         <h1 className="alphaText">Alpha Release</h1>
         <h2 className="alphaDescription">
