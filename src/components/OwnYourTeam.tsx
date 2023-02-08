@@ -7,10 +7,9 @@ import oytFootball1 from "../assets/ownyourteam/american_football.png";
 import oytFootball2 from "../assets/ownyourteam/american_football_2.png";
 import oytFootball3 from "../assets/ownyourteam/american_football_3.png";
 import oytVs from "../assets/ownyourteam/vs.png";
+import litepaper from "../assets/litepaper.pdf";
 
 function OwnYourTeam() {
-  const [toggler, setToggler] = useState(false);
-
   return (
     <Container className="oytContainer" id="whatis">
       <h1 className="oytTitle">OWN. YOUR. TEAM.</h1>
@@ -38,12 +37,19 @@ function OwnYourTeam() {
             free-to-play game that solves the issues with current sports video
             games.
           </p>
-          <Button
-            onClick={() => setToggler(!toggler)}
-            className="buttonGeneral buttonGeneralLitePaper"
+          <object
+            data={litepaper}
+            type="application/pdf"
+            width="100%"
+            height="100%"
+            className="litepaperLink"
           >
-            LITEPAPER
-          </Button>
+            <a href={litepaper} target="_blank">
+              <Button className="buttonGeneral buttonGeneralLitePaper">
+                LITEPAPER
+              </Button>
+            </a>
+          </object>
           {/*<FsLightbox*/}
           {/*  toggler={toggler}*/}
           {/*  sources={[*/}

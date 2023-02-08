@@ -28,7 +28,9 @@ function Hero() {
           <h1 className="buttonText">
             Experience the height of sports emulation
           </h1>
-          <Button className="buttonGeneral">PLAY</Button>
+          <Button href="#gameplay" className="buttonGeneral">
+            PLAY
+          </Button>
         </div>
       </div>
     </Container>
