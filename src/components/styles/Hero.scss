@@ -117,3 +117,76 @@
   top: 30%;
   z-index: 1;
 }
+
+@media only screen and (max-width: 600px) {
+  .landingAssets {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  .landingLogos {
+    flex-direction: column;
+    height: 70%;
+  }
+
+  .landingLogo {
+    width: 100%;
+  }
+
+  .heroContainer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .buttonText {
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .heroRulerLeft {
+    float: left;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+  }
+  .heroRulerRight {
+    float: right;
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+  }
+  .buttonGeneral {
+    width: 150px;
+  }
+  .dotPatternLogo {
+    position: absolute;
+    width: 30vw;
+    height: auto;
+    left: 55%;
+    top: 30%;
+    z-index: 1;
+  }
+
+  .dotPatternSlogan {
+    position: absolute;
+    width: 5vw;
+    height: auto;
+    left: 13%;
+    top: 60%;
+    z-index: 1;
+  }
+
+  .dotPatternSlogan2 {
+    position: absolute;
+    width: 5vw;
+    height: auto;
+    left: 38%;
+    top: 30%;
+    z-index: 1;
+  }
+}

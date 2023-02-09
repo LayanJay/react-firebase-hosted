@@ -46,3 +46,26 @@
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  .alphaContainer {
+    flex-direction: column;
+  }
+
+  .alphaAssets {
+    max-width: 100% !important;
+  }
+
+  .alphaForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+  }
+
+  .alphaFormField {
+    width: 100%;
+    height: auto;
+  }
+}
