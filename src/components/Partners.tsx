@@ -21,9 +21,9 @@ function Partners() {
         <img alt="" src={partnerImg1} className="partnersImg" />
         <img alt="" src={partnerImg2} className="partnersImg" />
       </div>
-      <div>
+      {/*<div>
         <Button className="buttonGeneral buttonGeneralSignup">MORE</Button>
-      </div>
+  </div> */}
     </Container>
   );
 }

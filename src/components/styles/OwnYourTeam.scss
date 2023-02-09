@@ -113,3 +113,44 @@
   text-align: center;
   width: 70vw;
 }
+
+.litepaperLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .oytTitle {
+    font-size: 32px;
+  }
+
+  .oytDescription {
+    font-size: 16px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+  }
+
+  .oytAssets {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60vh;
+  }
+
+  .whatIsImage {
+    width: 40%;
+  }
+
+  .whatIsImageMain {
+    width: 100%;
+  }
+
+  .gradientBackground {
+    padding: 0;
+    width: 40%;
+  }
+
+  .buttonGeneralLitePaper {
+    max-width: 100% !important;
+  }
+}
