@@ -79,10 +79,8 @@
   align-items: center;
 }
 
-.buttonGeneralLitePaper {
-  max-width: 10vw !important;
-  border-radius: 0 !important;
-  height: 4vh;
+.litepaperButton {
+  display: none;
 }
 //Background Assets
 
@@ -118,6 +116,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 60vw;
+  height: 60vh;
 }
 
 @media only screen and (max-width: 600px) {
@@ -152,5 +152,15 @@
 
   .buttonGeneralLitePaper {
     max-width: 100% !important;
+  }
+
+  .litepaperEmbed {
+    display: none;
+  }
+
+  .litepaperButton {
+    display: block;
+    width: 40vw;
+    height: auto;
   }
 }

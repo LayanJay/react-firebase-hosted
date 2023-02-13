@@ -30,14 +30,14 @@ const ContactForm = () => {
     >
       <div className="formNameEntry">
         <input
-          className="formEntry formName"
+          className="formEntry formFName"
           type="text"
           placeholder="First Name"
           name="name"
           required
         />
         <input
-          className="formEntry formName"
+          className="formEntry formLName"
           type="text"
           placeholder="Last Name"
           name="name"
@@ -46,7 +46,7 @@ const ContactForm = () => {
       </div>
       <div>
         <input
-          className="formEntry"
+          className="formEntry formEmail"
           type="email"
           placeholder="Email"
           name="email"

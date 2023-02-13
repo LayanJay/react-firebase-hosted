@@ -93,3 +93,51 @@
   top: 30%;
   z-index: 1;
 }
+
+@media only screen and (max-width: 600px) {
+  .aboutRight {
+    border: none;
+    width: auto;
+    padding: 10px;
+    padding-bottom: 50px;
+    align-items: center;
+  }
+
+  .aboutRightText {
+    padding: 0;
+    text-align: center;
+  }
+
+  .about {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .socialIcon {
+    width: 10vw;
+  }
+
+  .aboutRightTitle {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .aboutRightSubtitle {
+    text-align: center;
+  }
+
+  .aboutLeftImg {
+    width: 90vw;
+    max-width: 100vw;
+  }
+
+  .aboutLeft {
+    padding-bottom: 10px;
+  }
+
+  .dotPatternAbout {
+    max-width: 80vw;
+    top: 8%;
+  }
+}
