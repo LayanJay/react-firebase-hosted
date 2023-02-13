@@ -5,6 +5,7 @@ import dotPattern2 from "../assets/dot_pattern_2.png";
 import linkedinLogo from "../assets/linkedin-logo.svg";
 import redditLogo from "../assets/reddit-logo.svg";
 import twitterLogo from "../assets/twitter-logo.svg";
+import mediumLogo from "../assets/medium-logo.svg";
 
 function About() {
   return (
@@ -24,9 +25,18 @@ function About() {
           while they "contribute-to-earn."
         </p>
         <div className="aboutRightSocials">
-          <img alt="" src={twitterLogo} className="socialIcon" />
-          <img alt="" src={linkedinLogo} className="socialIcon" />
-          <img alt="" src={redditLogo} className="socialIcon" />
+          <a href="https://twitter.com/draftables" target="_blank">
+            <img alt="" src={twitterLogo} className="socialIcon" />
+          </a>
+          <a href="https://www.linkedin.com/company/draftlabs" target="_blank">
+            <img alt="" src={linkedinLogo} className="socialIcon" />
+          </a>
+          <a href="https://www.reddit.com/r/Draftables/" target="_blank">
+            <img alt="" src={redditLogo} className="socialIcon" />
+          </a>
+          <a href="https://draftables.medium.com/" target="_blank">
+            <img alt="" src={mediumLogo} className="socialIcon" />
+          </a>
         </div>
       </div>
     </Container>
