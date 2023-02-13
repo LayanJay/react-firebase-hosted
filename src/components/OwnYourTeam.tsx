@@ -9,6 +9,10 @@ import oytFootball3 from "../assets/ownyourteam/american_football_3.png";
 import oytVs from "../assets/ownyourteam/vs.png";
 import litepaper from "../assets/litepaper.pdf";
 
+let lightpaperPDFLink = JSON.stringify(litepaper);
+let lightpaperPDFLinkFinal =
+  lightpaperPDFLink + "#toolbar=0&navpanes=0&scrollbar=0";
+
 function OwnYourTeam() {
   return (
     <Container className="oytContainer" id="whatis">
@@ -29,7 +33,7 @@ function OwnYourTeam() {
           <img alt="" src={oytFootball3} className="whatIsImage" />
           <img alt="" src={oytFootball2} className="whatIsImage" />
         </div>
-        <div className="oytLitePaper">
+        <div className="oytLitePaper" id="litepaper">
           <p className="oytDescription">
             Draftables aims to fully realize the potential of sports simulators.
             Experience unlimited control, true ownership, season-to-season
@@ -37,19 +41,21 @@ function OwnYourTeam() {
             free-to-play game that solves the issues with current sports video
             games.
           </p>
-          <object
-            data={litepaper}
-            type="application/pdf"
-            width="100%"
-            height="100%"
-            className="litepaperLink"
-          >
+          <div className="litepaperEmbed">
+            <object
+              data={litepaper}
+              type="application/pdf"
+              width="100%"
+              height="100%"
+              className="litepaperLink"
+            ></object>
+          </div>
+          <div className="litepaperButton">
             <a href={litepaper} target="_blank">
-              <Button className="buttonGeneral buttonGeneralLitePaper">
-                LITEPAPER
-              </Button>
+              <Button className="buttonGeneral">LITEPAPER</Button>
             </a>
-          </object>
+          </div>
+
           {/*<FsLightbox*/}
           {/*  toggler={toggler}*/}
           {/*  sources={[*/}

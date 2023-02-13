@@ -88,3 +88,31 @@
   top: 20%;
   z-index: 1;
 }
+
+@media only screen and (max-width: 600px) {
+  .partnersTitle {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .partnersLogos {
+    width: 80vw;
+    padding: 0;
+  }
+
+  .partnersImg {
+    width: 30vw;
+  }
+
+  .dotPatternPartnerTop {
+    width: 25vw;
+    left: 70%;
+    top: 33%;
+  }
+
+  .dotPatternPartnerBot {
+    width: 25vw;
+    left: 5%;
+  }
+}
