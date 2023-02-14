@@ -41,6 +41,7 @@ function OwnYourTeam() {
             free-to-play game that solves the issues with current sports video
             games.
           </p>
+          {/* 
           <div className="litepaperEmbed">
             <object
               data={litepaper}
@@ -50,19 +51,12 @@ function OwnYourTeam() {
               className="litepaperLink"
             ></object>
           </div>
+  */}
           <div className="litepaperButton">
             <a href={litepaper} target="_blank">
               <Button className="buttonGeneral">LITEPAPER</Button>
             </a>
           </div>
-
-          {/*<FsLightbox*/}
-          {/*  toggler={toggler}*/}
-          {/*  sources={[*/}
-          {/*    //@ts-ignore*/}
-          {/*    <iframe title={'LITEPAPER'} src={litepaper} width="1920px" height="1080px" />,*/}
-          {/*  ]}*/}
-          {/*/>*/}
         </div>
       </Container>
     </Container>
