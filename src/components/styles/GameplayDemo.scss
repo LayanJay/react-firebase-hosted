@@ -1,8 +1,8 @@
 .gameplayDemoContainer {
   background-image: linear-gradient(
-                  to bottom,
-                  rgba(0, 0, 0, 0.5),
-                  rgba(0, 0, 0, 0.5)
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
   );
   background-position: center;
   background-repeat: no-repeat;
@@ -20,21 +20,21 @@
 }
 
 .gameplayRulerLeft {
-  height: 85%;
-  object-fit: cover;
-  overflow: hidden;
+  height: 80%;
+  float: left;
   position: absolute;
-  left: 0;
-  top: 0;
+  z-index: 1;
+  top: 15%;
+  left: 5px;
 }
 
 .gameplayRulerRight {
-  height: 85%;
-  object-fit: cover;
-  overflow: hidden;
+  height: 80%;
+  float: right;
   position: absolute;
-  right: 0;
-  top: 0;
+  z-index: 1;
+  top: 15%;
+  right: 5px;
 }
 
 .gameplayView {
@@ -51,5 +51,24 @@
   .gameplayButton {
     position: absolute;
     width: 30%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .gameplayRulerLeft {
+    display: none;
+  }
+
+  .gameplayRulerRight {
+    display: none;
+  }
+
+  .gameplayDemoContainer {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .gameplayDemoTitle {
+    font-size: 38px;
   }
 }

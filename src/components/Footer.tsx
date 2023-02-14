@@ -4,15 +4,12 @@ import linkedinLogo from "../assets/linkedin-logo.svg";
 import redditLogo from "../assets/reddit-logo.svg";
 import twitterLogo from "../assets/twitter-logo.svg";
 import mediumLogo from "../assets/medium-logo.svg";
+import draftablesLogo from "../assets/footer/footer_logo.png";
 
 function Footer() {
   return (
     <Container className="footer">
-      <img
-        alt=""
-        src="src/assets/footer/footer_logo.png"
-        className="footerLogo"
-      />
+      <img alt="" src={draftablesLogo} className="footerLogo" />
       <div className="footerContent">
         <div className="footerLeft">
           <h3 className="footerHeaders"></h3>
