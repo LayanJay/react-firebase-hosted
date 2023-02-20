@@ -47,6 +47,8 @@
   padding-top: 5vh;
   padding-bottom: 5vh;
   width: 90vw;
+  position: relative;
+  z-index: 2;
 }
 
 .whatIsImage {
@@ -117,6 +119,29 @@
   height: 60vh;
 }
 
+.oytImage {
+  position: relative;
+}
+
+.imageParagraph {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  text-align: center;
+}
+
+.imageParagraph span {
+  color: white;
+  line-height: 50px;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: -1px;
+  padding: 10px;
+}
+
 @media only screen and (max-width: 600px) {
   .oytTitle {
     font-size: 38px;
@@ -131,20 +156,10 @@
   .oytAssets {
     flex-direction: row;
     flex-wrap: wrap;
-    height: 60vh;
   }
 
   .whatIsImage {
-    width: 40%;
-  }
-
-  .whatIsImageMain {
-    width: 100%;
-  }
-
-  .gradientBackground {
-    padding: 0;
-    width: 40%;
+    width: 40vw;
   }
 
   .buttonGeneralLitePaper {
@@ -154,5 +169,17 @@
   .litepaperButton {
     width: 40vw;
     height: auto;
+  }
+
+  .imageParagraph span {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .imageParagraph {
+    display: flex;
+    top: 100px;
+    justify-content: center;
+    align-items: center;
   }
 }
