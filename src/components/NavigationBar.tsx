@@ -8,6 +8,7 @@ import draftablesLogo from "../assets/navbar/logo.png";
 function NavigationBar() {
   return (
     <Navbar
+      sticky="top"
       className="navigationBarMain"
       collapseOnSelect
       expand="xl"

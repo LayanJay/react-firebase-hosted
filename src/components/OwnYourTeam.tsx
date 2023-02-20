@@ -26,13 +26,41 @@ function OwnYourTeam() {
         <img alt="" src={dotPattern1} className="dotPatternOyt" />
         <img alt="" src={dotPattern1} className="dotPatternOyt2" />
         <div className="oytAssets">
-          <img alt="" src={oytFootball1} className="whatIsImage" />
-          <div className="gradientBackground">
-            <img alt="" src={oytVs} className="whatIsImage whatIsImageMain" />
+          <div className="oytImage">
+            <img src={oytFootball1} className="whatIsImage" alt="" />
+            <p className="imageParagraph">
+              <span>SCOUT AND TRAIN YOUR DIGITAL ATHLETES</span>
+            </p>
           </div>
-          <img alt="" src={oytFootball3} className="whatIsImage" />
-          <img alt="" src={oytFootball2} className="whatIsImage" />
+
+          <div className="oytImage">
+            <div className="gradientBackground">
+              <img alt="" src={oytVs} className="whatIsImage whatIsImageMain" />
+            </div>
+            <p className="imageParagraph">
+              <span>
+                COMPETE AGAINST <br></br>OTHER USERS
+              </span>
+            </p>
+          </div>
+
+          <div className="oytImage">
+            <img src={oytFootball2} className="whatIsImage" alt="" />
+            <p className="imageParagraph">
+              <span>EARN $DRAFT TO BENEFIT YOU AND YOUR TEAM</span>
+            </p>
+          </div>
+
+          <div className="oytImage">
+            <img src={oytFootball3} className="whatIsImage" alt="" />
+            <p className="imageParagraph">
+              <span>
+                <br></br>READ OUR LITEPAPER
+              </span>
+            </p>
+          </div>
         </div>
+
         <div className="oytLitePaper" id="litepaper">
           <p className="oytDescription">
             Draftables aims to fully realize the potential of sports simulators.
