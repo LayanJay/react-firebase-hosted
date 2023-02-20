@@ -45,14 +45,14 @@ function OwnYourTeam() {
           </div>
 
           <div className="oytImage">
-            <img src={oytFootball2} className="whatIsImage" alt="" />
+            <img src={oytFootball3} className="whatIsImage" alt="" />
             <p className="imageParagraph">
               <span>EARN $DRAFT TO BENEFIT YOU AND YOUR TEAM</span>
             </p>
           </div>
 
           <div className="oytImage">
-            <img src={oytFootball3} className="whatIsImage" alt="" />
+            <img src={oytFootball2} className="whatIsImage" alt="" />
             <p className="imageParagraph">
               <span>
                 <br></br>READ OUR LITEPAPER
