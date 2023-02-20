@@ -38,13 +38,23 @@
   color: white;
   font-size: 18px;
 }
-.alphaFormField {
+
+.emailEntry {
   height: 4vh;
   width: 25vw;
   background-color: #202f3f;
   border: 10px solid #202f3f;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+
+.emailContainer {
+  display: flex;
+  align-items: center;
+}
+
+.formSubmit {
+  padding: 1.2vh;
 }
 
 @media only screen and (max-width: 600px) {
@@ -56,7 +66,7 @@
     max-width: 100% !important;
   }
 
-  .alphaForm {
+  .emailContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,7 +74,7 @@
     justify-content: space-between;
   }
 
-  .alphaFormField {
+  .emailEntry {
     width: 100%;
     height: auto;
   }
