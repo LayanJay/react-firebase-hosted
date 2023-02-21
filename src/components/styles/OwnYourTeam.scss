@@ -165,7 +165,7 @@
   padding: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .oytTitle {
     font-size: 38px;
   }
@@ -223,4 +223,7 @@
     font-size: 11px !important;
     line-height: normal;
   }
+}
+
+@media only screen and (max-width: 1024px) {
 }
