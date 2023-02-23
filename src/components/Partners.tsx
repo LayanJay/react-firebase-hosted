@@ -11,11 +11,13 @@ import partnerImg2 from "../assets/partners/img-2.png";
 function Partners() {
   return (
     <Container className="supportingPartners" id="support">
-      <img alt="" src={dotPattern2} className="dotPatternPartnerMid" />
-      <img alt="" src={bottomPattern} className="dotPatternPartnerBot" />
-      <img alt="" src={topPattern} className="dotPatternPartnerTop" />
-      <img alt="" src={dotPattern1} className="dotPatternPartnerBack" />
-      <img alt="" src={dotPattern1} className="dotPatternPartnerBack2" />
+      <div className="backgroundAssets">
+        <img alt="" src={dotPattern2} className="dotPatternPartnerMid" />
+        <img alt="" src={bottomPattern} className="dotPatternPartnerBot" />
+        <img alt="" src={topPattern} className="dotPatternPartnerTop" />
+        <img alt="" src={dotPattern1} className="dotPatternPartnerBack" />
+        <img alt="" src={dotPattern1} className="dotPatternPartnerBack2" />
+      </div>
       <h1 className="partnersTitle">SUPPORTING PARTNERS</h1>
       <div className="partnersLogos">
         <img alt="" src={partnerImg1} className="partnersImg" />
