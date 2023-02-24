@@ -1,11 +1,9 @@
 // --------------HERO----------------
 
 .heroContainer {
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
+      rgba(0, 0, 0, 0.5)),
     url(../../assets/landing_section/landing_section_bg.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -76,9 +74,14 @@
   padding-bottom: 10px;
 }
 
+.btn:not(.buttonNav) {
+  border-radius: 0 !important;
+  margin-top: 20px;
+}
+
 .buttonGeneral {
   background-image: linear-gradient(to right, #5fa8ff, #cc00ff) !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   font-size: 16px !important;
   border: 0 !important;
   transition: transform 0.2s !important;
@@ -154,15 +157,18 @@
     z-index: 1;
     left: 0px;
   }
+
   .heroRulerRight {
     float: right;
     position: absolute;
     z-index: 1;
     right: 0px;
   }
+
   .buttonGeneral {
     width: 150px;
   }
+
   .dotPatternLogo {
     position: absolute;
     width: 30vw;

@@ -16,7 +16,7 @@ let lightpaperPDFLinkFinal =
 function OwnYourTeam() {
   return (
     <Container className="oytContainer" id="whatis">
-      <h1 className="oytTitle">OWN. YOUR. TEAM.</h1>
+      <h2 className="sectionTitle">OWN. YOUR. TEAM.</h2>
       <p className="oytDescription">
         Draftables is the most customizable, rewarding, and in-depth sports
         simulator of all time. You no longer have to pretend to be a football

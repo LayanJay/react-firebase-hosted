@@ -8,7 +8,7 @@ import playNowButton from "../assets/gameplay_demo/play-now-button.png";
 function GameplayDemo() {
   return (
     <Container className="gameplayDemoContainer" id="gameplay">
-      <h1 className="gameplayDemoTitle">GAMEPLAY DEMO</h1>
+      <h2 className="sectionTitle">GAMEPLAY DEMO</h2>
       <img alt="" src={rulerLeft} className="gameplayRulerLeft" />
       <img alt="" src={rulerRight} className="gameplayRulerRight" />
       <a href="https://demo.draftables.io/" target={"_blank"}>

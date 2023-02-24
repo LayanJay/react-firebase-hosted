@@ -12,16 +12,16 @@ function Roadmap() {
         <img alt="" src={dotPattern1} className="dotPatternRoadMap1" />
         <img alt="" src={dotPattern1} className="dotPatternRoadMap2" />
         <img alt="" src={dotPattern1} className="dotPatternRoadMap4" />
-        <img alt="" src={arrow1} className="roadMapArrow1" />
+        {/* <img alt="" src={arrow1} className="roadMapArrow1" />
         <img alt="" src={arrow1} className="roadMapArrow2" />
         <img alt="" src={arrow1} className="roadMapArrow3" />
         <img alt="" src={arrow1} className="roadMapArrow5" />
-        <img alt="" src={arrow3} className="roadMapArrow4" />
+        <img alt="" src={arrow3} className="roadMapArrow4" /> */}
         <img alt="" src={dotPattern2} className="dotPatternRoadMap3" />
       </div>
-      <h1 className="roadMapSection">ROADMAP</h1>
+      <h2 className="sectionTitle">ROADMAP</h2>
       <div className="roadMapFlexContainer">
-        <div className="roadMapInnerFlexContainerTop">
+        <div className="roadMapInnerFlexContainer">
           <div className="roadMapStep roadMapStepBackground1">
             <div className="roadMapTitle">
               <p className="roadMapNumber">01 </p>
@@ -61,7 +61,7 @@ function Roadmap() {
             <p className="progressTextSoon">SOON</p>
           </div>
         </div>
-        <div className="roadMapInnerFlexContainerBot">
+        <div className="roadMapInnerFlexContainer">
           <div className="roadMapStep roadMapStepBackground2">
             <div className="roadMapTitle">
               <p className="roadMapNumber">04 </p>

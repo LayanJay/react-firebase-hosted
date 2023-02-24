@@ -20,9 +20,7 @@ function NavigationBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#whatis">
-              <p className="linkLight">LIGHTPAPER</p>
-            </Nav.Link>
+            <Nav.Link href="#whatis" className="linkLight">LIGHTPAPER</Nav.Link>
             <Nav.Link href="#whatis">WHAT IS DRAFTABLES</Nav.Link>
             <Nav.Link href="#aboutus">ABOUT US</Nav.Link>
             <Nav.Link href="#contact">CONTACT</Nav.Link>

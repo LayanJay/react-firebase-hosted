@@ -12,8 +12,8 @@ function Contact() {
       <img alt="" src={dotPattern2} className="dotPatternContact2" />
       <img alt="" src={dotPattern2} className="dotPatternContact3" />
       <div className="contactLeft">
-        <h1 className="contactTalk">Hey! Let's Talk</h1>
-        <p className="contactSubTalk">
+        <h3 className="sectionTitle">Hey! Let's Talk.</h3>
+        <p>
           Have any questions or want to get in contact?
         </p>
       </div>

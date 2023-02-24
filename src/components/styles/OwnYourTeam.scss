@@ -1,9 +1,7 @@
 .oytContainer {
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
+      rgba(0, 0, 0, 0.5)),
     url(../../assets/ownyourteam/bg_img.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -127,6 +125,7 @@
   .imageParagraph {
     display: none;
   }
+
   .imageParagraphHover {
     display: block;
   }
@@ -204,10 +203,12 @@
     justify-content: center;
     align-items: center;
   }
+
   .oytImage:hover {
     .imageParagraph {
       display: none;
     }
+
     .imageParagraphHover {
       display: block;
     }
@@ -224,5 +225,4 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
-}
+@media only screen and (max-width: 1024px) {}

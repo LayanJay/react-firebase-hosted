@@ -1,9 +1,7 @@
 .about {
-  background: radial-gradient(
-    98.95% 150.94% at 51.44% 50%,
-    #32435c 0%,
-    #111822 100%
-  );
+  background: radial-gradient(98.95% 150.94% at 51.44% 50%,
+      #32435c 0%,
+      #111822 100%);
   display: flex;
   align-items: center;
   padding: 100px;
@@ -19,6 +17,7 @@
   display: flex;
   justify-content: center;
 }
+
 .aboutLeftImg {
   max-width: 30vw;
   height: auto;
@@ -42,11 +41,11 @@
   font-style: italic;
 }
 
-.aboutRightSubtitle {
+h4 {
   font-weight: 700;
   font-size: 32px;
-  color: #5fa8ff;
-  padding-bottom: 25px;
+  color: #5fa8ff !important;
+  padding: 25px 0;
 }
 
 .aboutRightText {
@@ -58,6 +57,8 @@
   justify-content: space-between;
   width: 50%;
   align-items: center;
+  margin-top: 30px;
+  ;
 }
 
 .socialIcon {

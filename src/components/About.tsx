@@ -15,9 +15,9 @@ function About() {
         <img alt="" src={dotPattern2} className="dotPatternAbout" />
       </div>
       <div className="aboutRight">
-        <h1 className="aboutRightTitle">About Draft Labs</h1>
-        <h2 className="aboutRightSubtitle">The company behind Draftables</h2>
-        <p className="aboutRightText">
+        <h3 className="sectionTitle">About Draft Labs</h3>
+        <h4 className="subtitle">The company behind Draftables</h4>
+        <p>
           Draft Labs is committed to integrating all aspects of Web3 into sports
           gaming. We help users monetize their time and skill unlike previously
           possible through our discrete blockchain integration and

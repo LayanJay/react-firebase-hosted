@@ -16,7 +16,7 @@ function Partners() {
       <img alt="" src={topPattern} className="dotPatternPartnerTop" />
       <img alt="" src={dotPattern1} className="dotPatternPartnerBack" />
       <img alt="" src={dotPattern1} className="dotPatternPartnerBack2" />
-      <h1 className="partnersTitle">SUPPORTING PARTNERS</h1>
+      <h2 className="sectionTitle">SUPPORTING PARTNERS</h2>
       <div className="partnersLogos">
         <img alt="" src={partnerImg1} className="partnersImg" />
         <img alt="" src={partnerImg2} className="partnersImg" />

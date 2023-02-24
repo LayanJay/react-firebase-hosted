@@ -1,9 +1,7 @@
 .roadMap {
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
+      rgba(0, 0, 0, 0.5)),
     url(../../assets/roadmap/roadmap_bg.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -18,6 +16,7 @@
   align-items: center;
   border-top: 5px solid #10171f;
   position: relative;
+  overflow: hidden;
 }
 
 .roadMapSection {
@@ -31,40 +30,39 @@
   flex-flow: row wrap;
   justify-content: space-around;
   padding: 0;
-  margin: 0;
+  margin-top: 15px;
   list-style: none;
   flex-direction: column;
   align-items: center;
 }
 
 .roadMapStep {
-  padding-top: 25px;
-  padding-left: 25px;
-  padding-right: 25px;
-  max-width: 20vw;
-  min-height: 30vh;
+  padding: 0 30px;
+  max-width: 29%;
   margin-top: 10px;
   line-height: 50px;
   color: white;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 5%;
+
   border: solid white 2px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 10px;
   z-index: 2;
 }
 
 .roadMapHeader {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
+  line-height: 1em;
+  text-align: left;
 }
 
 .roadMapText {
   font-weight: 500;
-  font-size: 17.4449px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 1.3em;
   /* or 135% */
 
   text-align: center;
@@ -72,14 +70,16 @@
 }
 
 .roadMapNumber {
-  font-size: 52px;
-  font-weight: 700;
+  font-size: 56px;
+  font-weight: 600;
   font-style: italic;
 }
 
 .roadMapTitle {
   display: flex;
-  justify-content: space-evenly;
+  gap: 15px;
+  justify-content: center;
+  justify-items: center;
   align-items: center;
   font-style: italic;
   font-weight: 700;
@@ -87,26 +87,29 @@
 }
 
 .progressText {
-  font-size: 42px;
-  font-weight: 700;
+  font-size: 38px;
+  font-weight: 600;
   font-style: italic;
   background: linear-gradient(90deg, #5fa8ff, #cc00ff);
   background-clip: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: auto;
+  padding: 20px 0;
 }
+
 .progressTextSoon {
-  font-size: 42px;
-  font-weight: 700;
+  font-size: 38px;
+  font-weight: 600;
   font-style: italic;
+  margin-top: auto;
+  padding: 20px 0;
 }
 
 .roadMapStepBackground1 {
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.8)
-    ),
+      rgba(0, 0, 0, 0.8)),
     url(../../assets/roadmap/RoadmapSteps.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -124,18 +127,14 @@
   background-size: cover;
 }
 
-.roadMapInnerFlexContainerTop {
+.roadMapInnerFlexContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  width: 90vw;
-}
-
-.roadMapInnerFlexContainerBot {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 90vw;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  max-width: 1600px;
+  margin-bottom: 50px;
 }
 
 //BackgroundAssets
@@ -193,6 +192,7 @@
   top: 31%;
   z-index: 1;
 }
+
 .roadMapArrow3 {
   position: absolute;
   width: 7vw;
@@ -221,13 +221,10 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .roadMapInnerFlexContainerTop {
+  .roadMapInnerFlexContainer {
     flex-direction: column;
   }
 
-  .roadMapInnerFlexContainerBot {
-    flex-direction: column;
-  }
 
   .roadMapStep {
     max-width: 100vw;
@@ -255,5 +252,183 @@
 
   .roadMapSection {
     font-size: 38px;
+  }
+}
+
+
+
+// arrow connector images for screens larger than 1024
+
+@media screen and (min-width: 1025px) {
+  .roadMapFlexContainer {
+
+    >div:first-of-type {
+
+      >div:first-child {
+        position: relative;
+
+        &:before {
+          content: "";
+          width: 1000px;
+          height: 9px;
+          background-image: url("/src/assets/roadmap/arrow4.png");
+          background-size: 1000px 9px;
+          background-position: center right;
+          background-repeat: no-repeat;
+          position: absolute;
+          right: calc(100% + 5px);
+          top: 50%;
+          opacity: 0.7;
+        }
+
+        &:after {
+          content: "";
+          width: 42px;
+          height: 9px;
+          background-image: url("/src/assets/roadmap/arrow4.png");
+          background-size: 1000px 9px;
+          background-position: center right;
+          background-repeat: no-repeat;
+          position: absolute;
+          left: calc(100% + 8px);
+          top: 50%;
+          opacity: 0.7;
+        }
+      }
+
+      >div:nth-child(2) {
+        position: relative;
+
+        &:before {
+          content: "";
+          width: 30vw;
+          height: 26px;
+          background-image: url("/src/assets/roadmap/arrow2.png");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          position: absolute;
+          left: 50%;
+          top: -32px;
+          opacity: 0.7;
+        }
+      }
+
+      >div:nth-child(3) {
+        position: relative;
+
+        &:after {
+          content: "";
+          width: 45vw;
+          height: 48px;
+          background-image: url("/src/assets/roadmap/arrow3.png");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          position: absolute;
+          right: 50%;
+          bottom: -55px;
+          opacity: 0.7;
+        }
+      }
+
+    }
+
+    >div:last-of-type {
+      >div:first-child {
+        position: relative;
+
+        &:after {
+          content: "";
+          width: 42px;
+          height: 9px;
+          background-image: url("/src/assets/roadmap/arrow4.png");
+          background-size: 1000px 9px;
+          background-position: center right;
+          background-repeat: no-repeat;
+          position: absolute;
+          left: calc(100% + 8px);
+          top: 50%;
+          opacity: 0.7;
+        }
+      }
+
+      >div:last-child {
+        position: relative;
+
+        &:after {
+          content: "";
+          width: 10vw;
+          height: 9px;
+          background-image: url("/src/assets/roadmap/arrow4.png");
+          background-size: 1000px 9px;
+          background-position: center right;
+          background-repeat: no-repeat;
+          position: absolute;
+          left: calc(100% + 8px);
+          top: 50%;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+// arrow images for extra large screens
+
+@media screen and (min-width: 1800px) {
+  .roadMapFlexContainer {
+
+    >div:first-of-type {
+
+      >div:nth-child(2) {
+        position: relative;
+
+        &:before {
+          width: 540px;
+        }
+      }
+
+      >div:nth-child(3) {
+        position: relative;
+
+        &:after {
+          width: 760px;
+        }
+      }
+    }
+
+    >div:last-of-type {
+
+      >div:last-child {
+        position: relative;
+
+        &:after {
+          width: 20vw;
+        }
+      }
+    }
+  }
+}
+
+// arrow connector images for screens smaller than 1024
+
+@media screen and (max-width: 1024px) {
+  .roadMapFlexContainer {
+    .roadMapStep {
+      position: relative;
+
+      &:after {
+        content: "";
+        width: 9px;
+        height: 42px;
+        background-image: url("/src/assets/roadmap/arrow-down.png");
+        background-size: 9px 270px;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 50%;
+        top: calc(100% + 8px);
+        opacity: 0.7;
+      }
+    }
   }
 }
