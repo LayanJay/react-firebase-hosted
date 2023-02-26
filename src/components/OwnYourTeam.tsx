@@ -22,10 +22,10 @@ function OwnYourTeam() {
         simulator of all time. You no longer have to pretend to be a football
         franchise owner — you are one.
       </p>
-      <Container className="oytInnerContainer">
+      <div className="oytInnerContainer">
         <img alt="" src={dotPattern1} className="dotPatternOyt" />
         <img alt="" src={dotPattern1} className="dotPatternOyt2" />
-        <div className="oytAssets">
+        {/* <div className="oytAssets">
           <div className="oytImage">
             <img src={oytFootball1} className="whatIsImage" alt="" />
             <p className="imageParagraph">
@@ -42,12 +42,12 @@ function OwnYourTeam() {
           </div>
 
           <div className="oytImage">
-            <div className="gradientBackground">
-              <img alt="" src={oytVs} className="whatIsImage whatIsImageMain" />
+            <div className="">
+              <img alt="" src={oytVs} className="whatIsImage" />
             </div>
             <p className="imageParagraph">
               <span>
-                COMPETE AGAINST <br></br>OTHER USERS
+                COMPETE AGAINST OTHER USERS
               </span>
             </p>
             <p className="imageParagraph imageParagraphHover">
@@ -89,6 +89,64 @@ function OwnYourTeam() {
               </span>
             </p>
           </div>
+        </div> */}
+
+
+        <div className="oytAssets">
+          <div>
+            <div className="oytImage">
+              <img src={oytFootball1} className="whatIsImage" alt="" />
+              <p className="imageParagraph">SCOUT AND TRAIN YOUR DIGITAL ATHLETES
+              </p>
+              <p className="imageParagraphHover">
+                Each digital athlete's skill, abilities, and development are
+                fully reliant on their owner's ability to train and compete with
+                them. This means that the more interactive you are with
+                Draftables, the quicker your team will develop
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div className="oytImage">
+              <div className="">
+                <img alt="" src={oytVs} className="whatIsImage" />
+              </div>
+              <p className="imageParagraph">COMPETE AGAINST OTHER USERS
+              </p>
+              <p className="imageParagraphHover">
+                Compete against other Draftables users in head to head matches.
+                To make it to the playoffs and championship matches you will
+                have to be the best of the best.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div className="oytImage">
+              <img src={oytFootball3} className="whatIsImage" alt="" />
+              <p className="imageParagraph">EARN $DRAFT TO BENEFIT YOU AND YOUR TEAM
+              </p>
+              <p className="imageParagraphHover">
+                $DRFT is more than just an in-game currency: Earn it by
+                competing against other users, spend it to purchase new players
+                and facilities, and sell it to other users when you don't need
+                it!
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div className="oytImage">
+              <img src={oytFootball2} className="whatIsImage" alt="" />
+              <p className="imageParagraph">READ OUR LITEPAPER</p>
+              <p className="imageParagraphHover">
+                Draftables expands what it means for a game to be a sports
+                simulator. Explore all of the ways Draftables is changing the
+                game in our litepaper.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="oytLitePaper" id="litepaper">
@@ -116,7 +174,7 @@ function OwnYourTeam() {
             </a>
           </div>
         </div>
-      </Container>
+      </div>
     </Container>
   );
 }

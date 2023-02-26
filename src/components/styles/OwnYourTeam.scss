@@ -34,19 +34,27 @@
   margin: 0 !important;
   justify-content: center;
   position: relative;
-  max-width: 100vw !important;
+  width: 100%;
   align-items: center;
 }
 
 .oytAssets {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  width: 90vw;
+  width: 94%;
+  max-width: 1400px;
   position: relative;
   z-index: 2;
+
+  >div {
+    width: 25%;
+    height: 460px;
+    position: relative;
+  }
 }
 
 .whatIsImage {
@@ -60,16 +68,6 @@
   height: auto;
   box-shadow: 10px 10px 40px 20px linear-gradient(to right, #5fa8ff, #cc00ff);
   z-index: 2;
-}
-
-.gradientBackground {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 7px;
-  border-radius: 3px;
-  box-shadow: inset 2 0 12px 12px #5fa8ff, inset 0 0 3px 2px #cc00ff;
-  background: linear-gradient(150deg, #5fa8ff, #cc00ff);
 }
 
 .oytLitePaper {
@@ -102,7 +100,7 @@
 .oytDescription {
   font-weight: 500;
   font-size: 18px;
-  line-height: 170%;
+  line-height: 1.3em;
   /* or 34px */
 
   text-align: center;
@@ -118,52 +116,82 @@
 }
 
 .oytImage {
-  position: relative;
-}
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: #fff;
+  padding: 2px;
+  transition: all 0.3s;
+  width: 85%;
 
-.oytImage:hover {
+  img {
+    width: 100%;
+    filter: brightness(100%);
+    transition: all 0.3s;
+  }
+
+  p {
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: -1px;
+    width: 100%;
+    text-align: center;
+    width: 240px;
+  }
+
   .imageParagraph {
-    display: none;
+    font-weight: 600;
+    opacity: 1;
+    transition: all 0.3s;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
   }
 
   .imageParagraphHover {
-    display: block;
+    font-weight: 500;
+    opacity: 0;
+    transition: all 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
   }
 }
 
-.imageParagraph {
-  position: absolute;
-  top: 70%;
-  left: 0;
+.oytImage:hover {
   width: 100%;
-  z-index: 3;
-  text-align: center;
-  text-shadow: 1px 1px 2px rgb(71, 71, 71), 0 0 1em rgb(3, 3, 3),
-    0 0 0.2em rgb(0, 0, 0);
+  padding: 8px;
+  border-radius: 3px;
+  background: linear-gradient(150deg, #5fa8ff, #cc00ff);
+
+  img {
+    filter: brightness(50%);
+  }
+
+  .imageParagraph {
+    opacity: 0;
+  }
+
+  .imageParagraphHover {
+    opacity: 1;
+  }
 }
 
 .imageParagraphHover {
-  display: none;
   top: 20%;
   text-shadow: 1px 1px 2px rgb(71, 71, 71), 0 0 1em rgb(3, 3, 3),
     0 0 0.2em rgb(0, 0, 0);
 }
 
-.imageParagraphHover span {
-  font-size: 1vw !important;
-  line-height: normal;
-}
-
-.imageParagraph span {
-  color: white;
-  font-size: 1.2vw;
-  font-style: italic;
-  font-weight: 700;
-  letter-spacing: -1px;
-  padding: 10px;
-}
-
 @media only screen and (max-width: 768px) {
+
   .oytTitle {
     font-size: 38px;
   }
@@ -171,7 +199,6 @@
   .oytDescription {
     font-size: 16px;
     margin-bottom: 0px;
-    padding-bottom: 20px;
   }
 
   .oytAssets {
@@ -192,37 +219,13 @@
     height: auto;
   }
 
-  .imageParagraph span {
-    font-size: 16px;
-    line-height: 30px;
-  }
-
-  .imageParagraph {
-    display: flex;
-    top: 100px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .oytImage:hover {
-    .imageParagraph {
-      display: none;
-    }
-
-    .imageParagraphHover {
-      display: block;
-    }
-  }
-
-  .imageParagraphHover {
-    top: 0%;
-    display: none;
-  }
-
-  .imageParagraphHover span {
-    font-size: 11px !important;
-    line-height: normal;
-  }
 }
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .oytAssets {
+    >div {
+      width: 50%;
+      height: 480px
+    }
+  }
+}

@@ -13,7 +13,7 @@
 }
 
 .aboutLeft {
-  width: 50vw;
+  width: 45vw;
   display: flex;
   justify-content: center;
 }
@@ -29,9 +29,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 50vw;
-  padding-left: 100px;
-  padding-right: 10%;
+  width: 55vw;
+  padding-left: 60px;
+  padding-right: 5%;
+
+  h3.sectionTitle {
+    text-align: left;
+  }
 }
 
 .aboutRightTitle {
@@ -64,6 +68,10 @@ h4 {
 .socialIcon {
   width: 2vw;
   height: auto;
+
+  &:hover {
+    filter: invert(40%) !important;
+  }
 }
 
 ///Background Assets
@@ -102,6 +110,11 @@ h4 {
     padding: 10px;
     padding-bottom: 50px;
     align-items: center;
+    text-align: center;
+
+    h3 {
+      text-align: center;
+    }
   }
 
   .aboutRightText {

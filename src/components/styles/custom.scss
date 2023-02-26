@@ -32,6 +32,16 @@ p {
   line-height: 1.5em;
 }
 
+@media screen and (max-width:768px) {
+  h2.sectionTitle {
+    font-size: 52px;
+  }
+
+  h3.sectionTitle {
+    font-size: 40px;
+  }
+}
+
 
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";
