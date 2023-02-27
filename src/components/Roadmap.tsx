@@ -25,7 +25,7 @@ function Roadmap() {
           <div className="roadMapStep roadMapStepBackground1">
             <div className="roadMapTitle">
               <p className="roadMapNumber">01 </p>
-              <p className="roadMapHeader">INITAL INVESTMENT</p>
+              <p className="roadMapHeader">INITIAL INVESTMENT</p>
             </div>
             <p className="roadMapText">
               After receiving a primary investment, Draft labs partnered with

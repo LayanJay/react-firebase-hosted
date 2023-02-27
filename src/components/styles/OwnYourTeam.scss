@@ -45,7 +45,7 @@
   align-items: center;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  width: 94%;
+  width: 85%;
   max-width: 1400px;
   position: relative;
   z-index: 2;
@@ -204,6 +204,11 @@
   .oytAssets {
     flex-direction: row;
     flex-wrap: wrap;
+
+    >div {
+      width: 100%;
+      height: 425px;
+    }
   }
 
   .whatIsImage {
