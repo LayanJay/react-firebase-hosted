@@ -36,12 +36,14 @@ const ContactForm = () => {
           name="name"
           required
         />
+      </div>
+      <div>
         <input
-          className="formEntry formLName"
-          type="text"
-          placeholder="Last Name"
-          name="name"
-          required
+            className="formEntry formLName"
+            type="text"
+            placeholder="Last Name"
+            name="name"
+            required
         />
       </div>
       <div>
