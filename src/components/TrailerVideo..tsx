@@ -12,26 +12,23 @@ function TrailerVideo() {
             <h2 className="sectionTitle">GAMEPLAY TRAILER</h2>
             <img alt="" src={rulerLeft} className="gameplayRulerLeft"/>
             <img alt="" src={rulerRight} className="gameplayRulerRight"/>
-            {/*<a href="https://demo.draftables.io/" target={"_blank"}>
-        <Container>
-          <div className={"gameplayView"}>
-            <img alt="" src={gameplayBg} className="gameplayViewBg" />
-            <img alt="" src={playNowButton} className="gameplayButton" />
-          </div>
-        </Container>
-      </a>*/}
             <Container>
                 <div className={"gameplayView"}>
                     <video
-                        width="100%"
-                        height="100%"
-                        controls
-                        src={gameTrailer} // Replace with your video file path
-                        className="gameplayVideo"
+                        id="video-player-tag"
+                        style={{backgroundColor: '#000', width: '100%', height: '100%', objectFit: 'cover', zIndex: '9999', top:0, left: 0}}
+                        className="video-player-tag" playsInline loop autoPlay
+                        poster={"https://res.cloudinary.com/ds5c0o49f/image/upload/v1683596792/Screenshot_2023-05-09_at_07.16.00_j4lj6l.png"}
+                        src="https://res.cloudinary.com/ds5c0o49f/video/upload/v1683596290/Draftables_Trailer_01_upohzz.mp4"
+                        controlsList="nodownload"
+                        onMouseEnter={(e) => {
+                            e.currentTarget.play()}
+                        }
                     />
                 </div>
             </Container>
         </Container>
+
     );
 }
 
