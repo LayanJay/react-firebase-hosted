@@ -8,7 +8,7 @@ import About from "./components/About";
 import Alpha from "./components/Alpha";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import GameplayDemo from "./components/GameplayDemo";
+import TrailerVideo from "./components/TrailerVideo.";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <Hero />
       <Alpha />
       <OwnYourTeam />
-      <GameplayDemo />
+      <TrailerVideo />
       <Roadmap />
       <About />
       <Partners />
