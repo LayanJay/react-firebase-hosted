@@ -17,13 +17,10 @@ function TrailerVideo() {
                     <video
                         id="video-player-tag"
                         style={{backgroundColor: '#000', width: '100%', height: '100%', objectFit: 'cover', zIndex: '9999', top:0, left: 0}}
-                        className="video-player-tag" playsInline loop autoPlay
+                        className="video-player-tag" playsInline loop controls
                         poster={"https://res.cloudinary.com/ds5c0o49f/image/upload/v1683596792/Screenshot_2023-05-09_at_07.16.00_j4lj6l.png"}
                         src="https://res.cloudinary.com/ds5c0o49f/video/upload/v1683596290/Draftables_Trailer_01_upohzz.mp4"
                         controlsList="nodownload"
-                        onMouseEnter={(e) => {
-                            e.currentTarget.play()}
-                        }
                     />
                 </div>
             </Container>
