@@ -11,7 +11,7 @@ function TrailerVideo() {
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => setIntersecting(entry.isIntersecting),
-            { threshold: 0.5 }
+            { threshold: 1 }
         );
 
         if (videoRef.current) {
@@ -27,10 +27,11 @@ function TrailerVideo() {
 
     useEffect(() => {
         if (isIntersecting) {
-            videoRef.current && (videoRef.current.muted = false);
             videoRef.current && videoRef.current.play();
+            videoRef.current && (videoRef.current.muted = false);
         } else {
             videoRef.current && videoRef.current.pause();
+            videoRef.current && (videoRef.current.muted = true);
         }
     }, [isIntersecting]);
 
@@ -45,14 +46,10 @@ function TrailerVideo() {
                         ref={videoRef}
                         id="video-player-tag"
                         style={{backgroundColor: '#000', width: '100%', height: '100%', objectFit: 'cover', zIndex: '999', top:0, left: 0}}
-                        className="video-player-tag" autoPlay loop muted playsInline controls
+                        className="video-player-tag" autoPlay loop muted playsInline
                         poster={"https://res.cloudinary.com/ds5c0o49f/image/upload/v1683596792/Screenshot_2023-05-09_at_07.16.00_j4lj6l.png"}
                         src="https://res.cloudinary.com/ds5c0o49f/video/upload/v1683596290/Draftables_Trailer_01_upohzz.mp4"
                         controlsList="nodownload"
-                           onCanPlay={() => {
-                                videoRef.current && videoRef.current.play();
-                           }
-                           }
                     />
                 </div>
             </Container>
