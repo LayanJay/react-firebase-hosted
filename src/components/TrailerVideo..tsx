@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import "./styles/GameplayDemo.scss";
 import rulerLeft from "../assets/landing_section/ruler_pattern_left.png";
 import rulerRight from "../assets/landing_section/ruler_pattern_right.png";
-import {useState, useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 
 function TrailerVideo() {
     const [isIntersecting, setIntersecting] = useState(false);
@@ -37,7 +37,7 @@ function TrailerVideo() {
 
     return (
         <Container className="gameplayDemoContainer" id="gameplay">
-            <h2 className="sectionTitle">GAMEPLAY TRAILER</h2>
+            {/*<h2 className="sectionTitle">GAMEPLAY TRAILER</h2>*/}
             <img alt="" src={rulerLeft} className="gameplayRulerLeft"/>
             <img alt="" src={rulerRight} className="gameplayRulerRight"/>
             <Container>
