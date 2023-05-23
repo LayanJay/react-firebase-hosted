@@ -13,11 +13,11 @@ import TrailerVideo from "./components/TrailerVideo.";
 function App() {
   return (
     <>
-      <NavigationBar />
-      <Hero />
+      <NavigationBar/>
+        <TrailerVideo/>
+        <Hero/>
       <Alpha />
       <OwnYourTeam />
-      <TrailerVideo />
       <Roadmap />
       <About />
       <Partners />
