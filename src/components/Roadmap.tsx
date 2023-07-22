@@ -2,22 +2,21 @@ import Container from "react-bootstrap/Container";
 import "./styles/Roadmap.scss";
 import dotPattern1 from "../assets/dot_pattern_1.png";
 import dotPattern2 from "../assets/dot_pattern_2.png";
-import arrow1 from "../assets/roadmap/arrow1.png";
-import arrow3 from "../assets/roadmap/arrow3.png";
+import dotPattern4 from "../assets/dot_pattern_4.png";
 
 function Roadmap() {
   return (
     <Container className="roadMap" id="roadmap">
       <div className="backgroundAssets">
-        <img alt="" src={dotPattern1} className="dotPatternRoadMap1" />
-        <img alt="" src={dotPattern1} className="dotPatternRoadMap2" />
-        <img alt="" src={dotPattern1} className="dotPatternRoadMap4" />
+        <img alt="" src={dotPattern4} className="dotPatternRoadMap1"/>
+        <img alt="" src={dotPattern1} className="dotPatternRoadMap2"/>
+        <img alt="" src={dotPattern2} className="dotPatternRoadMap3"/>
+        <img alt="" src={dotPattern4} className="dotPatternRoadMap4"/>
         {/* <img alt="" src={arrow1} className="roadMapArrow1" />
         <img alt="" src={arrow1} className="roadMapArrow2" />
         <img alt="" src={arrow1} className="roadMapArrow3" />
         <img alt="" src={arrow1} className="roadMapArrow5" />
         <img alt="" src={arrow3} className="roadMapArrow4" /> */}
-        <img alt="" src={dotPattern2} className="dotPatternRoadMap3" />
       </div>
       <h2 className="sectionTitle">ROADMAP</h2>
       <div className="roadMapFlexContainer">
@@ -58,7 +57,6 @@ function Roadmap() {
               what's to come. Alpha stage enables users to begin interacting
               with the Draftables ecosystem.
             </p>
-            <p className="progressTextSoon">SOON</p>
           </div>
         </div>
         <div className="roadMapInnerFlexContainer">
@@ -74,7 +72,6 @@ function Roadmap() {
               through responding to community feedback and refining the gameplay
               features.
             </p>
-            <p className="progressTextSoon">SOON</p>
           </div>
           <div className="roadMapStep roadMapStepBackground2">
             <div className="roadMapTitle">
@@ -86,7 +83,6 @@ function Roadmap() {
               have all Platform components available publicly via desktop and
               mobile.
             </p>
-            <p className="progressTextSoon">SOON</p>
           </div>
         </div>
       </div>
