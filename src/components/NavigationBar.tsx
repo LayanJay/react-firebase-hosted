@@ -12,7 +12,6 @@ function NavigationBar() {
       className="navigationBarMain"
       collapseOnSelect
       expand="xl"
-      bg="primary"
       variant="dark"
     >
       <Container fluid className="navBar">
