@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 
 const FORM_ENDPOINT =
   "https://public.herotofu.com/v1/bac633b0-a641-11ed-a31e-753411848f80"; // TODO - fill on the later step
@@ -30,14 +30,12 @@ const ContactForm = () => {
     >
       <div className="formNameEntry">
         <input
-          className="formEntry formFName"
-          type="text"
-          placeholder="First Name"
-          name="name"
-          required
+            className="formEntry formFName"
+            type="text"
+            placeholder="First Name"
+            name="name"
+            required
         />
-      </div>
-      <div>
         <input
             className="formEntry formLName"
             type="text"
@@ -46,21 +44,21 @@ const ContactForm = () => {
             required
         />
       </div>
-      <div>
+      <div className={"formEntryContainer"}>
         <input
-          className="formEntry formEmail"
-          type="email"
-          placeholder="Email"
-          name="email"
-          required
+            className="formEntry formEmail"
+            type="email"
+            placeholder="Email"
+            name="email"
+            required
         />
       </div>
-      <div>
+      <div className={"formEntryContainer"}>
         <textarea
-          className="formEntry formMessage"
-          placeholder="Your message"
-          name="message"
-          required
+            className="formEntry formMessage"
+            placeholder="Your message"
+            name="message"
+            required
         />
       </div>
       <div>
