@@ -381,12 +381,16 @@
 // arrow connector images for screens smaller than 1024
 
 @media screen and (max-width: 1024px) {
+  .dotPatternRoadMap4 {
+    display: none;
+  }
+
   .roadMapFlexContainer {
     .roadMapInnerFlexContainer {
       flex-direction: column;
       max-width: 600px;
 
-      &:last-child>.roadMapStep:last-child:after {
+      &:last-child > .roadMapStep:last-child:after {
         height: 100px;
       }
     }
