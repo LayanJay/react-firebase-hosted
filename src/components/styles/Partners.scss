@@ -23,7 +23,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 800px;
+  width: 1000px;
   max-width: 60%;
   padding: 150px 0;
 }
@@ -32,6 +32,7 @@
   width: 15vw;
   height: auto;
   z-index: 2;
+  border-radius: 5px;
 }
 
 .partnersTitle {
@@ -45,10 +46,10 @@
 
 .dotPatternPartnerMid {
   position: absolute;
-  width: 25vw;
+  width: 24vw;
   height: auto;
-  left: 36%;
-  top: 35%;
+  left: 26%;
+  top: 32%;
   z-index: 1;
 }
 
@@ -85,6 +86,24 @@
   height: auto;
   left: 90%;
   top: 20%;
+  z-index: 1;
+}
+
+.dotPatternPartnerBack3 {
+  position: absolute;
+  width: 5vw;
+  height: auto;
+  left: -2%;
+  top: 10%;
+  z-index: 1;
+}
+
+.dotPatternPartnerBack4 {
+  position: absolute;
+  width: 4vw;
+  height: auto;
+  left: 43%;
+  bottom: 6.5%;
   z-index: 1;
 }
 
