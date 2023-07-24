@@ -1,19 +1,19 @@
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import "./styles/Alpha.scss";
-import EmailForm from "./EmailForm";
+import React from "react";
 
 function Alpha() {
-  return (
-    <Container className="alphaContainer" id="alpha">
-      <Container className="alphaAssets">
-        <h3 className="sectionTitle">Alpha Release</h3>
-        <p>Sign up for access to Alpha Release
-        </p>
-      </Container>
-      <EmailForm />
-    </Container>
-  );
+    return (
+        <Container className="alphaContainer" id="alpha">
+            <Container className="alphaAssets">
+                <div className={"alphaText"}><span className={"alphaClickText"}>Click</span> to apply for the</div>
+                <Button className="buttonGeneral buttonAlpha"
+                        href={"https://docs.google.com/forms/d/1fToSysEHfRUr_N0Hjk8hIbSg6KrRkYAgHNo5En76pZI/edit"}>Closed
+                    Alpha Release</Button>
+            </Container>
+        </Container>
+    );
 }
 
 export default Alpha;

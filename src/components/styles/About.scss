@@ -1,10 +1,8 @@
 .about {
-  background: radial-gradient(98.95% 150.94% at 51.44% 50%,
-      #32435c 0%,
-      #111822 100%);
+  background: #2B2F60;
   display: flex;
   align-items: center;
-  padding: 100px;
+  padding: 50px;
   margin: 0;
   height: auto;
   max-width: 100vw !important;
@@ -19,9 +17,24 @@
 }
 
 .aboutLeftImg {
-  max-width: 30vw;
+  position: absolute;
+  max-width: 35vw;
   height: auto;
   z-index: 2;
+  top: -12%;
+}
+
+@media (max-width: 1300px) {
+  .aboutLeftImg {
+    top: -1vw;
+  }
+}
+
+@media (max-width: 1250px) {
+  .aboutLeftImg {
+    top: -3vw;
+    max-width: 45vw;
+  }
 }
 
 .aboutRight {
@@ -46,10 +59,14 @@
 }
 
 h4 {
-  font-weight: 700;
   font-size: 32px;
-  color: #5fa8ff !important;
-  padding: 25px 0;
+  color: #06D7B2 !important;
+  padding-top: 5px;
+  padding-bottom: 25px;
+}
+
+.subtitle {
+  font-weight: 600;
 }
 
 .aboutRightText {
@@ -59,10 +76,9 @@ h4 {
 .aboutRightSocials {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 30%;
   align-items: center;
-  margin-top: 30px;
-  ;
+  margin-top: 30px;;
 }
 
 .socialIcon {
@@ -74,13 +90,28 @@ h4 {
   }
 }
 
+.socialIconDisable {
+  opacity: 0.5;
+  cursor: unset !important;
+
+  .socialIcon {
+    width: 2vw;
+    height: auto;
+
+    &:hover {
+      filter: invert(0%) !important;
+    }
+  }
+
+}
+
 ///Background Assets
 
 .dotPatternAbout {
-  position: absolute;
+  position: relative;
   max-width: 30vw;
   height: auto;
-  left: 10%;
+  left: 0%;
   top: 15%;
   z-index: 1;
 }
