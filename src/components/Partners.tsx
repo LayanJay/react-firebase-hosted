@@ -1,5 +1,4 @@
 import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
 import "./styles/Partners.scss";
 import dotPattern1 from "../assets/dot_pattern_4.png";
 import dotPattern2 from "../assets/dot_pattern_7.png";
@@ -26,9 +25,9 @@ function Partners() {
                 <img alt="" src={partnerImg2} className="partnersImg"/>
                 <img alt="" src={partnerImg3} className="partnersImg"/>
             </div>
-            <div>
+            {/*<div>
                 <Button className="buttonGeneral buttonGeneralSignup">MORE</Button>
-            </div>
+            </div>*/}
         </Container>
   );
 }
