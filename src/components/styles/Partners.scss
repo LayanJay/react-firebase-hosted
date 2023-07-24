@@ -33,6 +33,10 @@
   height: auto;
   z-index: 2;
   border-radius: 5px;
+
+  &:hover {
+    filter: invert(20%) !important;
+  }
 }
 
 .partnersTitle {
@@ -51,6 +55,7 @@
   left: 26%;
   top: 32%;
   z-index: 1;
+  pointer-events: none;
 }
 
 .dotPatternPartnerTop {
@@ -121,17 +126,14 @@
   }
 
   .partnersImg {
-    width: 30vw;
+    width: 25vw;
   }
 
   .dotPatternPartnerTop {
-    width: 25vw;
-    left: 70%;
-    top: 33%;
+    display: none;
   }
 
   .dotPatternPartnerBot {
-    width: 25vw;
-    left: 5%;
+    display: none;
   }
 }

@@ -133,6 +133,13 @@
     padding-bottom: 50px;
   }
 
+  .socialIconDisable {
+    .socialIcon {
+      width: 10vw;
+    }
+
+  }
+
   .copyrightSocials {
     flex-direction: column-reverse;
     padding: 0;
