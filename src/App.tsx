@@ -9,6 +9,7 @@ import Alpha from "./components/Alpha";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import TrailerVideo from "./components/TrailerVideo.";
+import 'react-tooltip/dist/react-tooltip.css'
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
       <Hero />
       <Alpha />
       <OwnYourTeam />
-      <TrailerVideo />
-      <Roadmap />
+        <TrailerVideo/>
+        <Alpha/>
+        <Roadmap/>
       <About />
       <Partners />
       <Contact />

@@ -76,10 +76,9 @@ h4 {
 .aboutRightSocials {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 30%;
   align-items: center;
-  margin-top: 30px;
-  ;
+  margin-top: 30px;;
 }
 
 .socialIcon {
@@ -89,6 +88,21 @@ h4 {
   &:hover {
     filter: invert(40%) !important;
   }
+}
+
+.socialIconDisable {
+  opacity: 0.5;
+  cursor: unset !important;
+
+  .socialIcon {
+    width: 2vw;
+    height: auto;
+
+    &:hover {
+      filter: invert(0%) !important;
+    }
+  }
+
 }
 
 ///Background Assets

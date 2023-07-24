@@ -3,9 +3,9 @@ import "./styles/About.scss";
 import aboutUsImg from "../assets/aboutUs/aboutUs-img.png";
 import dotPattern7 from "../assets/dot_pattern_7.png";
 import linkedinLogo from "../assets/linkedin-logo.svg";
-import redditLogo from "../assets/reddit-logo.svg";
 import twitterLogo from "../assets/twitter-logo.svg";
-import mediumLogo from "../assets/medium-logo.svg";
+import discordLogo from "../assets/discord-logo.svg";
+import {Tooltip} from "react-tooltip";
 
 function About() {
     return (
@@ -28,12 +28,18 @@ function About() {
                     <a href="https://www.linkedin.com/company/draftlabs" target="_blank">
                         <img alt="" src={linkedinLogo} className="socialIcon"/>
                     </a>
-                    <a href="https://www.reddit.com/r/Draftables/" target="_blank">
+                    <div className={"socialIconDisable"}>
+                        <img alt="" src={discordLogo} className="socialIcon"/>
+                    </div>
+                    <Tooltip anchorSelect=".socialIconDisable" place="top">
+                        Coming Soon!
+                    </Tooltip>
+                    {/*<a href="https://www.reddit.com/r/Draftables/" target="_blank">
                         <img alt="" src={redditLogo} className="socialIcon"/>
                     </a>
                     <a href="https://draftables.medium.com/" target="_blank">
                         <img alt="" src={mediumLogo} className="socialIcon"/>
-                    </a>
+                    </a>*/}
                 </div>
             </div>
         </Container>
