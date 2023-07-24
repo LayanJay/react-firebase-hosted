@@ -159,8 +159,19 @@ h4 {
     padding-bottom: 50px;
   }
 
+  .aboutRightSocials {
+    width: 40%;
+  }
+
   .socialIcon {
     width: 10vw;
+  }
+
+  .socialIconDisable {
+    .socialIcon {
+      width: 10vw;
+    }
+
   }
 
   .aboutRightTitle {

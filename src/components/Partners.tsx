@@ -21,9 +21,9 @@ function Partners() {
             <img alt="" src={dotPattern1} className="dotPatternPartnerBack4"/>
             <h2 className="sectionTitle">SUPPORTING PARTNERS</h2>
             <div className="partnersLogos">
-                <img alt="" src={partnerImg1} className="partnersImg"/>
-                <img alt="" src={partnerImg2} className="partnersImg"/>
-                <img alt="" src={partnerImg3} className="partnersImg"/>
+                <a href="https://www.wisdom.gg/labs"><img alt="" src={partnerImg1} className="partnersImg"/></a>
+                <a href="https://www.acmeinnovation.com/"><img alt="" src={partnerImg2} className="partnersImg"/></a>
+                <a href="https://www.avax.network/"><img alt="" src={partnerImg3} className="partnersImg"/></a>
             </div>
             {/*<div>
                 <Button className="buttonGeneral buttonGeneralSignup">MORE</Button>
