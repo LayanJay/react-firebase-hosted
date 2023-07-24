@@ -134,6 +134,30 @@ h4 {
   z-index: 1;
 }
 
+@media only screen and (max-width: 1000px) {
+  .aboutLeftImg {
+    margin-top: 5vw;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .aboutLeftImg {
+    margin-top: 15vw;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .aboutLeftImg {
+    margin-top: 20vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .aboutLeftImg {
+    margin-top: 30vw;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .aboutRight {
     border: none;
@@ -185,8 +209,9 @@ h4 {
   }
 
   .aboutLeftImg {
-    width: 90vw;
+    width: 75vw;
     max-width: 100vw;
+    margin-top: 20px;
   }
 
   .aboutLeft {
