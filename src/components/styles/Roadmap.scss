@@ -165,10 +165,10 @@
 
 .dotPatternRoadMap3 {
   position: absolute;
-  width: 25vw;
+  width: 10vw;
   height: auto;
-  right: 17%;
-  top: 32%;
+  right: 8%;
+  top: 57.5%;
   z-index: 1;
 }
 
@@ -344,6 +344,7 @@
 // arrow images for extra large screens
 
 @media screen and (min-width: 1800px) {
+
   .roadMapFlexContainer {
 
     >div:first-of-type {
@@ -381,6 +382,10 @@
 // arrow connector images for screens smaller than 1024
 
 @media screen and (max-width: 1024px) {
+  .dotPatternRoadMap3 {
+    display: none;
+  }
+
   .dotPatternRoadMap4 {
     display: none;
   }

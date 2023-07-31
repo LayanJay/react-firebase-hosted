@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import "./styles/Roadmap.scss";
 import dotPattern1 from "../assets/dot_pattern_1.png";
-import dotPattern2 from "../assets/dot_pattern_2.png";
+import dotPattern2 from "../assets/dot_pattern_5.png";
 import dotPattern4 from "../assets/dot_pattern_4.png";
 
 function Roadmap() {
@@ -24,7 +24,7 @@ function Roadmap() {
                     <div className="roadMapStep roadMapStepBackground1">
                         <div className="roadMapTitle">
                             <p className="roadMapNumber">01 </p>
-                            <p className="roadMapHeader">INITIAL INVESTMENT</p>
+                            <p className="roadMapHeader">FUNDING</p>
                         </div>
                         <p className="roadMapText">
                             After receiving a primary investment, Draft labs partnered with
@@ -35,7 +35,7 @@ function Roadmap() {
                     <div className="roadMapStep roadMapStepBackground1">
                         <div className="roadMapTitle">
                             <p className="roadMapNumber">02</p>
-                            <p className="roadMapHeader">MVP DEVELOPMENT</p>
+                            <p className="roadMapHeader">PRIVATE ALPHA</p>
                         </div>
                         <p className="roadMapText">
                             Draft Labs is currently developing a minimum viable product that
