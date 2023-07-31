@@ -9,6 +9,7 @@ import oytFootball4 from "../assets/ownyourteam/lightpaper.png";
 import litepaper from "../assets/litepaper.pdf";
 import dotPattern5 from "../assets/dot_pattern_5.png";
 import dotPattern6 from "../assets/dot_pattern_6.png";
+import chevronRight from "../assets/chevron-right.png";
 
 let lightpaperPDFLink = JSON.stringify(litepaper);
 let lightpaperPDFLinkFinal =
@@ -105,7 +106,7 @@ function OwnYourTeam() {
                 Each digital athlete's skill, abilities, and development are
                 fully reliant on their owner's ability to train and compete with
                 them. This means that the more interactive you are with
-                Draftables, the quicker your team will develop
+                Draftables, the quicker your team will develop.
               </p>
             </div>
           </div>
@@ -130,10 +131,8 @@ function OwnYourTeam() {
               <img src={oytFootball3} className="whatIsImage" alt=""/>
               <p className="imageParagraph">BUILD YOUR OWN STADIUM VILLAGE</p>
               <p className="imageParagraphHover">
-                $DRFT is more than just an in-game currency: Earn it by
-                competing against other users, spend it to purchase new players
-                and facilities, and sell it to other users when you don't need
-                it!
+                Build your franchise from the ground up. Upgrade your team’s facilities and grow your stadium village to
+                boost your team’s performance.
               </p>
             </div>
           </div>
@@ -146,6 +145,15 @@ function OwnYourTeam() {
                 Draftables expands what it means for a game to be a sports
                 simulator. Explore all of the ways Draftables is changing the
                 game in our litepaper.
+
+                <div className={"litepaperBtnContainer"}>
+                  <a href="https://cdn.discordapp.com/attachments/1109142474158506185/1135618131675598928/Public_Litepaper_Formatted.pdf"
+                     className={"litepaperBtn"}>
+                    LITEPAPER
+                    <img src={chevronRight} className={"chevronRightImg"} alt=""/>
+                  </a>
+                </div>
+
               </p>
             </div>
           </div>
