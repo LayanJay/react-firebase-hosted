@@ -124,6 +124,26 @@
   height: 60vh;
 }
 
+.litepaperBtnContainer {
+
+  margin-top: 50px;
+
+  .litepaperBtn {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .chevronRightImg {
+      width: 10px;
+      margin-left: 10px;
+      filter: brightness(100%);
+    }
+  }
+}
+
 .oytImage {
   position: absolute;
   left: 50%;
