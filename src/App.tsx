@@ -10,17 +10,22 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import TrailerVideo from "./components/TrailerVideo.";
 import 'react-tooltip/dist/react-tooltip.css'
+import ReactGA from "react-ga4";
 
 function App() {
-  return (
-    <>
-      <NavigationBar />
-      <Hero />
-      <Alpha />
-      <OwnYourTeam />
-        <TrailerVideo/>
-        <Alpha/>
-        <Roadmap/>
+
+    const TRACKING_ID = "G-KTXP8LDPVT";
+    ReactGA.initialize(TRACKING_ID);
+
+    return (
+        <>
+            <NavigationBar/>
+            <Hero/>
+            <Alpha/>
+            <OwnYourTeam/>
+            <TrailerVideo/>
+            <Alpha/>
+            <Roadmap/>
       <About />
       <Partners />
       <Contact />
