@@ -45,7 +45,11 @@
 }
 
 .buttonAlpha {
-  min-width: 12vw;
+  min-width: 20vw;
+  font-size: 20px !important;
+  display: flex;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
 }
 
 .emailEntry {

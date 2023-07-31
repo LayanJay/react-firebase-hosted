@@ -22,7 +22,7 @@ function Hero() {
                 </div>
                 <div className="landingButton">
                     <h1 className="buttonText">
-                        Experience the height of sports emulation
+                        Experience the height of sports emulation.
                     </h1>
                 </div>
             </div>

@@ -7,9 +7,9 @@ function Alpha() {
     return (
         <Container className="alphaContainer" id="alpha">
             <Container className="alphaAssets">
-                <div className={"alphaText"}><span className={"alphaClickText"}>Click</span> to apply for the</div>
                 <Button className="buttonGeneral buttonAlpha"
-                        href={"https://docs.google.com/forms/d/1fToSysEHfRUr_N0Hjk8hIbSg6KrRkYAgHNo5En76pZI/edit"}>Closed
+                        href={"https://docs.google.com/forms/d/1fToSysEHfRUr_N0Hjk8hIbSg6KrRkYAgHNo5En76pZI/edit"}>Apply
+                    to Closed
                     Alpha Release</Button>
             </Container>
         </Container>
