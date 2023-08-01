@@ -147,8 +147,8 @@ function OwnYourTeam() {
                 game in our litepaper.
 
                 <div className={"litepaperBtnContainer"}>
-                  <a href="https://cdn.discordapp.com/attachments/1109142474158506185/1135618131675598928/Public_Litepaper_Formatted.pdf"
-                     className={"litepaperBtn"}>
+                  <a href="https://docs.google.com/viewer?url=https://cdn.discordapp.com/attachments/1109142474158506185/1135618131675598928/Public_Litepaper_Formatted.pdf"
+                     className={"litepaperBtn"} target="_blank">
                     LITEPAPER
                     <img src={chevronRight} className={"chevronRightImg"} alt=""/>
                   </a>
