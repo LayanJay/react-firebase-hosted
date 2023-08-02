@@ -18,7 +18,7 @@ function App() {
     ReactGA.initialize(TRACKING_ID);
 
     return (
-        <>
+        <div className={"App"}>
             <NavigationBar/>
             <Hero/>
             <Alpha/>
@@ -26,12 +26,12 @@ function App() {
             <TrailerVideo/>
             <Alpha/>
             <Roadmap/>
-      <About />
-      <Partners />
-      <Contact />
-      <Footer />
-    </>
-  );
+            <About/>
+            <Partners/>
+            <Contact/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
