@@ -41,11 +41,11 @@ function NavigationBar() {
           <Nav className="me-auto">
             <Nav.Link href="#whatis" className="linkLight">LIGHTPAPER</Nav.Link>
             <Nav.Link href="#whatis">WHAT IS DRAFTABLES</Nav.Link>
-            <Nav.Link href="#aboutus">ABOUT US</Nav.Link>
-            <Nav.Link href="#contact">CONTACT</Nav.Link>
-            <Nav.Link href="#roadmap">ROADMAP</Nav.Link>
-            <Nav.Link href="#support">SUPPORTING TEAM</Nav.Link>
             <Nav.Link href="#gameplay">GAMEPLAY</Nav.Link>
+            <Nav.Link href="#roadmap">ROADMAP</Nav.Link>
+            <Nav.Link href="#aboutus">ABOUT US</Nav.Link>
+            <Nav.Link href="#support">SUPPORTING TEAM</Nav.Link>
+            <Nav.Link href="#contact">CONTACT</Nav.Link>
           </Nav>
           <Nav>
             <div>
