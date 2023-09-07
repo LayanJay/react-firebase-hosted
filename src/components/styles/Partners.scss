@@ -26,10 +26,11 @@
   width: 1000px;
   max-width: 60%;
   padding: 150px 0;
+  position: relative;
 }
 
 .partnersImg {
-  width: 15vw;
+  width: 12vw;
   height: auto;
   z-index: 2;
   border-radius: 5px;
@@ -62,8 +63,8 @@
   position: absolute;
   width: 10vw;
   height: auto;
-  right: 20%;
-  top: 30%;
+  right: -50px;
+  top: 70px;
   z-index: 1;
 }
 
@@ -71,8 +72,8 @@
   position: absolute;
   width: 10vw;
   height: auto;
-  left: 20%;
-  bottom: 15%;
+  left: -50px;
+  bottom: 70px;
   z-index: 1;
 }
 
@@ -112,21 +113,37 @@
   z-index: 1;
 }
 
+@media (max-width: 1025px) {
+  .partnersLogos {
+    flex-wrap: wrap;
+    min-width: 450px;
+    width: 450px;
+  }
+
+  .partnersImg {
+    width: 200px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .partnersLogos {
+    flex-wrap: wrap;
+    min-width: 300px;
+    width: 300px;
+  }
+
+  .partnersImg {
+    width: 125px;
+    margin-bottom: 40px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .partnersTitle {
     font-size: 24px;
     text-align: center;
     padding-bottom: 20px;
-  }
-
-  .partnersLogos {
-    width: 80vw;
-    padding: 0;
-    gap: 20px;
-  }
-
-  .partnersImg {
-    width: 25vw;
   }
 
   .dotPatternPartnerTop {
