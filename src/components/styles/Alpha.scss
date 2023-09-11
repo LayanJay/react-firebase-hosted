@@ -22,9 +22,16 @@
   align-items: center;
   padding: 0 !important;
   margin: 0 !important;
-  max-width: 30vw !important;
+  max-width: 600px !important;
+  font-size: 25px;
+  font-weight: 600;
+  font-style: italic;
 }
 
+.alphaSubContainer {
+  display: flex;
+  align-items: center;
+}
 
 .alphaText {
   color: white;
@@ -45,11 +52,20 @@
 }
 
 .buttonAlpha {
-  min-width: 20vw;
-  font-size: 20px !important;
+  min-width: 240px;
+  font-size: 25px !important;
   display: flex;
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
+  align-items: center;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  justify-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  .discordIcon {
+    margin-right: 10px;
+    width: 40px;
+  }
 }
 
 .emailEntry {
@@ -71,20 +87,24 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .buttonAlpha {
-    min-width: 60vw !important;
-    font-size: 20px !important;
-    display: flex;
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
-  }
-
-  .alphaContainer {
-    flex-direction: column;
-  }
-
   .alphaAssets {
-    max-width: 100% !important;
+    flex-direction: column;
+    font-size: 22px;
+  }
+
+  .alphaSubContainer {
+    margin-top: 20px;
+  }
+
+  .buttonAlpha {
+    min-width: 180px;
+    font-size: 22px !important;
+    margin-left: 0;
+
+    .discordIcon {
+      margin-right: 10px;
+      width: 35px;
+    }
   }
 
   .emailContainer {
