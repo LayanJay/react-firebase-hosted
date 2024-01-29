@@ -1,72 +1,94 @@
-import React, {useState} from "react";
+import React from 'react';
+import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik';
+import * as Yup from 'yup';
+import axios from "axios";
 
-const FORM_ENDPOINT =
-  "https://public.herotofu.com/v1/bac633b0-a641-11ed-a31e-753411848f80"; // TODO - fill on the later step
+interface FormValues {
+  firstName: string;
+  lastName: string;
+  email: string;
+  message: string;
+}
+
+const initialValues: FormValues = {
+  firstName: '',
+  lastName: '',
+  email: '',
+  message: '',
+};
+
+const validationSchema = Yup.object({
+  firstName: Yup.string().required('Required'),
+  lastName: Yup.string().required('Required'),
+  email: Yup.string().email('Invalid email format').required('Required'),
+  message: Yup.string().required('Required'),
+});
 
 const ContactForm = () => {
-  const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = () => {
-    setTimeout(() => {
-      setSubmitted(true);
-    }, 100);
+  const handleSubmit = async (values: FormValues, { setSubmitting, resetForm }: FormikHelpers<FormValues>) => {
+    try {
+      const response = await axios.post('https://draft-test-3-go1qc9lcc-invisiblextanx.vercel.app/api/test', values);
+      console.log(response)
+      alert(JSON.stringify(response.data, null, 2));
+      resetForm();
+    } catch (error) {
+      alert('An error occurred while sending the form.');
+      console.error(error);
+    }
+    setSubmitting(false);
   };
 
-  if (submitted) {
-    return (
-      <>
-        <h2>Thank you!</h2>
-        <div>We'll be in touch soon.</div>
-      </>
-    );
-  }
-
   return (
-    <form
-      className="formContainer"
-      action={FORM_ENDPOINT}
-      onSubmit={handleSubmit}
-      method="POST"
-      target="_blank"
-    >
-      <div className="formNameEntry">
-        <input
-            className="formEntry formFName"
-            type="text"
-            placeholder="First Name"
-            name="name"
-            required
-        />
-        <input
-            className="formEntry formLName"
-            type="text"
-            placeholder="Last Name"
-            name="name"
-            required
-        />
-      </div>
-      <div className={"formEntryContainer"}>
-        <input
-            className="formEntry formEmail"
-            type="email"
-            placeholder="Email"
-            name="email"
-            required
-        />
-      </div>
-      <div className={"formEntryContainer"}>
-        <textarea
-            className="formEntry formMessage"
-            placeholder="Your message"
-            name="message"
-            required
-        />
-      </div>
-      <div>
-        <button className="buttonGeneral formSubmit" type="submit">
-          SUBMIT
-        </button>
-      </div>
-    </form>
+      <Formik
+          initialValues={initialValues}
+          validationSchema={validationSchema}
+          onSubmit={handleSubmit}
+      >
+        {({ isSubmitting }) => (
+            <Form className="formContainer">
+              <div className="formNameEntry">
+                <Field
+                    className="formEntry formFName"
+                    type="text"
+                    name="firstName"
+                    placeholder="First Name"
+                />
+                <ErrorMessage name="firstName" component="div" />
+
+                <Field
+                    className="formEntry formLName"
+                    type="text"
+                    name="lastName"
+                    placeholder="Last Name"
+                />
+                <ErrorMessage name="lastName" component="div" />
+              </div>
+              <div className="formEntryContainer">
+                <Field
+                    className="formEntry formEmail"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                />
+                <ErrorMessage name="email" component="div" />
+              </div>
+              <div className="formEntryContainer">
+                <Field
+                    className="formEntry formMessage"
+                    as="textarea"
+                    name="message"
+                    placeholder="Your message"
+                />
+                <ErrorMessage name="message" component="div" />
+              </div>
+              <div>
+                <button className="buttonGeneral formSubmit" type="submit" disabled={isSubmitting}>
+                  SUBMIT
+                </button>
+              </div>
+            </Form>
+        )}
+      </Formik>
   );
 };
 
