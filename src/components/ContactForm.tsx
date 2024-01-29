@@ -2,6 +2,8 @@ import React from 'react';
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
 import axios from "axios";
+import {toast, ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 interface FormValues {
   firstName: string;
@@ -26,19 +28,38 @@ const validationSchema = Yup.object({
 
 const ContactForm = () => {
   const handleSubmit = async (values: FormValues, { setSubmitting, resetForm }: FormikHelpers<FormValues>) => {
+    console.log(values)
     try {
-      const response = await axios.post('https://draft-test-3-go1qc9lcc-invisiblextanx.vercel.app/api/test', values);
-      console.log(response)
-      alert(JSON.stringify(response.data, null, 2));
+       await axios.post('https://draft-test-3-453praki0-invisiblextanx.vercel.app/api/test', {
+        firstName: values.firstName,
+        lastName: values.lastName,
+        email: values.email,
+        message: values.message
+      },{
+        headers: {
+          Authorization: 'Bearer abqBs0TqKZJ7jowRPUtpPDWf',
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        }
+      });
+      // if success
+      toast.success("Message sent successfully!", {
+        position: 'bottom-right'
+      })
+
       resetForm();
     } catch (error) {
-      alert('An error occurred while sending the form.');
-      console.error(error);
+      toast.error("Message unsuccessful!", {
+        position: 'bottom-right'
+      })
+      console.error((error as any).message);
     }
     setSubmitting(false);
   };
 
   return (
+      <React.Fragment>
+        <ToastContainer />
       <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}
@@ -89,6 +110,7 @@ const ContactForm = () => {
             </Form>
         )}
       </Formik>
+      </React.Fragment>
   );
 };
 
