@@ -1,9 +1,9 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
-import axios from "axios";
 import {toast, ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import * as emailjs from 'emailjs-com';
 
 interface FormValues {
   firstName: string;
@@ -28,88 +28,80 @@ const validationSchema = Yup.object({
 
 const ContactForm = () => {
   const handleSubmit = async (values: FormValues, { setSubmitting, resetForm }: FormikHelpers<FormValues>) => {
-    console.log(values)
     try {
-       await axios.post('https://draft-test-3-gcvsqu662-invisiblextanx.vercel.app/api/send-email', {
-        firstName: values.firstName,
-        lastName: values.lastName,
-        email: values.email,
-        message: values.message
-      },{
-        headers: {
-          Authorization: 'Bearer abqBs0TqKZJ7jowRPUtpPDWf',
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        }
-      });
-      // if success
-      toast.success("Message sent successfully!", {
-        position: 'bottom-right'
-      })
-
+        const emailjsParams = {
+            firstName: values.firstName,
+            lastName: values.lastName,
+            email: values.email,
+            message: values.message
+        };
+      const response = emailjs.send('service_fm54fcz', 'template_tfzsykb', emailjsParams, 'dHRgiedF_M9tXZwlc');
+      console.log(response)
+        toast.success("Message sent successfully!", {
+            position: 'bottom-right'
+        })
       resetForm();
     } catch (error) {
-      toast.error("Message unsuccessful!", {
-        position: 'bottom-right'
-      })
-      console.error((error as any).message);
+        toast.error("Message unsuccessful!", {
+            position: 'bottom-right'
+        })
     }
     setSubmitting(false);
   };
 
   return (
       <React.Fragment>
-        <ToastContainer />
-      <Formik
-          initialValues={initialValues}
-          validationSchema={validationSchema}
-          onSubmit={handleSubmit}
-      >
-        {({ isSubmitting }) => (
-            <Form className="formContainer">
-              <div className="formNameEntry">
-                <Field
-                    className="formEntry formFName"
-                    type="text"
-                    name="firstName"
-                    placeholder="First Name"
-                />
-                <ErrorMessage name="firstName" component="div" />
+          <ToastContainer />
+          <Formik
+              initialValues={initialValues}
+              validationSchema={validationSchema}
+              onSubmit={handleSubmit}
+          >
+            {({ isSubmitting }) => (
+                <Form className="formContainer">
+                  <div className="formNameEntry">
+                    <Field
+                        className="formEntry formFName"
+                        type="text"
+                        name="firstName"
+                        placeholder="First Name"
+                    />
+                    <ErrorMessage name="firstName" component="div" />
 
-                <Field
-                    className="formEntry formLName"
-                    type="text"
-                    name="lastName"
-                    placeholder="Last Name"
-                />
-                <ErrorMessage name="lastName" component="div" />
-              </div>
-              <div className="formEntryContainer">
-                <Field
-                    className="formEntry formEmail"
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                />
-                <ErrorMessage name="email" component="div" />
-              </div>
-              <div className="formEntryContainer">
-                <Field
-                    className="formEntry formMessage"
-                    as="textarea"
-                    name="message"
-                    placeholder="Your message"
-                />
-                <ErrorMessage name="message" component="div" />
-              </div>
-              <div>
-                <button className="buttonGeneral formSubmit" type="submit" disabled={isSubmitting}>
-                  SUBMIT
-                </button>
-              </div>
-            </Form>
-        )}
-      </Formik>
+                    <Field
+                        className="formEntry formLName"
+                        type="text"
+                        name="lastName"
+                        placeholder="Last Name"
+                    />
+                    <ErrorMessage name="lastName" component="div" />
+                  </div>
+                  <div className="formEntryContainer">
+                    <Field
+                        className="formEntry formEmail"
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                    />
+                    <ErrorMessage name="email" component="div" />
+                  </div>
+                  <div className="formEntryContainer">
+                    <Field
+                        className="formEntry formMessage"
+                        as="textarea"
+                        name="message"
+                        placeholder="Your message"
+                    />
+                    <ErrorMessage name="message" component="div" />
+                  </div>
+                  <div>
+                    <button className="buttonGeneral formSubmit" type="submit" disabled={isSubmitting}>
+                      SUBMIT
+                    </button>
+                  </div>
+                </Form>
+            )}
+          </Formik>
       </React.Fragment>
   );
 };
