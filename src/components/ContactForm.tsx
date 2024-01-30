@@ -30,7 +30,7 @@ const ContactForm = () => {
   const handleSubmit = async (values: FormValues, { setSubmitting, resetForm }: FormikHelpers<FormValues>) => {
     console.log(values)
     try {
-       await axios.post('https://draft-test-3-453praki0-invisiblextanx.vercel.app/api/test', {
+       await axios.post('https://draft-test-3-gcvsqu662-invisiblextanx.vercel.app/api/send-email', {
         firstName: values.firstName,
         lastName: values.lastName,
         email: values.email,
