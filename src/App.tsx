@@ -27,7 +27,6 @@ function App() {
             <OwnYourTeam/>
             <Roadmap/>
             <About/>
-            <OurTeam/>
             <Partners/>
             <Contact/>
             <Footer/>
