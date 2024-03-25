@@ -6,14 +6,10 @@ import oytFootball1 from "../assets/ownyourteam/american_football.png";
 import oytFootball2 from "../assets/ownyourteam/american_football_2.png";
 import oytFootball3 from "../assets/ownyourteam/american_football_3.png";
 import oytFootball4 from "../assets/ownyourteam/lightpaper.png";
-import litepaper from "../assets/litepaper.pdf";
 import dotPattern5 from "../assets/dot_pattern_5.png";
 import dotPattern6 from "../assets/dot_pattern_6.png";
 import chevronRight from "../assets/chevron-right.png";
 
-let lightpaperPDFLink = JSON.stringify(litepaper);
-let lightpaperPDFLinkFinal =
-    lightpaperPDFLink + "#toolbar=0&navpanes=0&scrollbar=0";
 
 function OwnYourTeam() {
   return (
