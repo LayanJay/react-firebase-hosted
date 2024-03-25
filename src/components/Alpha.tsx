@@ -11,7 +11,7 @@ function Alpha() {
                 <div>Join Our</div>
                 <div className={"alphaSubContainer"}>
                     <Button className="buttonGeneral buttonAlpha"
-                            href={"https://discord.gg/BfJ8VcgfA5"}>
+                            href={"https://discord.gg/V25JWp5Jp5"}>
                         <img alt="" src={discordLogo} className="discordIcon"/>
                         Discord
                     </Button>
