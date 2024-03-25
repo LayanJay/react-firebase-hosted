@@ -25,7 +25,6 @@ function App() {
             <Alpha/>
             <TrailerVideo/>
             <OwnYourTeam/>
-            <Alpha/>
             <Roadmap/>
             <About/>
             <Partners/>
