@@ -11,6 +11,7 @@ import TrailerVideo from "./components/TrailerVideo.";
 import 'react-tooltip/dist/react-tooltip.css'
 import ReactGA from "react-ga4";
 import Alpha from "./components/Alpha";
+import OurTeam from "./components/OurTeam";
 
 function App() {
 
@@ -22,11 +23,11 @@ function App() {
             <NavigationBar/>
             <Hero/>
             <Alpha/>
-            <OwnYourTeam/>
             <TrailerVideo/>
-            <Alpha/>
+            <OwnYourTeam/>
             <Roadmap/>
             <About/>
+            <OurTeam/>
             <Partners/>
             <Contact/>
             <Footer/>

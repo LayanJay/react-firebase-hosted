@@ -28,12 +28,9 @@ function About() {
                     <a href="https://www.linkedin.com/company/draftlabs" target="_blank">
                         <img alt="" src={linkedinLogo} className="socialIcon"/>
                     </a>
-                    <div className={"socialIconDisable"}>
+                    <a href="https://discord.gg/V25JWp5Jp5" target="_blank">
                         <img alt="" src={discordLogo} className="socialIcon"/>
-                    </div>
-                    <Tooltip anchorSelect=".socialIconDisable" place="top">
-                        Coming Soon!
-                    </Tooltip>
+                    </a>
                     {/*<a href="https://www.reddit.com/r/Draftables/" target="_blank">
                         <img alt="" src={redditLogo} className="socialIcon"/>
                     </a>
