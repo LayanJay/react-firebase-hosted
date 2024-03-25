@@ -46,6 +46,30 @@ function OurTeam() {
                         Marketing
                     </div>
                 </a>
+                <a href="https://twitter.com/0xFlows" className="teamImgContainer">
+                    <img alt="" src={brian} className="teamImg"/>
+                    <div className={"teamDescription"}>
+                        CEO
+                    </div>
+                </a>
+                <a href="https://twitter.com/0xSimn" className="teamImgContainer">
+                    <img alt="" src={simon} className="teamImg"/>
+                    <div className={"teamDescription"}>
+                        COO
+                    </div>
+                </a>
+                <a href="https://twitter.com/0xWorkhorse" className="teamImgContainer">
+                    <img alt="" src={ian} className="teamImg"/>
+                    <div className={"teamDescription"}>
+                        Game Design
+                    </div>
+                </a>
+                <a href="#" className="teamImgContainer">
+                    <img alt="" src={alec} className="teamImg"/>
+                    <div className={"teamDescription"}>
+                        Marketing
+                    </div>
+                </a>
             </div>
             {/*<div>
                 <Button className="buttonGeneral buttonGeneralSignup">MORE</Button>
