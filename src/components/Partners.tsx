@@ -9,6 +9,8 @@ import partnerImg1 from "../assets/partners/img-1.png";
 import partnerImg2 from "../assets/partners/img-2.png";
 import partnerImg3 from "../assets/partners/img-4.png";
 import vapordexLogo from "../assets/partners/vapordex.png";
+import dVerseLogo from "../assets/partners/DVerse.jpg";
+import infernoLogo from "../assets/partners/Inferno_Labs.jpg";
 
 function Partners() {
     return (
@@ -49,6 +51,16 @@ function Partners() {
                     <img alt="" src={vapordexLogo} className="partnersImg"/>
                     <div className={"partnerDescription"}>VaporDEX is the world’s most rewarding DEX. Trade your crypto
                         with less fees and more options to earn
+                    </div>
+                </a>
+                <a href="https://dverse.xyz/" className="partnersImgContainer">
+                    <img alt="" src={dVerseLogo} className="partnersImg"/>
+                    <div className={"partnerDescription"}>DVerse
+                    </div>
+                </a>
+                <a href="https://infernolabs.xyz/" className="partnersImgContainer">
+                    <img alt="" src={infernoLogo} className="partnersImg"/>
+                    <div className={"partnerDescription"}>Inferno Labs
                     </div>
                 </a>
             </div>
