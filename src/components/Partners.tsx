@@ -7,7 +7,7 @@ import bottomPattern from "../assets/partners/border_style_bottom.png";
 import topPattern from "../assets/partners/border_style_top.png";
 import partnerImg1 from "../assets/partners/img-1.png";
 import partnerImg2 from "../assets/partners/img-2.png";
-import partnerImg3 from "../assets/partners/img-4.png";
+import partnerImg3 from "../assets/partners/Avalanche_AVAX_White.png";
 import vapordexLogo from "../assets/partners/vapordex.png";
 import dVerseLogo from "../assets/partners/DVerse.jpg";
 import infernoLogo from "../assets/partners/Inferno_Labs.jpg";

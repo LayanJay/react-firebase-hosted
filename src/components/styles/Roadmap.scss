@@ -201,7 +201,7 @@
 
 .roadMapArrow3 {
   position: absolute;
-  width: 7vw;
+  width: 15vw;
   height: auto;
   left: 60.2%;
   top: 31%;
@@ -270,7 +270,7 @@
 
         &:before {
           content: "";
-          width: 30vw;
+          width: 32vw;
           height: 26px;
           background-image: url("/src/assets/roadmap/arrow2.png");
           background-size: 100% 100%;
@@ -287,7 +287,7 @@
 
         &:after {
           content: "";
-          width: 45vw;
+          width: 65vw;
           height: 48px;
           background-image: url("/src/assets/roadmap/arrow3.png");
           background-size: 100% 100%;
@@ -302,7 +302,7 @@
     }
 
     >div:last-of-type {
-      >div:first-child {
+      >div:nth-child(1) {
         position: relative;
 
         &:after {
@@ -320,7 +320,25 @@
         }
       }
 
-      >div:last-child {
+      >div:nth-child(2) {
+        position: relative;
+
+        &:after {
+          content: "";
+          width: 42px;
+          height: 9px;
+          background-image: url("/src/assets/roadmap/arrow4.png");
+          background-size: 1000px 9px;
+          background-position: center right;
+          background-repeat: no-repeat;
+          position: absolute;
+          left: calc(100% + 8px);
+          top: 50%;
+          opacity: 0.7;
+        }
+      }
+
+      >div:nth-child(3) {
         position: relative;
 
         &:after {

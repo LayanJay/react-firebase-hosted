@@ -49,7 +49,7 @@ function TrailerVideo() {
 
     return (
         <Container className="gameplayDemoContainer" id="gameplay">
-            <h2 className="sectionTitle">GAMEPLAY TRAILER</h2>
+            <h2 className="sectionTitle">TRAILER</h2>
             <img alt="" src={rulerLeft} className="gameplayRulerLeft"/>
             <img alt="" src={rulerRight} className="gameplayRulerRight"/>
             <Container>
