@@ -43,14 +43,14 @@ function NavigationBar() {
             <Nav.Link href="#whatis">WHAT IS DRAFTABLES</Nav.Link>
             <Nav.Link href="#gameplay">GAMEPLAY</Nav.Link>
             <Nav.Link href="#roadmap">ROADMAP</Nav.Link>
-            <Nav.Link href="#aboutus">ABOUT US</Nav.Link>
-            <Nav.Link href="#support">SUPPORTING TEAM</Nav.Link>
+            <Nav.Link href="#aboutus">ABOUT</Nav.Link>
+            <Nav.Link href="#support">TEAM</Nav.Link>
             <Nav.Link href="#contact">CONTACT</Nav.Link>
           </Nav>
           <Nav>
             <div>
-              <Button href="#alpha" className="buttonGeneral buttonNav">
-                JOIN NOW
+              <Button href="#" className="buttonGeneral buttonNav">
+                STAKE
               </Button>
             </div>
           </Nav>
