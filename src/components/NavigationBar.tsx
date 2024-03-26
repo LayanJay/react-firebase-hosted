@@ -50,7 +50,7 @@ function NavigationBar() {
           </Nav>
           <Nav>
             <div>
-              <Button href="https://www.premint.xyz/draftables/" className="buttonGeneral buttonNav">
+              <Button href="https://www.premint.xyz/draftables/" className="buttonGeneral buttonNav" target="_blank" rel="noopener noreferrer">
                 PREMINT
               </Button>
             </div>

@@ -51,6 +51,7 @@
   width: 275px;
   height: 275px;
   position: relative;
+  overflow: hidden; // Ensure this is set to hide parts of the image that overflow
 
   &:hover {
     .partnerDescription {
@@ -61,11 +62,11 @@
 }
 
 .partnersImg {
-  width: 275px;
-  height: auto;
+  width: 100%; // Change to 100% to take the full width of the container
+  height: 100%; // Change to 100% to take the full height of the container
+  object-fit: cover; // Add this line to ensure the image covers the container
   z-index: 2;
   border-radius: 5px;
-
   &:hover {
     filter: invert(20%) !important;
   }
