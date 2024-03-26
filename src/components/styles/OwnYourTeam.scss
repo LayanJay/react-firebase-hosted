@@ -201,6 +201,7 @@
   border-radius: 3px;
   /*linear-gradient(to right, #02E0AF, #3368CC)*/
   background: linear-gradient(150deg, #02E0AF, #3368CC);
+  cursor: default;
 
   img {
     filter: brightness(50%);
@@ -208,10 +209,12 @@
 
   .imageParagraph {
     opacity: 0;
+    cursor: default;
   }
 
   .imageParagraphHover {
     opacity: 1;
+    cursor:default;
   }
 }
 
