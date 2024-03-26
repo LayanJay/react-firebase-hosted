@@ -1,7 +1,6 @@
 import Container from "react-bootstrap/Container";
 import "./styles/Roadmap.scss";
 import dotPattern1 from "../assets/dot_pattern_1.png";
-import dotPattern2 from "../assets/dot_pattern_5.png";
 import dotPattern4 from "../assets/dot_pattern_4.png";
 
 function Roadmap() {
@@ -10,7 +9,6 @@ function Roadmap() {
             <div className="backgroundAssets">
                 <img alt="" src={dotPattern4} className="dotPatternRoadMap1"/>
                 <img alt="" src={dotPattern1} className="dotPatternRoadMap2"/>
-                <img alt="" src={dotPattern2} className="dotPatternRoadMap3"/>
                 <img alt="" src={dotPattern4} className="dotPatternRoadMap4"/>
                 {/* <img alt="" src={arrow1} className="roadMapArrow1" />
         <img alt="" src={arrow1} className="roadMapArrow2" />
