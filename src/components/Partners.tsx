@@ -24,14 +24,18 @@ function Partners() {
             <div className="partnersLogos">
                 <img alt="" src={bottomPattern} className="dotPatternPartnerBot"/>
                 <img alt="" src={topPattern} className="dotPatternPartnerTop"/>
-                <a href="https://www.acmeinnovation.com/" className="partnersImgContainer">
+                <a href="https://www.acmeinnovation.com/" 
+                className="partnersImgContainer"
+                target="_blank" rel="noreferrer noopener">
                     <img alt="" src={partnerImg2} className="partnersImg"/>
                     <div className={"partnerDescription"}>Acme is a hybrid venture fund and holding company that invests
                         in, supports, and incubates high-growth potential companies and protocols combining media,
                         entertainment, and emerging technology.
                     </div>
                 </a>
-                <a href="https://www.avax.network/" className="partnersImgContainer">
+                <a href="https://www.avax.network/" 
+                className="partnersImgContainer" 
+                target="_blank" rel="noreferrer noopener">
                     <img alt="" src={partnerImg3} className="partnersImg"/>
                     <div className={"partnerDescription"}>Avalanche is a smart contracts platform that scales infinitely
                         and regularly finalizes transactions in less than one second. Its novel consensus protocol,
@@ -39,29 +43,27 @@ function Partners() {
                         custom blockchain solutions.
                     </div>
                 </a>
-                <a href="https://dverse.xyz/" className="partnersImgContainer">
+                <a href="https://dverse.xyz/" 
+                className="partnersImgContainer" 
+                target="_blank" rel="noreferrer noopener">
                     <img alt="" src={dVerseLogo} className="partnersImg"/>
                     <div className={"partnerDescription"}>
                     DVerse is an advisory, strategy, and communications firm with a global team presence, 
                     ready ro lead and accelerate businesses, institutions, and governments into Web 3.
                     </div>
                 </a>
-                <a href="https://infernolabs.xyz/" className="partnersImgContainer">
+                <a href="https://infernolabs.xyz/" 
+                className="partnersImgContainer" 
+                target="_blank" rel="noreferrer noopener">
                     <img alt="" src={infernoLogo} className="partnersImg"/>
                     <div className={"partnerDescription"}>
                     Inferno Labs is a world-class team of Trusted Advisors and Marketers, Empowering Brands 
                     in the Dynamic World of Web 3 and Beyond.
                     </div>
                 </a>
-                <a href="https://www.wisdom.gg/labs" className="partnersImgContainer">
-                    <img alt="" src={partnerImg1} className="partnersImg"/>
-                    <div className={"partnerDescription"}>From ideation to development, Wisdom Labs are a fully doxxed
-                        team of yield-maxis working at the
-                        intersection of marketing and development who can carry any web-based project from beginning to
-                        end – all in one place.
-                    </div>
-                </a>
-                <a href="https://www.vaporfi.io/" className="partnersImgContainer">
+                <a href="https://www.vaporfi.io/" 
+                className="partnersImgContainer" 
+                target="_blank" rel="noreferrer noopener">
                     <img alt="" src={vapordexLogo} className="partnersImg"/>
                     <div className={"partnerDescription"}>VaporDEX is the world’s most rewarding DEX. 
                     Trade your crypto with less fees and more options to earn.
