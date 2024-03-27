@@ -65,10 +65,10 @@ function Roadmap() {
                             <p className="roadMapHeader">MINT</p>
                         </div>
                         <p className="roadMapText">
-                        Q2/3 will see the first on-chain Draftables assets. The mint, 
-                        features Draftables athletes, LE cosmetics, in-game consumables, 
-                        airdroped tokens, and much more. Want a hint to learn more? What 
-                        is one of Draft Labs’ main pillars of game design?
+                        Draft Labs will be releasing the first on-chain assets for Draftables 
+                        in Q2/Q3. The mint features Draftables athletes, limited-edition 
+                        cosmetics, in-game consumables, airdroped tokens, and much more. More 
+                        info coming soon!
                         </p>
                         <p className="progressText">LOADING...</p>
                     </div>
@@ -78,7 +78,7 @@ function Roadmap() {
                             <p className="roadMapHeader">IDO</p>
                         </div>
                         <p className="roadMapText">
-                        During Q2/3 Draftables will be holding an IDO for its primary 
+                        During Q2/Q3, Draftables will be holding an IDO for its primary 
                         in-game currency, $DRFT. The $DRFT IDO is the first step to 
                         unlocking Draftables’ peer-to-peer economy that mimics 
                         real-world sports economics.
@@ -92,9 +92,8 @@ function Roadmap() {
                         </div>
                         <p className="roadMapText">
                         Beta release will feature on-chain gameplay, PVP competition, 
-                        new game modes, 3-5x times faster gameplay, and fully revamped 
-                        UI. Beta release will be available on mobile and desktop 
-                        platforms Q3/Q4 2024.
+                        new game modes, optimized gameplay, and fully revamped 
+                        UI. Available on mobile and desktop platforms Q4 2024.
                         </p>
                         <p className="progressText">LOADING...</p>
                     </div>
