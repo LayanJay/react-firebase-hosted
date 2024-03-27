@@ -24,8 +24,6 @@ function Partners() {
             <div className="partnersLogos">
                 <img alt="" src={bottomPattern} className="dotPatternPartnerBot"/>
                 <img alt="" src={topPattern} className="dotPatternPartnerTop"/>
-<<<<<<< HEAD
-=======
                 <a href="https://www.acmeinnovation.com/" className="partnersImgContainer">
                     <img alt="" src={partnerImg2} className="partnersImg"/>
                     <div className={"partnerDescription"}>Acme is a hybrid venture fund and holding company that invests
@@ -69,7 +67,6 @@ function Partners() {
                     Trade your crypto with less fees and more options to earn.
                     </div>
                 </a>
->>>>>>> parent of 088a712 (removed wisdom, condensed into one line)
             </div>
         </Container>
     );
