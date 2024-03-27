@@ -1,4 +1,5 @@
 import Container from "react-bootstrap/Container";
+import Button from "react-bootstrap/Button";
 import "./styles/OurTeam.scss";
 import dotPattern1 from "../assets/dot_pattern_4.png";
 import dotPattern2 from "../assets/dot_pattern_7.png";
@@ -9,6 +10,12 @@ import brian from "../assets/ourteam/Brian.png";
 import simon from "../assets/ourteam/Simon.png";
 import ian from "../assets/ourteam/Ian.jpeg";
 import alec from "../assets/ourteam/Alec.jpg";
+import rory from "../assets/ourteam/Rory.jpg";
+import stafford from "../assets/ourteam/Stafford.jpeg";
+import denise from "../assets/ourteam/Denise.jpg";
+import justin from "../assets/ourteam/Justin.jpg";
+import max from "../assets/ourteam/Max.png";
+import garrett from "../assets/ourteam/Garrett.jpeg";
 
 function OurTeam() {
     return (
@@ -22,22 +29,34 @@ function OurTeam() {
             <div className="teamPictures">
                 <img alt="" src={bottomCorner} className="bottomCorner"/>
                 <img alt="" src={topCorner} className="topCorner"/>
-                <a href="https://www.wisdom.gg/labs" className="teamImgContainer">
+                <a href="https://twitter.com/0xFlows" className="teamImgContainer">
                     <img alt="" src={brian} className="teamImg"/>
                     <div className={"teamDescription"}>
                         Brian Ross - CEO
                     </div>
                 </a>
-                <a href="https://www.acmeinnovation.com/" className="teamImgContainer">
+                <a href="https://twitter.com/0xSimn" className="teamImgContainer">
                     <img alt="" src={simon} className="teamImg"/>
                     <div className={"teamDescription"}>
                         Simon Peterson - COO
                     </div>
                 </a>
-                <a href="https://www.avax.network/" className="teamImgContainer">
+                <a href="https://twitter.com/0xWorkhorse" className="teamImgContainer">
                     <img alt="" src={ian} className="teamImg"/>
                     <div className={"teamDescription"}>
                         Ian Anderson - Game Design
+                    </div>
+                </a>
+                <a href="https://www.roryreich.com/" className="teamImgContainer">
+                    <img alt="" src={rory} className="teamImg"/>
+                    <div className={"teamDescription"}>
+                        Rory Reich - Product Design
+                    </div>
+                </a>
+                <a href="https://twitter.com/mcintyrehots" className="teamImgContainer">
+                    <img alt="" src={stafford} className="teamImg"/>
+                    <div className={"teamDescription"}>
+                        Stafford McIntyre - Game Design
                     </div>
                 </a>
                 <a href="https://www.vaporfi.io/" className="teamImgContainer">
@@ -46,34 +65,28 @@ function OurTeam() {
                         Alec Lykken - Marketing
                     </div>
                 </a>
-                <a href="https://www.wisdom.gg/labs" className="teamImgContainer">
-                    <img alt="" src={brian} className="teamImg"/>
+                <a href="https://known.online/" className="teamImgContainer">
+                    <img alt="" src={denise} className="teamImg"/>
                     <div className={"teamDescription"}>
-                        Brian Ross - CEO
+                        Denise K. Záles - Strategic Advisor
                     </div>
                 </a>
-                <a href="https://www.acmeinnovation.com/" className="teamImgContainer">
-                    <img alt="" src={simon} className="teamImg"/>
+                <a href="https://www.linkedin.com/in/justinabernathy/" className="teamImgContainer">
+                    <img alt="" src={justin} className="teamImg"/>
                     <div className={"teamDescription"}>
-                        Simon Peterson - COO
+                        Justin Abernathy - Strategic Advisor
                     </div>
                 </a>
-                <a href="https://www.avax.network/" className="teamImgContainer">
-                    <img alt="" src={ian} className="teamImg"/>
+                <a href="https://www.linkedin.com/in/maxwell-cox-b167a5bb/" className="teamImgContainer">
+                    <img alt="" src={max} className="teamImg"/>
                     <div className={"teamDescription"}>
-                        Ian Anderson - Game Design
-                    </div>
-                </a>
-                <a href="https://www.vaporfi.io/" className="teamImgContainer">
-                    <img alt="" src={alec} className="teamImg"/>
-                    <div className={"teamDescription"}>
-                        Alec Lykken - Marketing
+                        Maxwell Cox - Project Manager
                     </div>
                 </a>
             </div>
-            {/*<div>
+            {<div>
                 <Button className="buttonGeneral buttonGeneralSignup">MORE</Button>
-            </div>*/}
+            </div>}
         </Container>
     );
 }
