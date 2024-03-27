@@ -7,7 +7,7 @@ import draftablesLogo from "../assets/navbar/logo.png";
 import {useEffect, useState} from "react";
 import { Link } from 'react-router-dom';
 
-function NavigationBar() {
+function StakeNavBar() {
   const [showNav, setShowNav] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -42,12 +42,12 @@ function NavigationBar() {
           <Nav className="me-auto">
             <Link to="/stake" className="nav-link">STAKE</Link>
             <Nav.Link href="https://draft-labs.gitbook.io/draftables-litepaper/" target="_blank" rel="noopener noreferrer">LIGHTPAPER</Nav.Link>
-            <Nav.Link href="#gameplay">TRAILER</Nav.Link>
-            <Nav.Link href="#whatis">WHAT IS DRAFTABLES</Nav.Link>
-            <Nav.Link href="#roadmap">ROADMAP</Nav.Link>
-            <Nav.Link href="#aboutus">ABOUT</Nav.Link>
-            <Nav.Link href="#support">TEAM</Nav.Link>
-            <Nav.Link href="#contact">CONTACT</Nav.Link>
+            <Link to="/" className="nav-link">WHAT IS DRAFTABLES</Link>
+            <Link to="/" className="nav-link">GAMEPLAY</Link>
+            <Link to="/" className="nav-link">ROADMAP</Link>
+            <Link to="/" className="nav-link">ABOUT</Link>
+            <Link to="/" className="nav-link">TEAM</Link>
+            <Link to="/" className="nav-link">CONTACT</Link>
           </Nav>
           <Nav>
             <div>
@@ -63,4 +63,4 @@ function NavigationBar() {
   );
 }
 
-export default NavigationBar;
+export default StakeNavBar;
