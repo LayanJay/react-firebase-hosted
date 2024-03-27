@@ -78,9 +78,10 @@ function Roadmap() {
                             <p className="roadMapHeader">IDO</p>
                         </div>
                         <p className="roadMapText">
-                            Although draftables will never have a “final” release, V1.0 will
-                            have all Platform components available publicly via desktop and
-                            mobile.
+                        During Q2/3 Draftables will be holding an IDO for its primary 
+                        in-game currency, $DRFT. The $DRFT IDO is the first step to 
+                        unlocking Draftables’ peer-to-peer economy that mimics 
+                        real-world sports economics.
                         </p>
                         <p className="progressText">LOADING...</p>
                     </div>
@@ -90,9 +91,10 @@ function Roadmap() {
                             <p className="roadMapHeader">BETA RELEASE</p>
                         </div>
                         <p className="roadMapText">
-                            Although draftables will never have a “final” release, V1.0 will
-                            have all Platform components available publicly via desktop and
-                            mobile.
+                        Beta release will feature on-chain gameplay, PVP competition, 
+                        new game modes, 3-5x times faster gameplay, and fully revamped 
+                        UI. Beta release will be available on mobile and desktop 
+                        platforms Q3/Q4 2024.
                         </p>
                         <p className="progressText">LOADING...</p>
                     </div>
