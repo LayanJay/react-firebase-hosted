@@ -1,180 +1,184 @@
 .supportingTeam {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 120px 0 80px;
-    margin: 0;
-    height: auto;
-    max-width: 100vw !important;
-    background-image: linear-gradient(to bottom,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)),
-      url(../../assets/partners/bg-img.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #202f3f;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0 80px;
+  margin: 0;
+  height: auto;
+  max-width: 100vw !important;
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url(../../assets/ourteam/StadiumMockup.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #202f3f;
+  position: relative;
+}
+
+.teamPictures {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1200px;
+  padding: 150px 0;
+  position: relative;
+  z-index: +50;
+}
+
+.teamDescription {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  padding: 15px;
+  font-style: italic;
+  top: 0;
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms;
+  background: rgba(0, 0, 0, 0.75);
+  text-align: center;
+}
+
+.teamImgContainer {
+  width: 275px;
+  height: 275px;
+  position: relative;
+  margin-bottom: 40px;
+
+  &:hover {
+    .teamDescription {
+      opacity: 1;
+      transition: 300ms;
+    }
   }
-  
-  .teamImages {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 1200px;
-    padding: 150px 0;
-    position: relative;
-    z-index: +50;
+}
+
+.teamImg {
+  width: 275px;
+  object-fit: fill;
+  z-index: 2;
+  border-radius: 5px;
+
+  &:hover {
+    filter: invert(20%) !important;
   }
-  
-  .teamDescription {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    font-size: 15px;
-    padding: 15px;
-    font-style: italic;
-    top: 0;
-    display: flex;
-    opacity: 0;
-    justify-content: center;
-    align-items: center;
-    transition: 300ms;
-    background: rgba(0, 0, 0, 0.75);
-    text-align: center;
+}
+
+.teamTitle {
+  font-weight: 700;
+  font-size: 64px;
+  padding-bottom: 150px;
+  font-style: italic;
+}
+
+//Background Assets
+
+.dotPatternPartnerMid {
+  position: absolute;
+  width: 24vw;
+  height: auto;
+  left: 26%;
+  top: 32%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.topCorner {
+  position: absolute;
+  width: 10vw;
+  height: auto;
+  left: -50px;
+  top: 70px;
+  z-index: 1;
+  rotate: -90deg;
+}
+
+.bottomCorner {
+  position: absolute;
+  width: 10vw;
+  height: auto;
+  right: -50px;
+  bottom: 70px;
+  z-index: 1;
+  rotate: -90deg;
+}
+
+.dotPatternPartnerBack {
+  position: absolute;
+  width: 5vw;
+  height: auto;
+  left: 10%;
+  top: 65%;
+  z-index: 1;
+}
+
+.dotPatternPartnerBack2 {
+  position: absolute;
+  width: 5vw;
+  height: auto;
+  left: 90%;
+  top: 20%;
+  z-index: 1;
+}
+
+.dotPatternPartnerBack3 {
+  position: absolute;
+  width: 5vw;
+  height: auto;
+  left: -2%;
+  top: 10%;
+  z-index: 1;
+}
+
+.dotPatternPartnerBack4 {
+  position: absolute;
+  width: 4vw;
+  height: auto;
+  left: 43%;
+  bottom: 6.5%;
+  z-index: 1;
+}
+
+@media (max-width: 1500px) {
+  .teamPictures {
+    flex-wrap: wrap;
+    min-width: 650px;
+    width: 650px;
   }
-  
+
   .teamImgContainer {
-    width: 275px;
-    height: 275px;
-    position: relative;
-  
-    &:hover {
-      .teamDescription {
-        opacity: 1;
-        transition: 300ms;
-      }
-    }
+    margin-bottom: 40px;
   }
-  
-  .teamImg {
-    width: 275px;
-    height: auto;
-    z-index: 2;
-    border-radius: 5px;
-  
-    &:hover {
-      filter: invert(20%) !important;
-    }
+}
+
+@media (max-width: 800px) {
+  .teamPictures {
+    flex-wrap: wrap;
+    min-width: 300px;
+    width: 300px;
   }
-  
+}
+
+@media only screen and (max-width: 600px) {
   .teamTitle {
-    font-weight: 700;
-    font-size: 64px;
-    padding-bottom: 150px;
-    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 20px;
   }
-  
-  //Background Assets
-  
-  .dotPatternPartnerMid {
-    position: absolute;
-    width: 24vw;
-    height: auto;
-    left: 26%;
-    top: 32%;
-    z-index: 1;
-    pointer-events: none;
+
+  .topCorner {
+    display: none;
   }
-  
-  .dotPatternPartnerTop {
-    position: absolute;
-    width: 10vw;
-    height: auto;
-    right: -50px;
-    top: 70px;
-    z-index: 1;
-  }
-  
+
   .dotPatternPartnerBot {
-    position: absolute;
-    width: 10vw;
-    height: auto;
-    left: -50px;
-    bottom: 70px;
-    z-index: 1;
+    display: none;
   }
-  
-  .dotPatternPartnerBack {
-    position: absolute;
-    width: 5vw;
-    height: auto;
-    left: 10%;
-    top: 65%;
-    z-index: 1;
-  }
-  
-  .dotPatternPartnerBack2 {
-    position: absolute;
-    width: 5vw;
-    height: auto;
-    left: 90%;
-    top: 20%;
-    z-index: 1;
-  }
-  
-  .dotPatternPartnerBack3 {
-    position: absolute;
-    width: 5vw;
-    height: auto;
-    left: -2%;
-    top: 10%;
-    z-index: 1;
-  }
-  
-  .dotPatternPartnerBack4 {
-    position: absolute;
-    width: 4vw;
-    height: auto;
-    left: 43%;
-    bottom: 6.5%;
-    z-index: 1;
-  }
-  
-  @media (max-width: 1500px) {
-    .teamImg {
-      flex-wrap: wrap;
-      min-width: 650px;
-      width: 650px;
-    }
-  
-    .teamImgContainer {
-      margin-bottom: 40px;
-    }
-  }
-  
-  @media (max-width: 800px) {
-    .teamImg {
-      flex-wrap: wrap;
-      min-width: 300px;
-      width: 300px;
-    }
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .teamTitle {
-      font-size: 24px;
-      text-align: center;
-      padding-bottom: 20px;
-    }
-  
-    .dotPatternPartnerTop {
-      display: none;
-    }
-  
-    .dotPatternPartnerBot {
-      display: none;
-    }
-  }
+}

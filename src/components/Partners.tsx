@@ -7,8 +7,10 @@ import bottomPattern from "../assets/partners/border_style_bottom.png";
 import topPattern from "../assets/partners/border_style_top.png";
 import partnerImg1 from "../assets/partners/img-1.png";
 import partnerImg2 from "../assets/partners/img-2.png";
-import partnerImg3 from "../assets/partners/img-4.png";
+import partnerImg3 from "../assets/partners/Avalanche_AVAX_White.png";
 import vapordexLogo from "../assets/partners/vapordex.png";
+import dVerseLogo from "../assets/partners/DVerse.png";
+import infernoLogo from "../assets/partners/Inferno_Labs.png";
 
 function Partners() {
     return (
@@ -22,14 +24,6 @@ function Partners() {
             <div className="partnersLogos">
                 <img alt="" src={bottomPattern} className="dotPatternPartnerBot"/>
                 <img alt="" src={topPattern} className="dotPatternPartnerTop"/>
-                <a href="https://www.wisdom.gg/labs" className="partnersImgContainer">
-                    <img alt="" src={partnerImg1} className="partnersImg"/>
-                    <div className={"partnerDescription"}>From ideation to development, Wisdom Labs are a fully doxxed
-                        team of yield-maxis working at the
-                        intersection of marketing and development who can carry any web-based project from beginning to
-                        end – all in one place.
-                    </div>
-                </a>
                 <a href="https://www.acmeinnovation.com/" className="partnersImgContainer">
                     <img alt="" src={partnerImg2} className="partnersImg"/>
                     <div className={"partnerDescription"}>Acme is a hybrid venture fund and holding company that invests
@@ -45,10 +39,32 @@ function Partners() {
                         custom blockchain solutions.
                     </div>
                 </a>
+                <a href="https://dverse.xyz/" className="partnersImgContainer">
+                    <img alt="" src={dVerseLogo} className="partnersImg"/>
+                    <div className={"partnerDescription"}>
+                    DVerse is an advisory, strategy, and communications firm with a global team presence, 
+                    ready ro lead and accelerate businesses, institutions, and governments into Web 3.
+                    </div>
+                </a>
+                <a href="https://infernolabs.xyz/" className="partnersImgContainer">
+                    <img alt="" src={infernoLogo} className="partnersImg"/>
+                    <div className={"partnerDescription"}>
+                    Inferno Labs is a world-class team of Trusted Advisors and Marketers, Empowering Brands 
+                    in the Dynamic World of Web 3 and Beyond.
+                    </div>
+                </a>
+                <a href="https://www.wisdom.gg/labs" className="partnersImgContainer">
+                    <img alt="" src={partnerImg1} className="partnersImg"/>
+                    <div className={"partnerDescription"}>From ideation to development, Wisdom Labs are a fully doxxed
+                        team of yield-maxis working at the
+                        intersection of marketing and development who can carry any web-based project from beginning to
+                        end – all in one place.
+                    </div>
+                </a>
                 <a href="https://www.vaporfi.io/" className="partnersImgContainer">
                     <img alt="" src={vapordexLogo} className="partnersImg"/>
-                    <div className={"partnerDescription"}>VaporDEX is the world’s most rewarding DEX. Trade your crypto
-                        with less fees and more options to earn
+                    <div className={"partnerDescription"}>VaporDEX is the world’s most rewarding DEX. 
+                    Trade your crypto with less fees and more options to earn.
                     </div>
                 </a>
             </div>

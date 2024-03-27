@@ -16,7 +16,7 @@ function About() {
             </div>
             <div className="aboutRight">
                 <h3 className="sectionTitle">About Draft Labs</h3>
-                <h4 className="subtitle">A Sports Gaming Company</h4>
+                <h4 className="subtitle">A Sports Gaming Studio</h4>
                 <p>Draft Labs is committed to integrating all aspects of Web3 into sports gaming. We help users monetize
                     their time and skill in ways previously impossible through our discrete blockchain integration and
                     user-friendliness. We are developing a game template that anyone can enjoy while they

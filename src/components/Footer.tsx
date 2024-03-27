@@ -44,7 +44,7 @@ function Footer() {
       </div>
       <div className="copyrightSocials">
         <div className="copyrightRight">
-          <p>Copyright ©2023 All Rights Reserved | DRAFT LABS</p>
+          <p>Copyright ©2024 All Rights Reserved | DRAFT LABS, INC.</p>
         </div>
         <div className="copyrightLeft">
           <a href="https://twitter.com/draftables" target="_blank">
@@ -53,12 +53,9 @@ function Footer() {
           <a href="https://www.linkedin.com/company/draftlabs" target="_blank">
             <img alt="" src={linkedinLogo} className="socialIcon"/>
           </a>
-          <div className={"socialIconDisable"}>
+          <a href="https://discord.gg/V25JWp5Jp5" target="_blank">
             <img alt="" src={discordLogo} className="socialIcon"/>
-          </div>
-          <Tooltip anchorSelect=".socialIconDisable" place="top">
-            Coming Soon!
-          </Tooltip>
+          </a>
           {/*<a href="https://www.reddit.com/r/Draftables/" target="_blank">
             <img alt="" src={redditLogo} className="socialIcon" />
           </a>

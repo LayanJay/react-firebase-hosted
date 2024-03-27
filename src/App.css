@@ -1,3 +1,9 @@
 .App {
     background: #2B2F60;
 }
+
+.stakePageLayout {
+    display: flex;
+    align-items: start; /* Adjust based on your layout needs */
+    gap: 20px; /* Provides some space between the sidebar and the main content */
+}
