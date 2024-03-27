@@ -51,9 +51,11 @@ function OurTeam() {
                 ))}
             </div>
             <div>
+                <a href="#ourteam">
                 <Button onClick={() => setShowMore(!showMore)} className="buttonGeneral buttonGeneralSignup">
                     {showMore ? "LESS" : "MORE"}
                 </Button>
+                </a>
             </div>
         </Container>
     );
