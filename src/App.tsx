@@ -32,8 +32,10 @@ function App() {
                     <Route path="/stake" element={
                       <>
                       <StakeNavBar/>
+                      <div className='stakePageLayout'>
                       <StakeSidebar/>
                       <Stake/>
+                      </div>
                       </>
                     } />
                     {/* Default route */}

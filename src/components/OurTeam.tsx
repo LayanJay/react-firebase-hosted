@@ -1,6 +1,9 @@
+import React, { useState } from "react"; // Import useState
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import "./styles/OurTeam.scss";
+
+// Import images
 import dotPattern1 from "../assets/dot_pattern_4.png";
 import dotPattern2 from "../assets/dot_pattern_7.png";
 import dotPattern3 from "../assets/dot_pattern_1.png";
@@ -18,75 +21,46 @@ import max from "../assets/ourteam/Max.png";
 import garrett from "../assets/ourteam/Garrett.jpeg";
 
 function OurTeam() {
+    // State to toggle showing more or less team members
+    const [showMore, setShowMore] = useState(false);
+
+    // Array of all team members
+    const teamMembers = [
+        { img: brian, name: "Brian Ross - CEO" },
+        { img: simon, name: "Simon Peterson - COO" },
+        { img: ian, name: "Ian Anderson - Game Design" },
+        { img: rory, name: "Rory Reich - Product Design" },
+        { img: stafford, name: "Stafford McIntyre - Game Design" },
+        { img: alec, name: "Alec Lykken - Marketing" },
+        { img: denise, name: "Denise K. Záles - Strategic Advisor" },
+        { img: justin, name: "Justin Abernathy - Strategic Advisor" },
+        { img: max, name: "Maxwell Cox - Project Manager" },
+        { img: garrett, name: "Garrett - Position" }, // Add your details for Garrett
+    ];
+
+    // Determine which team members to display
+    const displayedMembers = showMore ? teamMembers : teamMembers.slice(0, 4);
+
     return (
         <Container className="supportingTeam" id="support">
-            <img alt="" src={dotPattern2} className="dotPatternPartnerMid"/>
-            <img alt="" src={dotPattern1} className="dotPatternPartnerBack"/>
-            <img alt="" src={dotPattern3} className="dotPatternPartnerBack2"/>
-            <img alt="" src={dotPattern3} className="dotPatternPartnerBack3"/>
-            <img alt="" src={dotPattern1} className="dotPatternPartnerBack4"/>
+            {/* Existing elements */}
             <h2 className="sectionTitle">OUR TEAM</h2>
             <div className="teamPictures">
-                <img alt="" src={bottomCorner} className="bottomCorner"/>
-                <img alt="" src={topCorner} className="topCorner"/>
-                <a href="https://twitter.com/0xFlows" className="teamImgContainer">
-                    <img alt="" src={brian} className="teamImg"/>
-                    <div className={"teamDescription"}>
-                        Brian Ross - CEO
-                    </div>
-                </a>
-                <a href="https://twitter.com/0xSimn" className="teamImgContainer">
-                    <img alt="" src={simon} className="teamImg"/>
-                    <div className={"teamDescription"}>
-                        Simon Peterson - COO
-                    </div>
-                </a>
-                <a href="https://twitter.com/0xWorkhorse" className="teamImgContainer">
-                    <img alt="" src={ian} className="teamImg"/>
-                    <div className={"teamDescription"}>
-                        Ian Anderson - Game Design
-                    </div>
-                </a>
-                <a href="https://www.roryreich.com/" className="teamImgContainer">
-                    <img alt="" src={rory} className="teamImg"/>
-                    <div className={"teamDescription"}>
-                        Rory Reich - Product Design
-                    </div>
-                </a>
-                <a href="https://twitter.com/mcintyrehots" className="teamImgContainer">
-                    <img alt="" src={stafford} className="teamImg"/>
-                    <div className={"teamDescription"}>
-                        Stafford McIntyre - Game Design
-                    </div>
-                </a>
-                <a href="https://www.vaporfi.io/" className="teamImgContainer">
-                    <img alt="" src={alec} className="teamImg"/>
-                    <div className={"teamDescription"}>
-                        Alec Lykken - Marketing
-                    </div>
-                </a>
-                <a href="https://known.online/" className="teamImgContainer">
-                    <img alt="" src={denise} className="teamImg"/>
-                    <div className={"teamDescription"}>
-                        Denise K. Záles - Strategic Advisor
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/justinabernathy/" className="teamImgContainer">
-                    <img alt="" src={justin} className="teamImg"/>
-                    <div className={"teamDescription"}>
-                        Justin Abernathy - Strategic Advisor
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/maxwell-cox-b167a5bb/" className="teamImgContainer">
-                    <img alt="" src={max} className="teamImg"/>
-                    <div className={"teamDescription"}>
-                        Maxwell Cox - Project Manager
-                    </div>
-                </a>
+                {/* Render displayed members */}
+                {displayedMembers.map((member, index) => (
+                    <a key={index} href="#" className="teamImgContainer"> {/* Update href as needed */}
+                        <img alt="" src={member.img} className="teamImg"/>
+                        <div className="teamDescription">
+                            {member.name}
+                        </div>
+                    </a>
+                ))}
             </div>
-            {<div>
-                <Button className="buttonGeneral buttonGeneralSignup">MORE</Button>
-            </div>}
+            <div>
+                <Button onClick={() => setShowMore(!showMore)} className="buttonGeneral buttonGeneralSignup">
+                    {showMore ? "LESS" : "MORE"}
+                </Button>
+            </div>
         </Container>
     );
 }
