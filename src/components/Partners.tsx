@@ -24,75 +24,7 @@ function Partners() {
             <div className="partnersLogos">
                 <img alt="" src={bottomPattern} className="dotPatternPartnerBot"/>
                 <img alt="" src={topPattern} className="dotPatternPartnerTop"/>
-<<<<<<< Updated upstream
-                <a href="https://www.acmeinnovation.com/" 
-                className="partnersImgContainer"
-                target="_blank" rel="noreferrer noopener">
-                    <img alt="" src={partnerImg2} className="partnersImg"/>
-=======
-                <a href="https://www.acmeinnovation.com/" className="partnersImgContainer">
-                    <img alt="" src={partnerImg2} className="partnersImg" id="acmeImage"/>
->>>>>>> Stashed changes
-                    <div className={"partnerDescription"}>Acme is a hybrid venture fund and holding company that invests
-                        in, supports, and incubates high-growth potential companies and protocols combining media,
-                        entertainment, and emerging technology.
-                    </div>
-                </a>
-<<<<<<< Updated upstream
-                <a href="https://www.avax.network/" 
-                className="partnersImgContainer" 
-                target="_blank" rel="noreferrer noopener">
-                    <img alt="" src={partnerImg3} className="partnersImg"/>
-=======
-                <a href="https://www.avax.network/" className="partnersImgContainer">
-                    <img alt="" src={partnerImg3} className="partnersImg" id="avaLabsImage"/>
->>>>>>> Stashed changes
-                    <div className={"partnerDescription"}>Avalanche is a smart contracts platform that scales infinitely
-                        and regularly finalizes transactions in less than one second. Its novel consensus protocol,
-                        Subnet infrastructure, and HyperSDK toolkit enable Web3 developers to easily launch powerful,
-                        custom blockchain solutions.
-                    </div>
-                </a>
-<<<<<<< Updated upstream
-                <a href="https://dverse.xyz/" 
-                className="partnersImgContainer" 
-                target="_blank" rel="noreferrer noopener">
-                    <img alt="" src={dVerseLogo} className="partnersImg"/>
-=======
-                <a href="https://dverse.xyz/" className="partnersImgContainer">
-                    <img alt="" src={dVerseLogo} className="partnersImg" id="dverseImage"/>
->>>>>>> Stashed changes
-                    <div className={"partnerDescription"}>
-                    DVerse is an advisory, strategy, and communications firm with a global team presence, 
-                    ready ro lead and accelerate businesses, institutions, and governments into Web 3.
-                    </div>
-                </a>
-<<<<<<< Updated upstream
-                <a href="https://infernolabs.xyz/" 
-                className="partnersImgContainer" 
-                target="_blank" rel="noreferrer noopener">
-                    <img alt="" src={infernoLogo} className="partnersImg"/>
-=======
-                <a href="https://infernolabs.xyz/" className="partnersImgContainer">
-                    <img alt="" src={infernoLogo} className="partnersImg" id="infernoImage"/>
->>>>>>> Stashed changes
-                    <div className={"partnerDescription"}>
-                    Inferno Labs is a world-class team of Trusted Advisors and Marketers, Empowering Brands 
-                    in the Dynamic World of Web 3 and Beyond.
-                    </div>
-                </a>
-                <a href="https://www.vaporfi.io/" 
-                className="partnersImgContainer" 
-                target="_blank" rel="noreferrer noopener">
-                    <img alt="" src={vapordexLogo} className="partnersImg"/>
-                    <div className={"partnerDescription"}>VaporDEX is the world’s most rewarding DEX. 
-                    Trade your crypto with less fees and more options to earn.
-                    </div>
-                </a>
             </div>
-            {/*<div>
-                <Button className="buttonGeneral buttonGeneralSignup">MORE</Button>
-            </div>*/}
         </Container>
     );
 }
