@@ -21,34 +21,28 @@ import max from "../assets/ourteam/Max.png";
 import garrett from "../assets/ourteam/Garrett.jpeg";
 
 function OurTeam() {
-    // State to toggle showing more or less team members
     const [showMore, setShowMore] = useState(false);
 
-    // Array of all team members
     const teamMembers = [
-        { img: brian, name: "Brian Ross - CEO" },
-        { img: simon, name: "Simon Peterson - COO" },
-        { img: ian, name: "Ian Anderson - Game Design" },
-        { img: rory, name: "Rory Reich - Product Design" },
-        { img: stafford, name: "Stafford McIntyre - Game Design" },
-        { img: alec, name: "Alec Lykken - Marketing" },
-        { img: denise, name: "Denise K. Záles - Strategic Advisor" },
-        { img: justin, name: "Justin Abernathy - Strategic Advisor" },
-        { img: max, name: "Maxwell Cox - Project Manager" },
-        { img: garrett, name: "Garrett - Position" }, // Add your details for Garrett
+        { img: brian, name: "Brian Ross - CEO", url: "https://twitter.com/0xFlows" },
+        { img: simon, name: "Simon Peterson - COO", url: "https://twitter.com/0xSimn" },
+        { img: ian, name: "Ian Anderson - Game Design", url: "https://twitter.com/0xWorkhorse" },
+        { img: rory, name: "Rory Reich - Product Design", url: "https://www.roryreich.com/" },
+        { img: stafford, name: "Stafford McIntyre - Game Design", url: "https://twitter.com/McIntyreHOTS" },
+        { img: alec, name: "Alec Lykken - Marketing", url: "https://www.linkedin.com/in/alec-lykken-41716631/" },
+        { img: denise, name: "Denise K. Záles - Strategic Advisor", url: "https://www.linkedin.com/in/denise-zales/" },
+        { img: justin, name: "Justin Abernathy - Strategic Advisor", url: "https://www.linkedin.com/in/justinabernathy/" },
+        { img: max, name: "Maxwell Cox - Project Manager", url: "https://www.linkedin.com/in/maxwell-cox-b167a5bb/" },
     ];
 
-    // Determine which team members to display
     const displayedMembers = showMore ? teamMembers : teamMembers.slice(0, 4);
 
     return (
         <Container className="supportingTeam" id="ourteam">
-            {/* Existing elements */}
             <h2 className="sectionTitle">OUR TEAM</h2>
             <div className="teamPictures">
-                {/* Render displayed members */}
                 {displayedMembers.map((member, index) => (
-                    <a key={index} href="#" className="teamImgContainer"> {/* Update href as needed */}
+                    <a key={index} href={member.url} className="teamImgContainer" target="_blank" rel="noopener noreferrer">
                         <img alt="" src={member.img} className="teamImg"/>
                         <div className="teamDescription">
                             {member.name}
