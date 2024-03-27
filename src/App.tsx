@@ -28,16 +28,6 @@ function App() {
         <Router>
             <div className={"App"}>
                 <Routes>
-                    {/* Define the route for the StakePage */}
-                    <Route path="/stake" element={
-                      <>
-                      <StakeNavBar/>
-                      <div className='stakePageLayout'>
-                      <StakeSidebar/>
-                      <Stake/>
-                      </div>
-                      </>
-                    } />
                     {/* Default route */}
                     <Route path="/" element={
                       <>

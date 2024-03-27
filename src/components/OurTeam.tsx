@@ -42,7 +42,7 @@ function OurTeam() {
     const displayedMembers = showMore ? teamMembers : teamMembers.slice(0, 4);
 
     return (
-        <Container className="supportingTeam" id="support">
+        <Container className="supportingTeam" id="ourteam">
             {/* Existing elements */}
             <h2 className="sectionTitle">OUR TEAM</h2>
             <div className="teamPictures">

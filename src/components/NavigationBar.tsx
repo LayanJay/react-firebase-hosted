@@ -40,13 +40,13 @@ function NavigationBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Link to="/stake" className="nav-link">STAKE</Link>
             <Nav.Link href="https://draft-labs.gitbook.io/draftables-litepaper/" target="_blank" rel="noopener noreferrer">LIGHTPAPER</Nav.Link>
             <Nav.Link href="#gameplay">TRAILER</Nav.Link>
             <Nav.Link href="#whatis">WHAT IS DRAFTABLES</Nav.Link>
             <Nav.Link href="#roadmap">ROADMAP</Nav.Link>
             <Nav.Link href="#aboutus">ABOUT</Nav.Link>
-            <Nav.Link href="#support">TEAM</Nav.Link>
+            <Nav.Link href="#ourteam">TEAM</Nav.Link>
+            <Nav.Link href="#support">PARTNERS</Nav.Link>
             <Nav.Link href="#contact">CONTACT</Nav.Link>
           </Nav>
           <Nav>
