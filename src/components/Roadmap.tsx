@@ -50,10 +50,7 @@ function Roadmap() {
                             <p className="roadMapHeader">IP PARTNERSHIPS</p>
                         </div>
                         <p className="roadMapText">
-                            In Q4 2023, Draft Labs secured the rights to bring legacy WBD 
-                            IP on-chain and into Draftables. This marked the completion of 
-                            the first step of Draft Labs’ larger plans for sweeping Web2 and 
-                            Web3 IP integration into its games.
+                            [CONFIDENTIAL]
                         </p>
                         <p className="progressText">COMPLETE</p>
                     </div>
@@ -66,7 +63,7 @@ function Roadmap() {
                         </div>
                         <p className="roadMapText">
                         Draft Labs will be releasing the first on-chain assets for Draftables 
-                        in Q2/Q3. The mint features Draftables athletes, limited-edition 
+                        in Q2/Q3 2024. The mint features Draftables athletes, limited-edition 
                         cosmetics, in-game consumables, airdroped tokens, and much more. More 
                         info coming soon!
                         </p>
@@ -78,7 +75,7 @@ function Roadmap() {
                             <p className="roadMapHeader">IDO</p>
                         </div>
                         <p className="roadMapText">
-                        During Q2/Q3, Draftables will be holding an IDO for its primary 
+                        Later this year, Draftables will be holding an IDO for its primary 
                         in-game currency, $DRFT. The $DRFT IDO is the first step to 
                         unlocking Draftables’ peer-to-peer economy that mimics 
                         real-world sports economics.
