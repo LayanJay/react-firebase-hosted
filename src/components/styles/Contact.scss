@@ -96,6 +96,30 @@
   min-height: 15vh;
 }
 
+//Error Message
+.errorMessage {
+  color: red; /* Error message color */
+  position: absolute; /* Position relative to the parent */
+  bottom: 100%; /* Position above the input field */
+  left: 0; /* Align to the left edge of the input field */
+  transform: translateY(-5px); /* Adjust spacing between error message and input field */
+  font-size: 0.8rem; /* Smaller font size for error message */
+}
+
+.errorMessageLast {
+  color: red; /* Error message color */
+  position: absolute; /* Position relative to the parent */
+  bottom: 100%; /* Position above the input field */
+  right: 0; /* Align to the left edge of the input field */
+  transform: translateY(-5px); /* Adjust spacing between error message and input field */
+  font-size: 0.8rem; /* Smaller font size for error message */
+}
+
+.formEntryContainer, .formNameEntry {
+  position: relative; /* Required for absolute positioning of children */
+  margin-bottom: 20px; /* Ensure space for the error message */
+}
+
 //Background Assets
 .dotPatternContact {
   position: absolute;

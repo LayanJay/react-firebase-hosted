@@ -66,7 +66,7 @@ const ContactForm = () => {
                         name="firstName"
                         placeholder="First Name"
                     />
-                    <ErrorMessage name="firstName" component="div" />
+                    <ErrorMessage name="firstName" component="div" className='errorMessage' />
 
                     <Field
                         className="formEntry formLName"
@@ -74,7 +74,7 @@ const ContactForm = () => {
                         name="lastName"
                         placeholder="Last Name"
                     />
-                    <ErrorMessage name="lastName" component="div" />
+                    <ErrorMessage name="lastName" component="div" className='errorMessageLast' />
                   </div>
                   <div className="formEntryContainer">
                     <Field
@@ -83,7 +83,7 @@ const ContactForm = () => {
                         name="email"
                         placeholder="Email"
                     />
-                    <ErrorMessage name="email" component="div" />
+                    <ErrorMessage name="email" component="div" className='errorMessage' />
                   </div>
                   <div className="formEntryContainer">
                     <Field
@@ -92,7 +92,7 @@ const ContactForm = () => {
                         name="message"
                         placeholder="Your message"
                     />
-                    <ErrorMessage name="message" component="div" />
+                    <ErrorMessage name="message" component="div" className='errorMessage' />
                   </div>
                   <div>
                     <button className="buttonGeneral formSubmit" type="submit" disabled={isSubmitting}>
