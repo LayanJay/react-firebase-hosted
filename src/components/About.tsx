@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import "./styles/About.scss";
 import aboutUsImg from "../assets/aboutUs/aboutUs-img.png";
 import dotPattern7 from "../assets/dot_pattern_7.png";
-import linkedinLogo from "../assets/linkedin-logo.svg";
+import mediumLogo from "../assets/medium-logo.svg";
 import twitterLogo from "../assets/twitter-logo.svg";
 import discordLogo from "../assets/discord-logo.svg";
 import {Tooltip} from "react-tooltip";
@@ -25,11 +25,11 @@ function About() {
                     <a href="https://twitter.com/draftables" target="_blank">
                         <img alt="" src={twitterLogo} className="socialIcon"/>
                     </a>
-                    <a href="https://www.linkedin.com/company/draftlabs" target="_blank">
-                        <img alt="" src={linkedinLogo} className="socialIcon"/>
-                    </a>
                     <a href="https://discord.gg/V25JWp5Jp5" target="_blank">
                         <img alt="" src={discordLogo} className="socialIcon"/>
+                    </a>
+                    <a href="https://medium.com/@DraftablesFootball" target="_blank">
+                        <img alt="" src={mediumLogo} className="socialIcon"/>
                     </a>
                     {/*<a href="https://www.reddit.com/r/Draftables/" target="_blank">
                         <img alt="" src={redditLogo} className="socialIcon"/>

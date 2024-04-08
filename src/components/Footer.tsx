@@ -1,6 +1,6 @@
 import Container from "react-bootstrap/Container";
 import "./styles/Footer.scss";
-import linkedinLogo from "../assets/linkedin-logo.svg";
+import mediumLogo from "../assets/medium-logo.svg";
 import twitterLogo from "../assets/twitter-logo.svg";
 import draftablesLogo from "../assets/footer/footer_logo.png";
 import discordLogo from "../assets/discord-logo.svg";
@@ -32,7 +32,7 @@ function Footer() {
         <div className="footerMiddleRight">
           <h3 className="footerHeaders"></h3>
           <li>
-            <a href="">Blogs</a>
+            <a href="https://medium.com/@DraftablesFootball" target="_blank">Blogs</a>
           </li>
         </div>
         <div className="footerRight">
@@ -50,11 +50,11 @@ function Footer() {
           <a href="https://twitter.com/draftables" target="_blank">
             <img alt="" src={twitterLogo} className="socialIcon"/>
           </a>
-          <a href="https://www.linkedin.com/company/draftlabs" target="_blank">
-            <img alt="" src={linkedinLogo} className="socialIcon"/>
-          </a>
           <a href="https://discord.gg/V25JWp5Jp5" target="_blank">
             <img alt="" src={discordLogo} className="socialIcon"/>
+          </a>
+          <a href="https://medium.com/@DraftablesFootball" target="_blank">
+            <img alt="" src={mediumLogo} className="socialIcon"/>
           </a>
           {/*<a href="https://www.reddit.com/r/Draftables/" target="_blank">
             <img alt="" src={redditLogo} className="socialIcon" />
