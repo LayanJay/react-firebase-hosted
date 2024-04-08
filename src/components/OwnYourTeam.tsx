@@ -136,16 +136,16 @@ function OwnYourTeam() {
           <div>
             <div className="oytImage">
               <img src={oytFootball4} className="whatIsImage" alt=""/>
-              <p className="imageParagraph">READ OUR LITEPAPER</p>
+              <p className="imageParagraph">READ OUR WHITEPAPER</p>
               <p className="imageParagraphHover">
                 Draftables expands what it means for a game to be a sports
                 simulator. Explore all of the ways Draftables is changing the
-                game in our litepaper.
+                game in our whitepaper.
 
                 <div className={"litepaperBtnContainer"}>
                   <a href="https://draft-labs.gitbook.io/draftables-litepaper/"
                      className={"litepaperBtn"} target="_blank">
-                    LITEPAPER
+                    WHITEPAPER
                     <img src={chevronRight} className={"chevronRightImg"} alt=""/>
                   </a>
                 </div>
