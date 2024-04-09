@@ -14,10 +14,7 @@ import 'react-tooltip/dist/react-tooltip.css';
 import ReactGA from 'react-ga4';
 import Alpha from './components/Alpha';
 import OurTeam from './components/OurTeam';
-// Import the StakePage component
-import Stake from './components/Stake'; // Adjust the path as necessary
-import StakeSidebar from "./components/StakeSidebar";
-import StakeNavBar from "./components/StakeNavBar";
+// Import the Signup component
 
 function App() {
 
