@@ -1,0 +1,204 @@
+.signup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px;
+    margin: 0;
+    background-image: url(../../assets/contact/contact-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw !important;
+    height: auto;
+    background-color: #202f3f;
+    position: relative;
+    overflow-x: hidden;
+  
+    .signupTitle {
+      font-style: normal;
+    }
+  
+    .signupText {
+      font-style: italic;
+    }
+  }
+  
+  .signupTalk {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 60px;
+  }
+  
+  .signupSubTalk {
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+  
+  //Contact Form
+  .formEntry {
+    font-size: 18px;
+    color: white;
+    width: 90%;
+    background-color: #161235;
+    border: 0;
+    min-height: 4vh;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .formSubmit {
+    width: 10vw;
+    min-height: 3vh;
+  }
+  
+  .formContainer {
+    background-color: #2B2F60;
+    width: 28vw;
+    min-height: 40vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 2;
+    padding: 10px;
+  }
+  
+  .formEntryContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .formNameEntry {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+  }
+  
+  .formName {
+    width: 50%;
+  }
+  
+  .formFName {
+    margin-right: 5px;
+  }
+  
+  .formLName {
+    margin-left: 5px;
+  }
+  
+  .formMessage {
+    min-height: 15vh;
+  }
+  
+  //Error Message
+  .errorMessage {
+    color: red; /* Error message color */
+    position: absolute; /* Position relative to the parent */
+    bottom: 100%; /* Position above the input field */
+    left: 0; /* Align to the left edge of the input field */
+    transform: translateY(-5px); /* Adjust spacing between error message and input field */
+    font-size: 0.8rem; /* Smaller font size for error message */
+  }
+  
+  .errorMessageLast {
+    color: red; /* Error message color */
+    position: absolute; /* Position relative to the parent */
+    bottom: 100%; /* Position above the input field */
+    right: 0; /* Align to the left edge of the input field */
+    transform: translateY(-5px); /* Adjust spacing between error message and input field */
+    font-size: 0.8rem; /* Smaller font size for error message */
+  }
+  
+  .formEntryContainer, .formNameEntry {
+    position: relative; /* Required for absolute positioning of children */
+    margin-bottom: 20px; /* Ensure space for the error message */
+  }
+  
+  //Background Assets
+  .dotPatternContact {
+    position: absolute;
+    height: auto;
+    z-index: 1;
+    width: 5vw;
+    top: 75%;
+    left: 10%;
+  }
+  .dotPatternContact1 {
+    position: absolute;
+    height: auto;
+    z-index: 1;
+    width: 5vw;
+    top: 15%;
+    left: 35%;
+  }
+  
+  .dotPatternContact2 {
+    position: absolute;
+    width: 25vw;
+    height: auto;
+    left: 45%;
+    top: 20%;
+    z-index: 1;
+  }
+  
+  .dotPatternContact3 {
+    position: absolute;
+    width: 8vw;
+    height: auto;
+    right: -4%;
+    top: -5%;
+    z-index: 1;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .signup {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .signupTalk {
+      font-size: 42px;
+    }
+  
+    .signupSubTalk {
+      font-size: 16px;
+    }
+  
+    .formContainer {
+      width: 85vw;
+    }
+  
+    .formSubmit {
+      width: 35vw;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .signup {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .signupTalk {
+      font-size: 42px;
+    }
+  
+    .signupSubTalk {
+      font-size: 16px;
+    }
+  
+    .formContainer {
+      width: 85vw;
+    }
+  
+    .formSubmit {
+      width: 35vw;
+    }
+  }
+  

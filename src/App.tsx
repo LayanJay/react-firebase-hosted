@@ -15,6 +15,7 @@ import ReactGA from 'react-ga4';
 import Alpha from './components/Alpha';
 import OurTeam from './components/OurTeam';
 // Import the Signup component
+import Signup from './components/Signup';
 
 function App() {
 
@@ -38,6 +39,13 @@ function App() {
                         <OurTeam/>
                         <Partners/>
                         <Contact/>
+                        <Footer/>
+                      </>
+                    } />
+                    <Route path="/signup" element={
+                      <>
+                        <NavigationBar/>
+                        <Signup/>
                         <Footer/>
                       </>
                     } />

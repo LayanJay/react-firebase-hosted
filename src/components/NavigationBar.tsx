@@ -41,13 +41,13 @@ function NavigationBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="https://draft-labs.gitbook.io/draftables-litepaper/" target="_blank" rel="noopener noreferrer">WHITEPAPER</Nav.Link>
-            <Nav.Link href="#gameplay">TRAILER</Nav.Link>
-            <Nav.Link href="#whatis">WHAT IS DRAFTABLES</Nav.Link>
-            <Nav.Link href="#roadmap">ROADMAP</Nav.Link>
-            <Nav.Link href="#aboutus">ABOUT</Nav.Link>
-            <Nav.Link href="#ourteam">TEAM</Nav.Link>
-            <Nav.Link href="#support">PARTNERS</Nav.Link>
-            <Nav.Link href="#contact">CONTACT</Nav.Link>
+            <Nav.Link href="/#gameplay">TRAILER</Nav.Link>
+            <Nav.Link href="/#whatis">WHAT IS DRAFTABLES</Nav.Link>
+            <Nav.Link href="/#roadmap">ROADMAP</Nav.Link>
+            <Nav.Link href="/#aboutus">ABOUT</Nav.Link>
+            <Nav.Link href="/#ourteam">TEAM</Nav.Link>
+            <Nav.Link href="/#support">PARTNERS</Nav.Link>
+            <Nav.Link href="/#contact">CONTACT</Nav.Link>
           </Nav>
           <Nav>
             <div>
