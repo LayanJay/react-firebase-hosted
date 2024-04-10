@@ -37,7 +37,7 @@
   }
   
   //Contact Form
-  .formEntry {
+  .formEntry, .referralInput {
     font-size: 18px;
     color: white;
     width: 90%;
@@ -95,7 +95,36 @@
   .formMessage {
     min-height: 15vh;
   }
+
+  //Toastify styling
+.toast-success-container,
+.toast-error-container {
+  background-color: grey !important;
+  font-weight: bold;
   
+  .Toastify__toast-body {
+    color: grey !important;
+  }
+  
+  button[aria-label="close"] {
+    color: grey !important;
+  }
+}
+
+
+// Custom styles to change the SVG fill color to black within the toast
+.Toastify__toast-container--bottom-right .Toastify__toast-body svg {
+  fill: #7487ff !important;
+}
+
+
+// Custom progress bar styles for success and error toasts
+.toast-success-progress,
+.toast-error-progress {
+  background: linear-gradient(to right, #7487ff, #a43fff) !important;
+}
+
+
   //Error Message
   .errorMessage {
     color: red; /* Error message color */
