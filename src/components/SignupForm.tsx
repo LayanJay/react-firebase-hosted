@@ -3,27 +3,14 @@ import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import "./styles/Signup.scss";
-// Firebase imports
-import { db } from "../../firebase";
-import {
-  collection,
-  addDoc,
-  serverTimestamp,
-  query,
-  where,
-  getDocs,
-  doc,
-  updateDoc
-} from "firebase/firestore";
+import * as emailjs from 'emailjs-com';
 
 interface FormValues {
   firstName: string;
   lastName: string;
   discordUsername: string;
   twitterUsername: string;
-  email: string;
-  referralCode?: string;
+  referralCode?: string; // Referral code is optional
 }
 
 const initialValues: FormValues = {
@@ -31,8 +18,7 @@ const initialValues: FormValues = {
   lastName: '',
   discordUsername: '',
   twitterUsername: '',
-  email: '',
-  referralCode: '',
+  referralCode: '', // Initialize as empty string but it's optional
 };
 
 const validationSchema = Yup.object({
@@ -40,8 +26,7 @@ const validationSchema = Yup.object({
   lastName: Yup.string().required('Required'),
   discordUsername: Yup.string().required('Required'),
   twitterUsername: Yup.string().required('Required'),
-  email: Yup.string().required('Required').email('Invalid email'),
-  referralCode: Yup.string(),
+  referralCode: Yup.string(), // No validation rule required, as it's optional
 });
 
 const generateReferralCode = () => {
@@ -52,75 +37,26 @@ const generateReferralCode = () => {
 
 const SignupForm = () => {
   const handleSubmit = async (values: FormValues, { setSubmitting, resetForm }: FormikHelpers<FormValues>) => {
-    const signupsRef = collection(db, "signups");
-    // Separate queries for Discord username, Twitter username, and email
-    const queries = [
-      query(signupsRef, where("discordUsername", "==", values.discordUsername)),
-      query(signupsRef, where("twitterUsername", "==", values.twitterUsername)),
-      query(signupsRef, where("email", "==", values.email)),
-    ];
-
-    let duplicateFound = false;
-
-    for (const q of queries) {
-      const querySnapshot = await getDocs(q);
-      if (!querySnapshot.empty) {
-        duplicateFound = true;
-        break; // Stop checking if any duplicate is found
-      }
-    }
-
-    if (duplicateFound) {
-      toast.error("An entry with this information already exists.", {
-        className: 'toast-error-container toast-error-container-after',
-        progressClassName: 'toast-error-progress',
+    try {
+      // Assume handling of form submission remains the same
+      // Adjusted to include new fields and exclude removed ones
+      const emailjsParams = {
+        firstName: values.firstName,
+        lastName: values.lastName,
+        discordUsername: values.discordUsername,
+        twitterUsername: values.twitterUsername,
+        referralCode: values.referralCode // Optional, handled gracefully by your backend/email service
+      };
+      const response = emailjs.send('service_fm54fcz', 'template_tfzsykb', emailjsParams, 'dHRgiedF_M9tXZwlc');
+      console.log(response);
+      toast.success("Signup successful!", {
+        position: 'bottom-right'
       });
-      setSubmitting(false);
-    } else {
-      let referralValid = true;
-      if (values.referralCode) {
-        const referralQuery = query(signupsRef, where("rID", "==", values.referralCode));
-        const querySnapshot = await getDocs(referralQuery);
-        referralValid = !querySnapshot.empty;
-        
-        if (referralValid) {
-          // Increment points for the user who owns the referral code
-          const referrerDocRef = doc(db, "signups", querySnapshot.docs[0].id);
-          await updateDoc(referrerDocRef, {
-            points: (querySnapshot.docs[0].data().points || 0) + 1
-          });
-        } else {
-          toast.error("Referral code not found.", {
-            className: 'toast-error-container toast-error-container-after',
-            progressClassName: 'toast-error-progress',
-          });
-          setSubmitting(false);
-          return; // Exit the function early
-        }
-      }
-
-      const rID = generateReferralCode(); // Generate the referral code
-      try {
-        await addDoc(signupsRef, {
-          ...values,
-          rID, // Include the generated referral code
-          points: 1, // Initialize points to 1 for the new user
-          createdAt: serverTimestamp()
-        });
-        // Success toast includes the referral code
-        toast.success(`Signup successful! Your referral code is: ${rID}`, {
-          className: 'toast-success-container toast-success-container-after',
-          progressClassName: 'toast-success-progress',
-        });
-        resetForm();
-      } catch (error) {
-        console.error("Error adding document: ", error);
-        toast.error("Signup unsuccessful!", {
-          className: 'toast-error-container toast-error-container-after',
-          progressClassName: 'toast-error-progress',
-        });
-      }
-      setSubmitting(false);
+      resetForm();
+    } catch (error) {
+      toast.error("Signup unsuccessful!", {
+        position: 'bottom-right'
+      });
     }
   };
 
@@ -135,29 +71,25 @@ const SignupForm = () => {
         {({ isSubmitting }) => (
           <Form className="formContainer">
             <div className="formNameEntry">
-              <Field name="firstName" type="text" placeholder="First Name" className="formEntry formFName" />
+              <Field className="formEntry formFName" type="text" name="firstName" placeholder="First Name" />
               <ErrorMessage name="firstName" component="div" className='errorMessage' />
-              <Field name="lastName" type="text" placeholder="Last Name" className="formEntry formLName" />
+
+              <Field className="formEntry formLName" type="text" name="lastName" placeholder="Last Name" />
               <ErrorMessage name="lastName" component="div" className='errorMessageLast' />
             </div>
 
             <div className="formEntryContainer">
-              <Field name="discordUsername" type="text" placeholder="Discord Username" className="formEntry" />
+              <Field className="formEntry" type="text" name="discordUsername" placeholder="Discord Username" />
               <ErrorMessage name="discordUsername" component="div" className='errorMessage' />
             </div>
 
             <div className="formEntryContainer">
-              <Field name="twitterUsername" type="text" placeholder="Twitter Username" className="formEntry" />
+              <Field className="formEntry" type="text" name="twitterUsername" placeholder="Twitter Username" />
               <ErrorMessage name="twitterUsername" component="div" className='errorMessage' />
             </div>
 
             <div className="formEntryContainer">
-              <Field name="email" type="text" placeholder="Email (for referral code)" className="formEntry" />
-              <ErrorMessage name="email" component="div" className='errorMessage' />
-            </div>
-
-            <div className="formEntryContainer">
-              <Field name="referralCode" type="text" placeholder="Referral Code (Optional)" className="formEntry" />
+              <Field className="formEntry" type="text" name="referralCode" placeholder="Referral Code (Optional)" />
               <ErrorMessage name="referralCode" component="div" className='errorMessage' />
             </div>
 
