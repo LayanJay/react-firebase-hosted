@@ -91,18 +91,22 @@ const SignupForm = () => {
     }
 
     let initialPoints = 1; // Default points if no referral
-    try {
-      if (values.referralCode) {
-        const referralQuery = query(signupsRef, where("rID", "==", values.referralCode));
-        const referralSnapshot = await getDocs(referralQuery);
-        if (!referralSnapshot.empty) {
-          const userDoc = referralSnapshot.docs[0];
-          const userRef = doc(db, "signups", userDoc.id);
-          await updateDoc(userRef, { points: userDoc.data().points + 1 });
-          initialPoints = 2; // Bonus point for using a valid referral
-        }
+    if (values.referralCode) {
+      const referralQuery = query(signupsRef, where("rID", "==", values.referralCode));
+      const referralSnapshot = await getDocs(referralQuery);
+      if (!referralSnapshot.empty) {
+        const userDoc = referralSnapshot.docs[0];
+        const userRef = doc(db, "signups", userDoc.id);
+        await updateDoc(userRef, { points: userDoc.data().points + 1 });
+        initialPoints = 2; // Bonus point for using a valid referral
+      } else {
+        toast.error("Error: referral code not found", { position: 'top-right', style: { backgroundColor: 'red' }});
+        setSubmitting(false);
+        return; // Early return to stop processing if referral code is invalid
       }
+    }
 
+    try {
       values.points = initialPoints; // Set the correct initial points based on the referral code usage
       await addDoc(signupsRef, {
         ...values,
