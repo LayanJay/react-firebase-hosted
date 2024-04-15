@@ -5,7 +5,9 @@ import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { db } from "../../firebase";
-import { collection, addDoc, serverTimestamp, query, where, getDocs, doc, updateDoc } from "firebase/firestore";
+import {
+  collection, addDoc, serverTimestamp, query, where, getDocs
+} from "firebase/firestore";
 
 interface FormValues {
   firstName: string;
@@ -14,6 +16,7 @@ interface FormValues {
   email: string;
   walletAddress: string;
   points: number;
+  discordID?: string; // Optional Discord ID
 }
 
 const initialValues: FormValues = {
@@ -23,6 +26,7 @@ const initialValues: FormValues = {
   email: '',
   walletAddress: '',
   points: 0,
+  discordID: '', // Initialize Discord ID as empty
 };
 
 const validationSchema = Yup.object({
@@ -35,24 +39,30 @@ const validationSchema = Yup.object({
 
 const SignupForm = () => {
   const [isDiscordConnected, setDiscordConnected] = useState(false);
+  const [discordID, setDiscordID] = useState('');
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
 
   useEffect(() => {
     const code = searchParams.get('code');
     if (code) {
-      verifyDiscordConnection(code).then(isConnected => {
-        setDiscordConnected(isConnected);
+      verifyDiscordConnection(code).then(({ isConnected, discordID }) => {
+        if (isConnected) {
+          setDiscordConnected(true);
+          setDiscordID(discordID); // Save the Discord ID
+        }
         navigate('/signup');
       });
     }
   }, [searchParams]);
 
   const handleDiscordConnect = () => {
-    window.location.href = 'https://discord.com/oauth2/authorize?client_id=1227756790582607982&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A5173%2Fsignup&scope=identify+connections+guilds+guilds.join';
+    if (!isDiscordConnected) {
+      window.location.href = 'https://discord.com/oauth2/authorize?client_id=1227756790582607982&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A5173%2Fsignup&scope=identify+guilds+guilds.join+connections';
+    }
   };
 
-  const verifyDiscordConnection = async (code: string): Promise<boolean> => {
+  const verifyDiscordConnection = async (code: string): Promise<{ isConnected: boolean, discordID: string }> => {
     try {
       const response = await fetch('/api/verify-discord', {
         method: 'POST',
@@ -62,59 +72,59 @@ const SignupForm = () => {
         body: JSON.stringify({ code })
       });
       const data = await response.json();
-      return data.isConnected;
+      return { isConnected: data.isConnected, discordID: data.discordID || '' };
     } catch (error) {
       console.error('Error verifying Discord connection:', error);
-      return false;
+      return { isConnected: false, discordID: '' };
     }
   };
 
   const handleSubmit = async (values: FormValues, { setSubmitting, resetForm }: FormikHelpers<FormValues>) => {
     setSubmitting(true);
-    const rID = `ID${Date.now().toString().slice(-8)}`;
     const signupsRef = collection(db, "signups");
-
     const emailQuery = query(signupsRef, where("email", "==", values.email));
-    const emailSnapshot = await getDocs(emailQuery);
-    if (!emailSnapshot.empty) {
-      toast.error("Email already submitted!", { position: 'top-right', style: { backgroundColor: 'black' }});
-      setSubmitting(false);
-      return;
-    }
-
     const walletQuery = query(signupsRef, where("walletAddress", "==", values.walletAddress));
-    const walletSnapshot = await getDocs(walletQuery);
-    if (!walletSnapshot.empty) {
-      toast.error("Wallet already submitted!", { position: 'top-right', style: { backgroundColor: 'black' }});
-      setSubmitting(false);
-      return;
-    }
-
-    let initialPoints = 1; // Default points if no referral
-    if (values.referralCode) {
-      const referralQuery = query(signupsRef, where("rID", "==", values.referralCode));
-      const referralSnapshot = await getDocs(referralQuery);
-      if (!referralSnapshot.empty) {
-        const userDoc = referralSnapshot.docs[0];
-        const userRef = doc(db, "signups", userDoc.id);
-        await updateDoc(userRef, { points: userDoc.data().points + 1 });
-        initialPoints = 2; // Bonus point for using a valid referral
-      } else {
-        toast.error("Error: referral code not found", { position: 'top-right', style: { backgroundColor: 'red' }});
-        setSubmitting(false);
-        return; // Early return to stop processing if referral code is invalid
-      }
-    }
 
     try {
-      values.points = initialPoints; // Set the correct initial points based on the referral code usage
+      const [emailSnapshot, walletSnapshot] = await Promise.all([
+        getDocs(emailQuery),
+        getDocs(walletQuery)
+      ]);
+
+      if (!emailSnapshot.empty || !walletSnapshot.empty) {
+        toast.error("Information already submitted", { position: 'top-right', style: { backgroundColor: 'red' }});
+        setSubmitting(false);
+        return; // Early return to stop processing if the email or wallet address already exists
+      }
+
+      let initialPoints = 1; // Default points for required fields
+
+      if (values.referralCode) {
+        const referralQuery = query(signupsRef, where("rID", "==", values.referralCode));
+        const referralSnapshot = await getDocs(referralQuery);
+        if (!referralSnapshot.empty) {
+          initialPoints++; // Add 1 point for a valid referral
+        } else {
+          toast.error("Error: referral code not found", { position: 'top-right', style: { backgroundColor: 'red' }});
+          setSubmitting(false);
+          return; // Early return to stop processing if referral code is invalid
+        }
+      }
+
+      if (isDiscordConnected) {
+        initialPoints++; // Add 1 point for a connected Discord account
+      }
+
+      const rID = `ID${Date.now().toString().slice(-8)}`;
+      values.discordID = discordID; // Assign the Discord ID to form values before submitting
       await addDoc(signupsRef, {
         ...values,
+        points: initialPoints,
         createdAt: serverTimestamp(),
         rID: rID
       });
       toast.success(`Signup successful! Your referral code is ${rID}`, { position: 'top-right', style: { backgroundColor: 'black' }});
-      resetForm({ values: { ...initialValues, points: initialPoints } });
+      resetForm({ values: { ...initialValues, points: initialPoints, discordID: discordID } });
     } catch (error) {
       console.error("Error adding document: ", error);
       toast.error("Signup unsuccessful!", { position: 'top-right', style: { backgroundColor: 'black' }});
@@ -140,7 +150,7 @@ const SignupForm = () => {
               <ErrorMessage name="lastName" component="div" className='errorMessageLast' />
             </div>
             <div className="formEntryContainer">
-              <button type="button" className="buttonSocials" onClick={handleDiscordConnect}>
+              <button type="button" className="buttonSocials" onClick={handleDiscordConnect} disabled={isDiscordConnected}>
                 {isDiscordConnected ? 'Discord Connected' : 'Connect Discord'}
               </button>
               <button type="button" className="buttonSocials">Connect Twitter</button>
