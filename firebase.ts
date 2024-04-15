@@ -1,7 +1,7 @@
 // Import the necessary SDKs
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getFirestore } from "firebase/firestore"; // Change this line
+import { getFirestore } from "firebase/firestore"; 
 
 // Firebase configuration
 const firebaseConfig = {
@@ -13,11 +13,11 @@ const firebaseConfig = {
     messagingSenderId: "906332943631",
     appId: "1:906332943631:web:c70006c464416f23c6ba7a",
     measurementId: "G-B7BYMP4NQM"
-  };
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-const db = getFirestore(app); // Initialize Firestore
+const db = getFirestore(app); // Properly initialize Firestore using the Firebase app instance
 
 export { db };
